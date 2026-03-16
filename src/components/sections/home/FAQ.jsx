@@ -1,0 +1,196 @@
+"use client";
+import Link from "next/link";
+import { useRef, useState } from "react";
+
+const faqs = [
+  {
+    id: 1,
+    question: "When should I arrive?",
+    answer:
+      `We recommend arriving in Marrakech before or by the morning of Saturday, November 14. Wedding celebrations begin at noon on Saturday, November 14.
+`,
+  },
+  {
+    id: 2,
+    question: "Where will I stay",
+    answer:
+      `The Shariff and Jawaid families will be hosting all guests for both nights (Nov 14 and 15) at The Oberoi Marrakech and Park Hyatt Marrakech. 
+`,
+  },
+  {
+    id: 3,
+    question: "When should I depart?",
+    answer: `The final event of the weekend will be the Brunch on Monday, November 16. Guests may depart later that day or the following morning.`,
+  },
+  {
+    id: 4,
+    question: "Where will the wedding events take place?",
+    answer:
+      `All wedding events will take place at The Oberoi Marrakech unless otherwise noted.`,
+  },
+  {
+    id: 5,
+    question: "Which airport should I fly into?",
+    answer:
+      `The closest airport is Marrakech Menara Airport (RAK), about 25 minutes from the hotel.
+Alternatively, guests can fly into Casablanca, which offers more international flight options. From Casablanca, it is either a short domestic flight to Marrakech or approximately a 2-hour drive to the hotel.
+`,
+  },
+  {
+    id: 6,
+    question: "Will transportation be provided?",
+    answer:
+     `Transportation will be arranged for guests staying at the hotels for all wedding events.`,
+  },
+  {
+    id: 7,
+    question: "What is the dress code?",
+    answer:
+      `Dress codes will vary by event. We will be sharing a wardrobe planner soon!
+`,
+  },
+  {
+    id: 8,
+    question: "What will the weather be like?",
+    answer:
+      `November is one of the best times to visit Marrakech.
+Expect warm sunny days (70–75°F / 21–24°C) and cooler evenings, so a light jacket is recommended for nighttime events.`,
+  },
+  {
+    id: 9,
+    question: "Can I bring a guest?",
+    answer:
+      `Due to the intimate nature of the celebration, invitations are limited to those listed on the invitation.
+`,
+  },
+  {
+    id: 10,
+    question: "Who should I contact with questions?",
+    answer: `If you have any questions, please reach out to our wedding planner:
+`,
+    LINK: `https://indianvisaonline.gov.in/evisa/tvoa.html`,
+  },
+  
+];
+
+export default function FAQ() {
+  const [openId, setOpenId] = useState(null);
+  const contentRefs = useRef({});
+
+  const toggleFAQ = (id) => {
+    setOpenId(openId === id ? null : id);
+  };
+
+  return (
+    <section
+      id="FAQ"
+      className="min-h-screen max-sm:min-h-fit COLOR_BG_CREAM  flex items-center justify-center max-sm:py-[20vw] py-[20vh]"
+    >
+      <div className="w-[80%] max-sm:w-full px-6 max-sm:px-[20px] flex flex-col gap-20">
+        <h2 className="text-center Font_Q flex flex-col justify-center items-center max-sm:justify-start max-sm:mt-10 COLOR_TEXT_RED">
+          FAQ
+          {/* <p className="  Font_YV mt-7 font-bold sm:pt-5 max-sm:w-full max-sm:px-[10vw]">
+            For any wedding-related questions, please reach out to Sonal & Kush’s wedding planning team at:
+          </p>
+          <div className=" w-fit h-fit flex sm:gap-2 mt-4 justify-center items-center max-sm:flex-col">
+
+             <a href="mailto:sonalskushie@gmail.com" >
+              <div className=" relative group flex flex-col max-sm:mt-2">
+              <p className="Font_YV ">sonalskushie@gmail.com</p>
+              <div className="w-0 h-px bg-[#551301]  group-hover:w-full absolute bottom-[-1] left-0 transition-all duration-200"></div>
+              </div>
+            </a>
+
+            <p className="px-2 max-sm:hidden">|</p>
+
+            <a href="tel:+919358800614">
+              <div className=" relative group flex w-fit flex-col max-sm:mt-2">
+              <p className="Font_YV ">+91 93588 00614</p>
+              <div className="w-0 h-px bg-[#551301]  group-hover:w-full absolute bottom-[-1] left-0 transition-all duration-200"></div>
+              </div>
+            </a>
+            <p className="px-2 max-sm:hidden">|</p>
+            <a href="tel:+919310069102">
+              <div className=" relative group flex w-fit flex-col">
+              <p className="Font_YV max-sm:mt-2">+91 93100 69102</p>
+              <div className="w-0 h-px bg-[#551301]  group-hover:w-full absolute bottom-[-1] left-0 transition-all duration-200"></div>
+              </div>
+            </a>
+          </div> */}
+        </h2>
+
+        <div className="space-y-6 w-full">
+          {faqs.map((faq) => (
+            <div
+              key={faq.id}
+              className="border-b border-[#55130121] pb-6 group relative"
+            >
+              {/* BUTTON */}
+              <button
+                onClick={() => toggleFAQ(faq.id)}
+                className="group w-full flex items-center justify-between text-left"
+              >
+                <span className="tracking-wide uppercase COLOR_TEXT_RED Font_YV text-[1.5rem] max-sm:text-[1.1rem] md:text-base">
+                  {faq.question}
+                </span>
+
+                {/* ICON */}
+                <span
+                  className={`relative w-5 h-5 transition-transform duration-500 ${
+                    openId === faq.id ? "rotate-45" : ""
+                  }`}
+                >
+                  <img
+                    src="/svgs/IconPlusnew.svg"
+                    alt="icon"
+                    className="absolute inset-0 w-full h-full"
+                  />
+                  <span className="absolute inset-0 m-auto w-[7px] h-[7px] COLOR_BG_CREAM" />
+                </span>
+              </button>
+
+              {/* CONTENT */}
+              <div
+                ref={(el) => (contentRefs.current[faq.id] = el)}
+                className="overflow-hidden transition-all duration-500 ease-in-out"
+                style={{
+                  height:
+                    openId === faq.id
+                      ? `${contentRefs.current[faq.id]?.scrollHeight}px`
+                      : "0px",
+                }}
+              >
+                <div className="mt-4 Font_YV text-[18px] text-[#044ab291]">
+                  {faq.answer}
+
+                  {/* {(faq.id === 14 || faq.id === 15) && (
+                    <Link
+                      href="/explore"
+                      className="COLOR_TEXT_RED underline ml-2"
+                    >
+                      Know More
+                    </Link>
+                  )}
+                 
+                  {faq.id === 10 && faq.LINK && (
+                    <a
+                      href={faq.LINK}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block mt-2 COLOR_TEXT_RED underline"
+                    >
+                      Apply for Indian e-Tourist Visa
+                    </a>
+                  )} */}
+                </div>
+              </div>
+
+              {/* HOVER LINE */}
+              <div className="w-0 h-px bg-[#044BB2] group-hover:w-full absolute bottom-0 left-0 transition-all duration-200"></div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
