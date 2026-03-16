@@ -55,7 +55,7 @@ const HomeHeroSection = () => {
 
 
     return (
-        <div className='w-full h-[100svh] overflow-hidden relative   '>
+        <div className='w-full h-[100svh] overflow-hidden relative COLOR_BG_RED  '>
 
             <div ref={containerRefHome} className='w-full h-full flex overflow-hidden relative'>
                 <Image
