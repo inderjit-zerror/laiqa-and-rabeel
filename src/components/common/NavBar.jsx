@@ -110,29 +110,30 @@ const NavBar = () => {
   }
 
   return (
-    <div ref={navRef} className='w-full h-[46px] mt-20 flex gap-20 justify-between fixed top-0 left-0   items-center z-100 px-20'>
+    <div ref={navRef} className='w-full h-[46px] mt-10 flex gap-50 justify-between fixed top-0 left-0   items-center z-100 px-20'>
       {/* Left */}
       <div className='w-1/2 h-full RVSPBTN items-center max-lg:hidden flex justify-between uppercase text-[14px] COLOR_TEXT_RED '>
         <Link href={`/`} ><div className={`w-fit ${pathname === '/' && (' border-b border-[#044BB2]')} h-fit flex flex-col group relative COLOR_TEXT_RED  select-none cursor-pointer`}> <div className=' absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out COLOR_BG_RED'></div>Monogram</div></Link>
 
-        <Link href={`/`} ><div className={`w-fit ${pathname === '/' && (' border-b border-[#044BB2]')} h-fit flex flex-col group relative COLOR_TEXT_RED  select-none cursor-pointer`}> <div className=' absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out COLOR_BG_RED'></div>The Wedding</div></Link>
+        {/* <Link href={`/`} ><div className={`w-fit ${pathname === '/' && (' border-b border-[#044BB2]')} h-fit flex flex-col group relative COLOR_TEXT_RED  select-none cursor-pointer`}> <div className=' absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out COLOR_BG_RED'></div>The Wedding</div></Link> */}
 
         <Link href={`/wedding`} ><div className={`w-fit h-fit ${pathname === '/wedding' && (' border-b border-[#044BB2]')}  flex flex-col group COLOR_TEXT_RED relative  select-none cursor-pointer`}> <div className=' absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out COLOR_BG_RED'></div> Itinerary</div></Link>
 
-        <Link href={`/`} ><div className={`w-fit h-fit ${pathname === '/wedding' && (' border-b border-[#044BB2]')}  flex flex-col group COLOR_TEXT_RED relative  select-none cursor-pointer`}> <div className=' absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out COLOR_BG_RED'></div> VENUE</div></Link>
+        {/* <Link href={`/`} ><div className={`w-fit h-fit ${pathname === '/wedding' && (' border-b border-[#044BB2]')}  flex flex-col group COLOR_TEXT_RED relative  select-none cursor-pointer`}> <div className=' absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out COLOR_BG_RED'></div> VENUE</div></Link> */}
+
+      <Link href={`/venue`} ><div className={`w-fit h-fit ${pathname === '/venue' && (' border-b border-[#044BB2]')}  flex flex-col group relative COLOR_TEXT_RED  select-none cursor-pointer`}> <div className=' absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out COLOR_BG_RED'></div>Wedding Hotel</div></Link>
 
         
       </div>
 
       {/* Logo */}
-      <div className='w-fit h-[50px] RVSPBTN absolute top-[-60%] left-1/2 -translate-x-1/2 -translate-y-1/2  '>
+      {/* <div className='w-fit h-[50px] RVSPBTN absolute top-[-60%] left-1/2 -translate-x-1/2 -translate-y-1/2  '>
         <Link href={`/`} ><img src={`/svgs/CustomLogo.svg`} alt="Logo" className='h-full object-cover object-center' /></Link>
-      </div>
+      </div> */}
 
       {/* Right */}
       <div className='w-1/2  h-full RVSPBTN items-center max-lg:hidden flex justify-between uppercase text-[14px]   COLOR_TEXT_RED'>
 
-      <Link href={`/venue`} ><div className={`w-fit h-fit ${pathname === '/venue' && (' border-b border-[#044BB2]')}  flex flex-col group relative COLOR_TEXT_RED  select-none cursor-pointer`}> <div className=' absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out COLOR_BG_RED'></div>Wedding Hotel</div></Link>
 
         <Link href={`/faq`} ><div className={`w-fit h-fit ${pathname === '/faq' && (' border-b border-[#044BB2]')}  flex flex-col group relative  COLOR_TEXT_RED select-none cursor-pointer`}> <div className=' absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out COLOR_BG_RED'></div>FAQs</div></Link>
         <Link href={`/explore`} ><div className={`w-fit h-fit ${pathname === '/explore' && (' border-b border-[#044BB2]')}  flex flex-col group relative  COLOR_TEXT_RED select-none cursor-pointer`}> <div className=' absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out COLOR_BG_RED'></div>Explore Marrakech</div></Link>

@@ -20,6 +20,17 @@
   src: url('/fonts/final/Open-Sans-Condensed.woff2');
 }
 
+/* --------------------------------------------- */
+@font-face {
+  font-family: Font_Q_new;
+  src:url('/fonts/final/new/Caseopia_Regular.otf');
+}
+
+@font-face {
+  font-family: Font_YV_new;
+  src: url('/fonts/final/new/Manrope-VariableFont_wght.ttf');
+}
+
 
 body {
   position: relative;
@@ -28,12 +39,15 @@ body {
   background-color: #EFDFCB;
 }
 
+
+
+
 .Font_MLD {
   font-family: Font_MLD;
 }
 
 .Font_Q {
-  font-family: Font_Q;
+  font-family: Font_Q_new;
 }
 
 .Font_YIV {
@@ -41,7 +55,7 @@ body {
 }
 
 .Font_YV {
-  font-family: Font_YV;
+  font-family: Font_YV_new;
 }
 
 h2 {
