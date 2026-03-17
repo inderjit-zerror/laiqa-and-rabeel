@@ -136,11 +136,11 @@ const CardX = () => {
           {/* right */}
           <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit  max-sm:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
             <div className="w-1/2 h-fit  flex flex-col justify-center img3d-wrapper items-center">
-              <img
+              {/* <img
                 src={`/imgs/icon3.png`}
                 alt="Img"
                 className="w-full imgQ1 object-cover object-center mt-4"
-              />
+              /> */}
             </div>
           </div>
 
@@ -216,11 +216,11 @@ const CardX = () => {
           </div> */}
           <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit max-sm:pb-[2vh] max-sm:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
             <div className="w-1/2 h-fit  flex flex-col justify-center img3d-wrapper items-center">
-              <img
+              {/* <img
                 src={`/imgs/icon4.png`}
                 alt="Img"
                 className="w-full imgQ1 object-cover object-center mt-4"
-              />
+              /> */}
             </div>
           </div>
 
@@ -320,11 +320,11 @@ const CardX = () => {
           </div> */}
           <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit  max-sm:py-[0vh] max-sm:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
             <div className="w-2/3 max-sm:w-1/2 h-fit  flex flex-col justify-center items-center img3d-wrapper pb-10">
-              <img
+              {/* <img
                 src={`/imgs/icon1.png`}
                 alt="Img"
                 className="w-full imgQ1 object-cover object-center mt-4"
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -413,11 +413,11 @@ const CardX = () => {
               (Comfortable, breezy fabrics recommended)
             </p> */}
 
-              <img
+              {/* <img
                 src={`/imgs/icon3.png`}
                 alt="Img"
                 className="w-full h-full object-cover imgQ1 imgQ2 object-center md:mt-4"
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -435,11 +435,11 @@ const CardX = () => {
               (Comfortable, breezy fabrics recommended)
             </p> */}
 
-              <img
+              {/* <img
                 src={`/imgs/icon4.png`}
                 alt="Img"
                 className="w-full object-cover imgQ1 imgQ2 object-center mt-4"
-              />
+              /> */}
             </div>
           </div>
 
@@ -814,11 +814,11 @@ const CardX = () => {
               (Comfortable, breezy fabrics recommended)
             </p> */}
 
-              <img
+              {/* <img
                 src={`/imgs/icon1.png`}
                 alt="Img"
                 className="w-full object-cover imgQ1 imgQ2 object-center md:mt-4"
-              />
+              /> */}
             </div>
           </div>
         </div>
