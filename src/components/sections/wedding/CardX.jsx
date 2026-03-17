@@ -401,8 +401,8 @@ const CardX = () => {
           </div>
 
           {/* right */}
-          <div className="w-1/2 md:h-screen   max-sm:w-full max-md:mt-15  md:sticky md:top-0 md:right-0 flex justify-center items-center md:bg-[#044BB2]">
-            <div className="w-1/2 md:h-fit  justify-center img3d-wrapper  ">
+          <div className="w-1/2 md:h-screen   max-sm:w-full max-md:mt-15 COLOR_BG_Noise  md:sticky md:top-0 md:right-0 flex justify-center items-center md:bg-[#044BB2]">
+            <div className="w-1/2 md:h-fit  justify-center img3d-wrapper z-100  ">
               {/* <h3 className="Font_Q COLOR_TEXT_CREAM uppercase">OutFit</h3>
 
             <p className="Font_YV COLOR_TEXT_CREAM mt-4">
@@ -425,8 +425,8 @@ const CardX = () => {
         {/* Div - 2*/}
         <div className="w-full md:min-h-screen  relative flex max-sm:flex-col ">
           {/* Left */}
-          <div className="w-1/2 max-sm:w-full max-sm:h-fit max-sm:py-[0vh]  max-md:m-10 h-screen md:sticky top-0 left-0 flex justify-center items-center md:bg-[#044BB2]">
-            <div className="w-1/2 h-fit  flex flex-col justify-center img3d-wrapper  items-center">
+          <div className="w-1/2 max-sm:w-full max-sm:h-fit max-sm:py-[0vh] COLOR_BG_Noise max-md:m-10 h-screen md:sticky top-0 left-0 flex justify-center items-center md:bg-[#044BB2]">
+            <div className="w-1/2 h-fit  flex flex-col justify-center img3d-wrapper z-100  items-center">
               {/* <h3 className="Font_Q COLOR_TEXT_CREAM uppercase">OutFit</h3>
             <p className="Font_YV COLOR_TEXT_CREAM mt-5">
               Light-coloured Indian or fusion wear
@@ -802,8 +802,8 @@ const CardX = () => {
           </div>
 
           {/* right */}
-          <div className="w-1/2 md:h-screen max-sm:w-full max-sm:h-fit md:sticky top-0 right-0  flex justify-center items-center md:bg-[#044BB2]">
-            <div className="w-1/2 h-fit  flex flex-col justify-center img3d-wrapper  items-center">
+          <div className="w-1/2 md:h-screen max-sm:w-full max-sm:h-fit md:sticky COLOR_BG_Noise top-0 right-0  flex justify-center items-center md:bg-[#044BB2]">
+            <div className="w-1/2 h-fit  flex flex-col justify-center img3d-wrapper  z-100 items-center">
               {/* <h3 className="Font_Q COLOR_TEXT_CREAM uppercase">OutFit</h3>
 
             <p className="Font_YV COLOR_TEXT_CREAM mt-4">

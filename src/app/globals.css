@@ -100,9 +100,12 @@ p {
 }
 
 .COLOR_BG_Noise{
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
 }
+
+
+
 
 .COLOR_TEXT_RED{
   color: #044BB2;
@@ -119,8 +122,11 @@ p {
 .COLOR_TEXT_CREAM{
   color: #F9F5ED;
 }
-.COLOR_BG_CREAM{
+/* .COLOR_BG_CREAM{
   background-color: #F9F5ED;
+} */
+.COLOR_BG_CREAM{
+  background-color: #D9E5F1;
 }
 
 

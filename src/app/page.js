@@ -62,7 +62,6 @@ export default function Home() {
         url={`${Const.ClientLink}/`}
       />
       <HomeHeroSection />
-
       <WeddingHero />
       <Line />
       <Countdown />

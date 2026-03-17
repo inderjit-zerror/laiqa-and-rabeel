@@ -69,7 +69,7 @@ const Hearts = () => {
 
     return (
         <div className='w-full h-[250vh] relative heart_cont cclt'>
-            <div className='w-full h-screen overflow-hidden sticky flex flex-col max-sm:hidden justify-center top-0 left-0 COLOR_BG_RED COLOR_TEXT_CREAM uppercase'>
+            <div className='w-full h-screen overflow-hidden sticky flex flex-col COLOR_BG_Noise max-sm:hidden justify-center top-0 left-0 COLOR_BG_RED COLOR_TEXT_CREAM uppercase'>
                 {/* 1 */}
                 <div className=' w-full innderHerartCont tlr  h-fit text-[8vw] leading-[8vw] Font_Q flex  gap-[10vw] justify-center'>
                     <h1>Two</h1>
