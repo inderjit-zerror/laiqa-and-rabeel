@@ -61,9 +61,17 @@ const HomeHeroSection = () => {
 
     return (
         <div className='w-full h-[100svh] overflow-hidden relative COLOR_BG_RED  '>
-            <Image
+            {/* <Image
                 ref={imageRefHome}
                 src={`/newimg/SonalKush6Img.webp`}
+                className='w-full h-full scale-[1] opacity-0 absolute top-0 left-0 z-10 object-cover object-center max-sm:object-[35%_50%] '
+                width={1000}
+                height={1000}
+                alt='IMG'
+            /> */}
+            <Image
+                ref={imageRefHome}
+                src={`/imgs/Screenshot.png`}
                 className='w-full h-full scale-[1] opacity-0 absolute top-0 left-0 z-10 object-cover object-center max-sm:object-[35%_50%] '
                 width={1000}
                 height={1000}
