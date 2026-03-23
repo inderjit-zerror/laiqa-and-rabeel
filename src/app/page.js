@@ -7,6 +7,7 @@ import HomeHeroSection from "@/components/sections/home/HomeHeroSection";
 import Itinerary from "@/components/sections/home/Itinerary";
 import Line from "@/components/sections/home/Line";
 import WeddingHero from "@/components/sections/home/WeddingHero";
+import HomeSection from "@/components/sections/newhome/HomeSection";
 import WebPageSchema from "@/components/seo/WebPageSchema";
 import { Const } from "@/components/utils/Constants";
 
@@ -56,19 +57,8 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <WebPageSchema
-        name=" Laiqa & Rabeel Wedding | Official Wedding Website"
-        description="Welcome to the official wedding website of  Laiqa & Rabeel. Join us in celebrating our special day and explore event details, itinerary, venue information, and RSVP updates."
-        url={`${Const.ClientLink}/`}
-      />
-      <HomeHeroSection />
-      <WeddingHero />
-      <Line />
-      <Countdown />
-      <Hearts />
-      <Destiny />
-      {/* <Itinerary /> */}
-      {/* <FAQ /> */}
+     <HomeSection />
+     
     </>
   );
 }
