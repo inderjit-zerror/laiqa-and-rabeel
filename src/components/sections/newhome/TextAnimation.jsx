@@ -38,7 +38,7 @@ const TextAnimation = () => {
         <div className=' TextAnimaterContainer w-full h-[300vh] relative COLOR_BG_CREAM '>
 
             <div className=' w-full h-screen sticky top-0 left-0 p-20 flex  justify-center items-center '>
-                 <img src={`/imgs/newHome/GDN.png`} alt="IMG" className="w-full h-full object-center object-cover opacity-10 absolute top-0 left-0 z-[-2]" />
+                 <img src={`/imgs/newHome/GDN.png`} alt="IMG" className="w-full h-full object-center object-cover opacity-5 absolute top-0 left-0 z-[-2]" />
 
                 <div className=' text-[4vw] leading-[4vw] flex flex-wrap justify-center items-center gap-4 Font_Q capitalize '>
 

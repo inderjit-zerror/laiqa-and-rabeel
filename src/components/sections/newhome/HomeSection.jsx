@@ -58,8 +58,8 @@ const HomeSection = () => {
       intro
         .fromTo(
           skyRef.current,
-          { scale: 4 },
-          { scale: 1, duration: 2, ease: "power3.out" }
+          { opacity:0 },
+          { opacity: 1, duration: 1, ease: "power3.out" }
         )
       intro.from('.namerDiv', {
         y: '150vh',
@@ -157,7 +157,7 @@ const HomeSection = () => {
     <>
 
 
-      <div ref={containerRef} className='w-full min-h-[300vh] overflow-hidden mainCont relative bg-[#d1e7d1]'>
+      <div ref={containerRef} className='w-full min-h-[300vh] overflow-hidden mainCont relative bg-[#044BB2]/20'>
         <img
           ref={skyRef}
           src={`/imgs/newHome/sky.png`}
@@ -177,9 +177,9 @@ const HomeSection = () => {
         {/* Name */}
         <div className='w-full h-screen  z-80  relative flex Font_Q justify-center pt-[40vh] font-bold'>
           <div className='w-fit h-fit flex flex-col namerDiv -rotate-z-25  justify-center items-center  COLOR_TEXT_RED tracking-tight'>
-            <div className='text-[5vw] uppercase leading-[5vw]'>Sonal</div>
+            <div className='text-[5vw] uppercase leading-[5vw]'>Laiqa</div>
             <div className='text-[1vw] leading-[1vw] mt-5'>Wed's</div>
-            <div className='text-[5vw] uppercase leading-[5vw]'>Kush</div>
+            <div className='text-[5vw] uppercase leading-[5vw]'>Rabeel</div>
           </div>
         </div>
 
@@ -193,14 +193,11 @@ const HomeSection = () => {
           <Lamp top="20%" left="20%" translateX="-50%" translateY="-50%" rotation="5deg" name={'DemoAllItem scale-[1.1] z-40 opacity-80 '} />
           <Lamp top="60%" left="80%" translateX="-50%" translateY="-50%" rotation="-20deg" name={'DemoAllItem scale-[0.6]   z-40 opacity-80 '} />
           <Lamp top="20%" left="60%" translateX="-50%" translateY="-50%" rotation="-18deg" name={'DemoAllItem scale-[1] z-40 opacity-80 '} />
-          <Lamp top="30%" left="40%" translateX="-50%" translateY="-50%" rotation="20deg" name={'DemoAllItem scale-[0.9]  z-40 opacity-80 '} />
-          <Lamp top="25%" left="90%" translateX="-50%" translateY="-50%" rotation="14deg" name={'DemoAllItem scale-[1.2]  z-40 opacity-80 '} />
-          <Lamp top="45%" left="70%" translateX="-50%" translateY="-50%" rotation="-30deg" name={'DemoAllItem scale-[0.7] z-40 opacity-80 '} />
-          <Lamp top="80%" left="90%" translateX="-50%" translateY="-50%" rotation="20deg" name={'DemoAllItem scale-[1.1]  z-40 opacity-80 '} />
-          <Lamp top="100%" left="65%" translateX="-50%" translateY="-50%" rotation="27deg" name={'DemoAllItem  scale-[0.9]  z-40 opacity-80 '} />
-          <Lamp top="85%" left="30%" translateX="-50%" translateY="-50%" rotation="25deg" name={'DemoAllItem  scale-[1.1] z-40 opacity-80 '} />
-          <Lamp top="55%" left="20%" translateX="-50%" translateY="-50%" rotation="14deg" name={'DemoAllItem  scale-[0.7] z-40 opacity-80 '} />
+          
         </div>
+
+
+       <div className="pointer-events-none absolute bottom-0 left-0 w-full h-[150vh] bg-gradient-to-b from-transparent via-[#D9E5F1]/60 to-[#D9E5F1] z-40" />
 
 
 

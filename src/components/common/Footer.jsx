@@ -40,11 +40,11 @@ const Footer = () => {
       </div>
 
       <div className="w-1/2 flex flex-col COLOR_TEXT_RED max-sm:w-full max-md:mt-5  max-md:text-center ">
-        <span className=" Font_YV">⁠For any wedding-related questions, please reach out to Sonal & Kush’s wedding planning team at:</span>
+        <span className=" Font_YV">⁠For any wedding-related questions, please reach out to laiqa & rabeel wedding planning team at:</span>
 
         <span className=" Font_YV flex gap-2 max-md:gap-0 max-md:mt-2  max-md:flex-col max-md:text-[14px] max-md:mx-auto max-md:text-center">
 
-          <a href="mailto:sonalskushie@gmail.com"><span className=" relative flex flex-col w-fit  group  cursor-pointer select-none max-md:mx-auto font-semibold">  sonalskushie@gmail.com
+          <a href="mailto:sonalskushie@gmail.com"><span className=" relative flex flex-col w-fit  group  cursor-pointer select-none max-md:mx-auto font-semibold">  laiqaandrabeel@gmail.com
             <div className="h-[1px] w-[0px] COLOR_BG_RED transition-all duration-150 ease-in-out group-hover:w-full select-none  ">
             </div>
           </span></a>
@@ -69,7 +69,7 @@ const Footer = () => {
 
 
 
-      <div className="w-fit ml-auto  flex  flex-col COLOR_TEXT_RED max-md:text-[14px] max-md:mx-auto max-md:text-center max-md:mt-5">
+      {/* <div className="w-fit ml-auto  flex  flex-col COLOR_TEXT_RED max-md:text-[14px] max-md:mx-auto max-md:text-center max-md:mt-5">
 
         <span className=" Font_YV flex md:justify-end max-md:mx-auto ">Website designed & developed by :</span>
 
@@ -85,7 +85,7 @@ const Footer = () => {
             </div>
           </span></a>
         </span>
-      </div>
+      </div> */}
 
     </footer>
   );

@@ -5,69 +5,59 @@ import { useEffect } from "react"
 gsap.registerPlugin(ScrollTrigger)
 
 
+
 const DataArr = [
     {
         url: `/imgs/newHome/bbg2.png`,
         class: 'Div1Img ImgContMainDiv',
         top: 25,
         rotate: '-1deg',
-
+      
     },
     {
         url: `/imgs/newHome/bbg2.png`,
         class: 'Div2Img ImgContMainDiv',
         top: 28,
         rotate: '1deg',
+    
     },
     {
         url: `/imgs/newHome/bbg2.png`,
         class: 'Div3Img ImgContMainDiv',
         top: 31,
         rotate: '-1deg',
+         
     },
     {
         url: `/imgs/newHome/bbg2.png`,
         class: 'Div4Img ImgContMainDiv',
         top: 34,
         rotate: '1deg',
+         
     },
     {
         url: `/imgs/newHome/bbg2.png`,
         class: 'Div5Img ImgContMainDiv',
         top: 37,
         rotate: '-1deg',
+         
     },
-    {
-        url: `/imgs/newHome/bbg2.png`,
-        class: 'Div6Img ImgContMainDiv',
-        top: 40,
-        rotate: '1deg',
-    },
-    {
-        url: `/imgs/newHome/bbg2.png`,
-        class: 'Div7Img ImgContMainDiv',
-        top: 43,
-        rotate: '-1deg',
-    },
-    {
-        url: `/imgs/newHome/bbg2.png`,
-        class: 'Div8Img ImgContMainDiv',
-        top: 45,
-        rotate: '1deg',
-    },
-
 ]
 
+const getLeftValue = (i) => {
+  const pattern = [48, 52, 49, 51] // your sequence
+  return pattern[i % pattern.length]
+}
 
-const ImageCollector = ({ URL, name, top, rotate }) => {
+const ImageCollector = ({ URL, name, top, rotate, left }) => {
     return (
         <>
-            <div style={{ top: `${top}%`, transform: `translateX(-50%) rotate(${rotate})` }} className={`w-1/5 aspect-5/4 bg-[#f5f5f5] absolute px-2 pt-2 ${name}  left-1/2  `}>
+            <div style={{ top: `${top}%`,  left: `${left}%`, transform: `translateX(-50%) rotate(${rotate})` }} className={`w-1/5 aspect-5/4 bg-[#f5f5f5] absolute px-2 pt-2 ${name}  left-1/2  `}>
                 <div className='w-full h-[80%]  overflow-hidden'>
                     <img src={URL} alt="IMG" className='w-full h-full object-center object-cover' />
                 </div>
-                <div className='w-full h-[20%] flex justify-center items-center'>
-                    <p className='Font_Q capitalize text-[#202020]'>Lorem ipsum dolor sit amet.</p>
+                <div className='w-full h-[20%] flex justify-center text-[14px] items-center COLOR_TEXT_RED'>
+                    <p className='Font_Q capitalize '>Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
         </>
@@ -132,36 +122,36 @@ const LoveStory = () => {
     }, [])
 
     return (
-        <div className='LS-MainContainer w-full h-[400vh] relative z-100'>
+        <div className='LS-MainContainer w-full h-[400vh] relative z-100 bg-[#D9E5F1]'>
 
             <div className='w-full h-screen sticky top-0 left-0 overflow-hidden'>
 
-                <img src={`/imgs/newHome/bbg3.png`} alt="IMG" className="w-full h-full object-center object-cover absolute top-0 left-0 z-[-2]" />
+                {/* <img src={`/imgs/newHome/bbg3.png`} alt="IMG" className="w-full h-full object-center object-cover absolute top-0 left-0 z-[-2]" />
                 <div className="w-full h-full bg-[#0e0e0e5b] absolute CLO top-0 left-0 z-[-1]">
                      
-                </div>
+                </div> */}
 
                 <div className='w-full h-fit Font_Q flex justify-center items-center pt-10'>
-                    <h1 className='text-white text-[7vw] leading-[7vw] tracking-tighter'>Our Love Story</h1>
+                    <h1 className='COLOR_TEXT_RED text-[7vw] leading-[7vw] tracking-tighter'>Our Love Story</h1>
                 </div>
 
                 {
                     DataArr.map((item, index) => {
                         return (
-                            <ImageCollector key={index} URL={item.url} name={item.class} top={item.top} rotate={item.rotate} />
+                            <ImageCollector key={index} URL={item.url} name={item.class} top={item.top} rotate={item.rotate} left={getLeftValue(index)}  />
                         )
                     })
                 }
 
-                <div className="w-1/5 Left_1_TextWrap h-fit flex justify-center items-center absolute top-[30%] left-[10%] text-white text-[14px] capitalize Font_Q ">
+                <div className="w-1/5 Left_1_TextWrap h-fit flex justify-center items-center absolute top-[30%] left-[10%] COLOR_TEXT_RED text-[14px]  capitalize Font_Q ">
                     <p>1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum explicabo omnis, laudantium deserunt ut animi odit quas sit perferendis ex?</p>
                 </div>
 
-                <div className="w-1/5 Left_2_TextWrap h-fit flex justify-center items-center absolute top-[30%] left-[10%] text-white text-[14px] capitalize Font_Q opacity-0">
+                <div className="w-1/5 Left_2_TextWrap h-fit flex justify-center items-center absolute top-[30%] left-[10%] COLOR_TEXT_RED text-[14px]  capitalize Font_Q opacity-0">
                     <p>3. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum explicabo omnis, laudantium deserunt.</p>
                 </div>
 
-                <div className="w-1/5 Right_1_TextWrap h-fit flex justify-center items-center absolute top-[30%] right-[10%] text-white text-[14px] capitalize Font_Q opacity-0">
+                <div className="w-1/5 Right_1_TextWrap h-fit flex justify-center items-center absolute top-[30%] right-[10%] COLOR_TEXT_RED text-[14px]  capitalize Font_Q opacity-0">
                     <p>2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum explicabo omnis, laudantium deserunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum explicabo omnis, laudantium deserunt.</p>
                 </div>
 
