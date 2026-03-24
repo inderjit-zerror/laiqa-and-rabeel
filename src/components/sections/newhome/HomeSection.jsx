@@ -7,6 +7,7 @@ import { useGSAP } from '@gsap/react';
 import Lamp from './Lamp';
 import LoveStory from './LoveStory';
 import TextAnimation from './TextAnimation';
+import GallerySection from './GallerySection';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -59,7 +60,7 @@ const HomeSection = () => {
         .fromTo(
           skyRef.current,
           { opacity:0 },
-          { opacity: 1, duration: 1, ease: "power3.out" }
+          { opacity: 1, duration: 1, ease: "none" }
         )
       intro.from('.namerDiv', {
         y: '150vh',
@@ -205,6 +206,8 @@ const HomeSection = () => {
 
       <LoveStory />
       <TextAnimation/>
+
+      <GallerySection />
 
     </>
   )
