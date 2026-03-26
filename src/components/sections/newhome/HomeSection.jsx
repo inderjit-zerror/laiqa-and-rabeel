@@ -35,6 +35,15 @@ const HomeSection = () => {
 
   useGSAP(() => {
 
+    gsap.to(skyRef.current, {         // move right
+      y: "-=50",           // move slightly down
+      duration: 5,        // slow movement
+      repeat: -1,          // infinite
+      yoyo: true,          // back & forth
+      ease: "sine.inOut"
+    })
+
+
     lockScroll()
     const ctx = gsap.context(() => {
 
@@ -59,7 +68,7 @@ const HomeSection = () => {
       intro
         .fromTo(
           skyRef.current,
-          { opacity:0 },
+          { opacity: 0 },
           { opacity: 1, duration: 1, ease: "none" }
         )
       intro.from('.namerDiv', {
@@ -109,36 +118,89 @@ const HomeSection = () => {
         }
       })
 
+
+      // LAMP FLOATING (INFINITE)
+      const lampsF = gsap.utils.toArray(".DemoAllItem")
+
+      lampsF.forEach((lamp, i) => {
+        gsap.to(lamp, {
+          y: "+=40",              // move down 40px
+          duration: 2 + i,        // different speed for each
+          repeat: -1,             // infinite
+          yoyo: true,             // up-down effect
+          ease: "sine.inOut",
+          delay: i * 0.3          // slight stagger start
+        })
+      })
+
       // -----------------------------
       // LAMP PARALLAX
+      // const lamps = gsap.utils.toArray(".DemoAllItem")
+
+      // const tl = gsap.timeline({
+      //   scrollTrigger: {
+      //     trigger: ".mainCont",
+      //     start: "top top",
+      //     end: "80% top",
+      //     scrub: true
+      //   }
+      // })
+
+      // lamps.forEach((lamp) => {
+
+      //   const currentRotation = gsap.getProperty(lamp, "rotation")
+
+      //   const targetRotation =
+      //     currentRotation === 0
+      //       ? gsap.utils.random(-10, 10)
+      //       : currentRotation
+
+      //   const offset = gsap.utils.random(0, 60)
+
+      //   tl.to(lamp, {
+      //     y: `-${140 + offset}vh`,
+      //     rotation: targetRotation,
+      //     opacity: 0.3,
+      //     ease: "none"
+      //   }, 0)
+
+      // })
+
       const lamps = gsap.utils.toArray(".DemoAllItem")
 
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".mainCont",
           start: "top top",
-          end: "80% top",
+          end: "100% top",
           scrub: true
         }
       })
 
-      lamps.forEach((lamp) => {
+      lamps.forEach((lamp, i) => {
 
-        const currentRotation = gsap.getProperty(lamp, "rotation")
-
-        const targetRotation =
-          currentRotation === 0
-            ? gsap.utils.random(-10, 10)
-            : currentRotation
-
-        const offset = gsap.utils.random(0, 60)
+        // random values har lamp ke liye
+        const xMove = gsap.utils.random(-200, 200)   // left-right
+        const yMove = gsap.utils.random(-300, -600)  // upar ki taraf
+        const rotate = gsap.utils.random(-30, 30)
+        const scale = gsap.utils.random(0.7, 1.3)
 
         tl.to(lamp, {
-          y: `-${140 + offset}vh`,
-          rotation: targetRotation,
-          opacity: 0.3,
+          x: xMove,
+          y: yMove,
+          rotation: rotate,
+          scale: scale,
+          opacity: 0.5,
           ease: "none"
         }, 0)
+
+        // 🔥 EXIT (screen ke bahar)
+        tl.to(lamp, {
+          y: yMove - 500,     // aur upar push
+          x: xMove * 1.5,     // aur spread
+          opacity: 0,
+          ease: "none"
+        }, 0.6) // timeline ke 60% pe start exit
 
       })
 
@@ -162,7 +224,7 @@ const HomeSection = () => {
         <img
           ref={skyRef}
           src={`/imgs/newHome/sky.png`}
-          className='w-full h-[120vh] object-cover object-top absolute top-0 left-0 z-10'
+          className='w-full h-[150vh] object-cover object-top absolute top-0 left-0 z-10'
           alt="IMG"
         />
 
@@ -187,27 +249,24 @@ const HomeSection = () => {
 
 
         <div className='w-full h-screen fixed top-0 left-0 z-50 flex'>
-
-
-          <Lamp top="80%" left="50%" translateX="-50%" translateY="-50%" rotation="20deg" name={'DemoAllItem scale-[0.8]  z-40 opacity-80 '} />
-          <Lamp top="70%" left="10%" translateX="-50%" translateY="-50%" rotation="-10deg" name={'DemoAllItem scale-[1]  z-40 opacity-80 '} />
-          <Lamp top="20%" left="20%" translateX="-50%" translateY="-50%" rotation="5deg" name={'DemoAllItem scale-[1.1] z-40 opacity-80 '} />
-          <Lamp top="60%" left="80%" translateX="-50%" translateY="-50%" rotation="-20deg" name={'DemoAllItem scale-[0.6]   z-40 opacity-80 '} />
-          <Lamp top="20%" left="60%" translateX="-50%" translateY="-50%" rotation="-18deg" name={'DemoAllItem scale-[1] z-40 opacity-80 '} />
-          
+          <Lamp top="80%" left="50%" translateX="-50%" translateY="-50%" rotation="20deg" URL={`/imgs/newHome/birdw.png`} name={'DemoAllItem scale-[0.8]  z-40 opacity-80 '} />
+          <Lamp top="20%" left="20%" translateX="-50%" translateY="-50%" rotation="5deg" URL={`/imgs/newHome/bird.png`} name={'DemoAllItem scale-[1.1] z-40 opacity-80 '} />
+          <Lamp top="20%" left="60%" translateX="-50%" translateY="-50%" rotation="-18deg" URL={`/imgs/newHome/bird.png`} name={'DemoAllItem scale-[1] z-40 opacity-80 '} />
         </div>
 
 
-       <div className="pointer-events-none absolute bottom-0 left-0 w-full h-[150vh] bg-gradient-to-b from-transparent via-[#D9E5F1]/60 to-[#D9E5F1] z-40" />
+        <div className="pointer-events-none absolute bottom-0 left-0 w-full h-[30vh] bg-gradient-to-b from-transparent via-[#D9E5F1]/60 to-[#D9E5F1] z-40" />
 
 
 
       </div>
 
       <LoveStory />
-      <TextAnimation/>
+      <TextAnimation />
 
       <GallerySection />
+
+
 
     </>
   )

@@ -56,7 +56,8 @@ const HeroSectionVenue = () => {
     <div ref={containerRef} className='w-full h-screen flex overflow-hidden  relative COLOR_BG_CREAM'>
       <Image
         ref={imageRef}
-        src={`/imgs/RafflesUdaipur.webp`}
+        // src={`/imgs/RafflesUdaipur.webp`}
+        src={`/imgs/newWedding/bgWed.jpg`}
         className='w-full h-full object-cover object-center Igm opacity-0 '
         width={1000}
         height={1000}

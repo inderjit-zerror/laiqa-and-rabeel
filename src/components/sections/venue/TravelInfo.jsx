@@ -101,7 +101,7 @@ const TravelInfo = () => {
         </span>
 
         <div className="Font_Q  mb-10 flex flex-col gap-4 max-sm:gap-1 uppercase COLOR_TEXT_CREAM max-sm:text-white max-sm:uppercase">
-          <h2> Way To Get To Travel</h2>
+          <h2> Arriving in Marrakech </h2>
         </div>
 
         <div className="space-y-3 max-sm:space-y-4 ">

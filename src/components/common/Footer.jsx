@@ -69,7 +69,7 @@ const Footer = () => {
 
 
 
-      {/* <div className="w-fit ml-auto  flex  flex-col COLOR_TEXT_RED max-md:text-[14px] max-md:mx-auto max-md:text-center max-md:mt-5">
+      <div className="w-fit ml-auto  flex  flex-col COLOR_TEXT_RED max-md:text-[14px] max-md:mx-auto max-md:text-center max-md:mt-5">
 
         <span className=" Font_YV flex md:justify-end max-md:mx-auto ">Website designed & developed by :</span>
 
@@ -85,7 +85,7 @@ const Footer = () => {
             </div>
           </span></a>
         </span>
-      </div> */}
+      </div>
 
     </footer>
   );

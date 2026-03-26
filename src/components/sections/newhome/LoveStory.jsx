@@ -101,6 +101,7 @@ const LoveStory = () => {
                 scrub: true,
             }
         })
+
         LST.to('.Left_1_TextWrap', {
             delay:1,
             opacity: 0,
@@ -122,12 +123,12 @@ const LoveStory = () => {
     }, [])
 
     return (
-        <div className='LS-MainContainer w-full h-[400vh] relative z-100 bg-[#D9E5F1]'>
+        <div className='LS-MainContainer w-full h-[400vh] relative z-70 bg-[#D9E5F1]'>
 
             <div className='w-full h-screen sticky top-0 left-0 overflow-hidden'>
 
-                {/* <img src={`/imgs/newHome/bbg3.png`} alt="IMG" className="w-full h-full object-center object-cover absolute top-0 left-0 z-[-2]" />
-                <div className="w-full h-full bg-[#0e0e0e5b] absolute CLO top-0 left-0 z-[-1]">
+                <img src={`/imgs/newHome/FullIMG.png`} alt="IMG" className="w-full h-full object-center BGIMGLS object-cover absolute top-0 left-0 z-[-2]" />
+                {/* <div className="w-full h-full bg-[#0e0e0e5b] absolute CLO top-0 left-0 z-[-1]">
                      
                 </div> */}
 
@@ -143,17 +144,20 @@ const LoveStory = () => {
                     })
                 }
 
-                <div className="w-1/5 Left_1_TextWrap h-fit flex justify-center items-center absolute top-[30%] left-[10%] COLOR_TEXT_RED text-[14px]  capitalize Font_Q ">
+                {/* <div className="w-1/5 Left_1_TextWrap h-fit flex justify-center items-center absolute top-[30%] left-[10%] COLOR_TEXT_RED text-[14px]   Font_Q ">
                     <p>1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum explicabo omnis, laudantium deserunt ut animi odit quas sit perferendis ex?</p>
                 </div>
 
-                <div className="w-1/5 Left_2_TextWrap h-fit flex justify-center items-center absolute top-[30%] left-[10%] COLOR_TEXT_RED text-[14px]  capitalize Font_Q opacity-0">
+                <div className="w-1/5 Left_2_TextWrap h-fit flex justify-center items-center absolute top-[30%] left-[10%] COLOR_TEXT_RED text-[14px]  Font_Q opacity-0">
                     <p>3. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum explicabo omnis, laudantium deserunt.</p>
                 </div>
 
-                <div className="w-1/5 Right_1_TextWrap h-fit flex justify-center items-center absolute top-[30%] right-[10%] COLOR_TEXT_RED text-[14px]  capitalize Font_Q opacity-0">
+                <div className="w-1/5 Right_1_TextWrap h-fit flex justify-center items-center absolute top-[30%] right-[10%] COLOR_TEXT_RED text-[14px]  Font_Q opacity-0">
                     <p>2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum explicabo omnis, laudantium deserunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum explicabo omnis, laudantium deserunt.</p>
-                </div>
+                </div> */}
+
+
+                {/* <div className="pointer-events-none absolute bottom-0 left-0 w-full h-[10vh] bg-gradient-to-b from-transparent via-[#D9E5F1]/60 to-[#D9E5F1] z-40" /> */}
 
             </div>
 

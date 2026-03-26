@@ -68,7 +68,7 @@ const Explore = () => {
             <div className="w-fit h-fit flex  ">
               <div className="w-[413px] aspect-[4/5]  overflow-hidden img5">
                 <Image
-                  src={`/imgs/explorNewImg/City_Palace_1.webp`}
+                  src={`/imgs/newExplorMarK/AA1.jpg`}
                   className="w-full h-full  object-cover object-center scale-[1.2]"
                   width={1000}
                   height={1000}
@@ -83,13 +83,12 @@ const Explore = () => {
               <p className=" uppercase Font_YV COLOR_TEXT_RED contA6">
 
               </p>
-              <h4 className=" text-[80px]  leading-[80px] Font_Q contA6 COLOR_TEXT_RED uppercase ">
-                City Palace
+              <h4 className=" text-[80px]  leading-[80px] Font_Q contA6 COLOR_TEXT_RED text-center uppercase ">
+                Jemaa el-Fnaa Square
               </h4>
               <div className="w-full max-w-[460px] flex flex-col contA6 justify-center items-center gap-6">
                 <div className="text-[#395238] text-[18px] contA6 COLOR_TEXT_RED text-center Font_YV">
-                  A magnificent lakeside palace complex showcasing centuries of royal heritage. Private guided tours and sunset visits offer breathtaking views over Lake Pichola.
-                </div>
+                 The beating heart of Marrakech, Jemaa el-Fnaa is a UNESCO-listed cultural square that comes alive at all hours. By day, snake charmers, henna artists, and storytellers fill the open plaza. As evening falls, it transforms into a sprawling open-air food market with dozens of stalls grilling meats, serving harira soup, and offering fresh-squeezed orange juice. </div>
               </div>
             </div>
           </div>
@@ -97,7 +96,7 @@ const Explore = () => {
           <div className=" w-fit h-screen mr-[2vw] flex justify-center items-center">
             <div className="w-[413px] aspect-[4/5] flex overflow-hidden ">
               <Image
-                src={`/imgs/explorNewImg/City_Palace_2.webp`}
+                src={`/imgs/newExplorMarK/AA2.jpg`}
                 className="w-full h-full object-cover  object-center"
                 width={1000}
                 height={1000}
@@ -110,7 +109,7 @@ const Explore = () => {
             <div className="w-fit h-fit flex  ">
               <div className="w-[50vw] h-screen  overflow-hidden img5">
                 <Image
-                  src={`/imgs/explorNewImg/Lake_Pichola_1.webp`}
+                  src={`/imgs/newExplorMarK/BB1.webp`}
                   className="w-full h-full  object-cover object-center scale-[1.2]"
                   width={2000}
                   height={2000}
@@ -124,13 +123,12 @@ const Explore = () => {
             <div className="w-fit max-w-[665px] contA6 h-fit flex flex-col gap-6 justify-center items-center">
               <p className=" uppercase Font_YV COLOR_TEXT_RED contA6">
               </p>
-              <h4 className=" text-[80px]  leading-[80px] Font_Q contA6 COLOR_TEXT_RED uppercase ">
-                Lake Pichola
+              <h4 className=" text-[80px]  leading-[80px] Font_Q text-center contA6 COLOR_TEXT_RED uppercase ">
+                 Jardin Majorelle
               </h4>
               <div className="w-full max-w-[460px] flex flex-col contA6 justify-center items-center gap-6">
                 <div className="text-[#395238] text-[18px] contA6 COLOR_TEXT_RED text-center Font_YV">
-                  Experience Udaipur from the water with a private sunset boat ride. Golden skies, marble palaces, and serene lake views create an unforgettable setting.
-                </div>
+                  Originally designed by French painter Jacques Majorelle in the 1920s and later rescued and restored by fashion icon Yves Saint Laurent, this botanical garden is one of Africa's most visited attractions.  </div>
               </div>
             </div>
           </div>
@@ -138,7 +136,7 @@ const Explore = () => {
           <div className=" animate_child w-fit h-screen mr-[2vw] flex justify-center items-center">
             <div className="w-[413px] aspect-[4/5] flex overflow-hidden ">
               <Image
-                src={`/imgs/explorNewImg/Lake_Pichola_2.webp`}
+                src={`/imgs/newExplorMarK/BB2.jpg`}
                 className="w-full h-full object-cover  object-center"
                 width={1000}
                 height={1000}
@@ -151,7 +149,7 @@ const Explore = () => {
             <div className="w-fit h-fit flex  ">
               <div className="w-[50vw] h-fit  overflow-hidden img5">
                 <Image
-                  src={`/imgs/explorNewImg/Taj_Lake_Palace_1.webp`}
+                  src={`/imgs/newExplorMarK/CC1.jpg`}
                   className="w-full h-full  object-cover object-center scale-[1.2]"
                   width={2000}
                   height={2000}
@@ -166,13 +164,12 @@ const Explore = () => {
               <p className=" uppercase Font_YV COLOR_TEXT_RED contA6">
 
               </p>
-              <h4 className=" text-[80px] leading-[80px] Font_Q contA6 COLOR_TEXT_RED uppercase ">
-                Taj Lake Palace
+              <h4 className=" text-[80px] leading-[80px] Font_Q contA6 text-center COLOR_TEXT_RED uppercase ">
+                Bahia Palace
               </h4>
               <div className="w-full max-w-[460px] flex flex-col contA6 justify-center items-center gap-6">
                 <div className="text-[#395238] text-[18px] contA6 COLOR_TEXT_RED text-center Font_YV">
-                  An iconic white-marble palace floating gracefully on the lake. Ideal for an elegant dinner, afternoon tea, or champagne at sunset.
-                </div>
+                 Built in the late 19th century, the Bahia Palace ("Palace of the Beautiful") was intended to be the grandest palace of its time.</div>
               </div>
             </div>
           </div>
@@ -180,7 +177,7 @@ const Explore = () => {
           <div className=" animate_child w-fit h-screen mr-[2vw] flex justify-center items-center">
             <div className="w-[70vw] h-screen flex overflow-hidden ">
               <img
-                src={`/imgs/explorNewImg/pales.jpg`}
+                src={`/imgs/newExplorMarK/CC2.jpg`}
                 className="w-full h-full object-cover  object-center"
                 alt="Img"
               />
@@ -192,7 +189,7 @@ const Explore = () => {
             <div className="w-fit h-fit flex  ">
               <div className="w-[50vw]  aspect-[3/2]  overflow-hidden img5">
                 <Image
-                  src={`/imgs/explorNewImg/The_Oberoi_Udaivilas_1.webp`}
+                  src={`/imgs/newExplorMarK/DD1.jpg`}
                   className="w-full h-full  object-cover object-center scale-[1.2]"
                   width={2000}
                   height={2000}
@@ -208,12 +205,11 @@ const Explore = () => {
 
               </p>
               <h4 className=" text-[80px] leading-[80px] Font_Q contA6 COLOR_TEXT_RED uppercase text-center  ">
-                The Oberoi Udaivilas
+                Koutoubia Mosque
               </h4>
               <div className="w-full max-w-[460px] flex flex-col contA6 justify-center items-center gap-6">
                 <div className="text-[#395238] text-[18px] contA6 COLOR_TEXT_RED text-center Font_YV">
-                  A benchmark of Indian luxury. Indulge in a world-class spa, lakeside dining, or sunset cocktails in a setting of timeless grandeur.
-                </div>
+                  The Koutoubia Mosque is Marrakech's most iconic landmark and the largest mosque in the city. Its soaring 70-metre minaret has dominated the skyline since the 12th century and served as the architectural inspiration</div>
               </div>
             </div>
           </div>
@@ -221,7 +217,7 @@ const Explore = () => {
           <div className="animate_child w-fit h-screen mr-[2vw] flex justify-center items-center">
             <div className="w-[413px] aspect-[4/5] flex overflow-hidden ">
               <Image
-                src={`/imgs/explorNewImg/The_Oberoi_Udaivilas_2.webp`}
+                src={`/imgs/newExplorMarK/DD2.jpg`}
                 className="w-full h-full object-cover  object-center"
                 width={1000}
                 height={1000}
@@ -236,7 +232,7 @@ const Explore = () => {
             <div className="w-fit h-fit flex  ">
               <div className="w-[50vw] h-fit  overflow-hidden img5">
                 <Image
-                  src={`/imgs/explorNewImg/Bagore_Ki_Haveli_1.webp`}
+                  src={`/imgs/newExplorMarK/EE1.jpg`}
                   className="w-full h-full  object-cover object-center scale-[1.2]"
                   width={2000}
                   height={2000}
@@ -252,12 +248,11 @@ const Explore = () => {
 
               </p>
               <h4 className=" text-[80px] leading-[80px] Font_Q contA6 COLOR_TEXT_RED uppercase text-center ">
-                Bagore Ki Haveli
+                The Souks of the Medina
               </h4>
               <div className="w-full max-w-[460px] flex flex-col contA6 justify-center items-center gap-6">
                 <div className="text-[#395238] text-[18px] contA6 COLOR_TEXT_RED text-center Font_YV">
-                  An 18th-century haveli offering a glimpse into Rajasthan’s cultural richness. The evening folk performance is particularly enchanting.
-                </div>
+                  Marrakech's old Medina is a living, breathing marketplace dating back centuries. The souks are organized loosely by trade — the dyers' souk (Souk Semmarine), the leather souk, the spice market,</div>
               </div>
             </div>
           </div>
@@ -265,7 +260,7 @@ const Explore = () => {
           <div className=" animate_child w-fit h-screen mr-[2vw] flex justify-center items-center">
             <div className="w-[70vw] h-screen flex overflow-hidden ">
               <img
-                src={`/imgs/explorNewImg/bkh.jpg`}
+                src={`/imgs/newExplorMarK/EE2.jpg`}
                 className="w-full h-full object-cover  object-center"
 
                 alt="Img"
@@ -275,7 +270,7 @@ const Explore = () => {
         </div>
       </div>
 
-      <Shop />
+     
 
     </>
   );

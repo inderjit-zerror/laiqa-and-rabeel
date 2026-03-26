@@ -15,12 +15,12 @@ const VenueGallery = () => {
     const sliderRef = useRef(null);
 
     const slideImg = [
-        "/imgs/h1.webp",
-        "/imgs/h2.webp",
-        "/imgs/h3.webp",
-        "/imgs/h4.webp",
-        "/imgs/h5.webp",
-        "/imgs/h6.webp",
+        "/imgs/newExplorMarK/AA1.jpg",
+        "/imgs/newExplorMarK/BB1.webp",
+        "/imgs/newExplorMarK/CC1.jpg",
+        "/imgs/newExplorMarK/DD1.jpg",
+        "/imgs/newExplorMarK/EE1.jpg",
+        "/imgs/newExplorMarK/AA2.jpg",
     ];
 
     const images = [...slideImg, ...slideImg]; // duplicate
