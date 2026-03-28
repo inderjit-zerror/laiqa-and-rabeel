@@ -68,7 +68,7 @@ const Explore = () => {
             <div className="w-fit h-fit flex  ">
               <div className="w-[413px] aspect-[4/5]  overflow-hidden img5">
                 <Image
-                  src={`/imgs/newExplorMarK/AA1.jpg`}
+                  src={`/imgs/newWedding/Horeel.webp`}
                   className="w-full h-full  object-cover object-center scale-[1.2]"
                   width={1000}
                   height={1000}
@@ -84,11 +84,11 @@ const Explore = () => {
 
               </p>
               <h4 className=" text-[80px]  leading-[80px] Font_Q contA6 COLOR_TEXT_RED text-center uppercase ">
-                Jemaa el-Fnaa Square
+                Marrakech
               </h4>
               <div className="w-full max-w-[460px] flex flex-col contA6 justify-center items-center gap-6">
                 <div className="text-[#395238] text-[18px] contA6 COLOR_TEXT_RED text-center Font_YV">
-                 The beating heart of Marrakech, Jemaa el-Fnaa is a UNESCO-listed cultural square that comes alive at all hours. By day, snake charmers, henna artists, and storytellers fill the open plaza. As evening falls, it transforms into a sprawling open-air food market with dozens of stalls grilling meats, serving harira soup, and offering fresh-squeezed orange juice. </div>
+                 Marrakech is one of the most vibrant and culturally rich cities in Morocco. Known as the “Red City” because of its rose-colored buildings, it blends history, culture.</div>
               </div>
             </div>
           </div>
@@ -149,7 +149,7 @@ const Explore = () => {
             <div className="w-fit h-fit flex  ">
               <div className="w-[50vw] h-fit  overflow-hidden img5">
                 <Image
-                  src={`/imgs/newExplorMarK/CC1.jpg`}
+                  src={`/imgs/newExplorMarK/EE1.jpg`}
                   className="w-full h-full  object-cover object-center scale-[1.2]"
                   width={2000}
                   height={2000}

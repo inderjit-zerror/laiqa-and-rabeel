@@ -15,9 +15,8 @@ const VenueGallery = () => {
     const sliderRef = useRef(null);
 
     const slideImg = [
-        "/imgs/newExplorMarK/AA1.jpg",
+        "/imgs/newWedding/Horeel.webp",
         "/imgs/newExplorMarK/BB1.webp",
-        "/imgs/newExplorMarK/CC1.jpg",
         "/imgs/newExplorMarK/DD1.jpg",
         "/imgs/newExplorMarK/EE1.jpg",
         "/imgs/newExplorMarK/AA2.jpg",

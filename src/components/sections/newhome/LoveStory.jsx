@@ -35,13 +35,6 @@ const DataArr = [
         rotate: '1deg',
          
     },
-    {
-        url: `/imgs/newHome/bbg2.png`,
-        class: 'Div5Img ImgContMainDiv',
-        top: 37,
-        rotate: '-1deg',
-         
-    },
 ]
 
 const getLeftValue = (i) => {
@@ -71,11 +64,16 @@ const LoveStory = () => {
         const LS = gsap.timeline({
             scrollTrigger: {
                 trigger: '.LS-MainContainer',
-                top: 'top bottom',
+                start: 'top top',
                 end: 'bottom bottom',
                 scrub: true,
+                // markers:true
 
             }
+        })
+        LS.to('.BGIMGLS',{
+            top:'50%',
+            ease:'none'
         })
         LS.from('.ImgContMainDiv', {
             y: '150vh',
@@ -87,6 +85,10 @@ const LoveStory = () => {
                 from: 'start'
             },
             ease: 'power3.out'
+        })
+         LS.to('.BGIMGLS',{
+            top:'0%',
+            ease:'none'
         })
 
     }, [])
@@ -123,7 +125,7 @@ const LoveStory = () => {
     }, [])
 
     return (
-        <div className='LS-MainContainer w-full h-[400vh] relative z-70 bg-[#D9E5F1]'>
+        <div className='LS-MainContainer w-full h-[600vh] relative z-70 bg-[#D9E5F1]'>
 
             <div className='w-full h-screen sticky top-0 left-0 overflow-hidden'>
 

@@ -57,8 +57,8 @@ const WeddingVenue = () => {
         </div>
 
         {/* Description */}
-        <p className="max-w-xl mx-auto Font_YV leading-[20px] COLOR_TEXT_RED WeddingText">
-        Set amidst the enchanting landscapes of Marrakech, The Oberoi Marrakech offers a timeless sanctuary for our wedding celebrations. Surrounded by serene gardens, grand architecture, and warm Moroccan hospitality, it creates the perfect setting where elegance meets intimacy. From the moment you arrive on the 14th of November until your departure on the 16th, every detail is designed to make our shared moments truly unforgettable.</p>
+        <p className="max-w-xl mx-auto Font_YV leading-[20px] COLOR_TEXT_RED text-justify WeddingText">
+        Set amidst the enchanting landscapes of Marrakech, The Oberoi Marrakech offers a timeless sanctuary for our wedding celebrations. Surrounded by serene gardens, grand architecture.</p>
       </div>
     </section>
   );

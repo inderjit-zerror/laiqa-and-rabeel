@@ -119,90 +119,55 @@ const HomeSection = () => {
       })
 
 
-      // LAMP FLOATING (INFINITE)
-      const lampsF = gsap.utils.toArray(".DemoAllItem")
+      // =========================
+    // 🔥 FLOATING (STORE ANIMS)
+    // =========================
+    const lamps = gsap.utils.toArray(".DemoAllItem")
+    const floatAnims = []
 
-      lampsF.forEach((lamp, i) => {
-        gsap.to(lamp, {
-          y: "+=40",              // move down 40px
-          duration: 2 + i,        // different speed for each
-          repeat: -1,             // infinite
-          yoyo: true,             // up-down effect
-          ease: "sine.inOut",
-          delay: i * 0.3          // slight stagger start
-        })
+    lamps.forEach((lamp, i) => {
+      const anim = gsap.to(lamp, {
+        y: "+=40",
+        duration: 2 + i,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+        delay: i * 0.3
       })
 
-      // -----------------------------
-      // LAMP PARALLAX
-      // const lamps = gsap.utils.toArray(".DemoAllItem")
+      floatAnims.push(anim)
+    })
 
-      // const tl = gsap.timeline({
-      //   scrollTrigger: {
-      //     trigger: ".mainCont",
-      //     start: "top top",
-      //     end: "80% top",
-      //     scrub: true
-      //   }
-      // })
+    // =========================
+    // 🔥 SCROLL UP EFFECT
+    // =========================
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".mainCont",
+        start: "top top",
+        end: "bottom top",
+        scrub: 1.5,
 
-      // lamps.forEach((lamp) => {
-
-      //   const currentRotation = gsap.getProperty(lamp, "rotation")
-
-      //   const targetRotation =
-      //     currentRotation === 0
-      //       ? gsap.utils.random(-10, 10)
-      //       : currentRotation
-
-      //   const offset = gsap.utils.random(0, 60)
-
-      //   tl.to(lamp, {
-      //     y: `-${140 + offset}vh`,
-      //     rotation: targetRotation,
-      //     opacity: 0.3,
-      //     ease: "none"
-      //   }, 0)
-
-      // })
-
-      const lamps = gsap.utils.toArray(".DemoAllItem")
-
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".mainCont",
-          start: "top top",
-          end: "100% top",
-          scrub: true
+        onEnter: () => {
+          floatAnims.forEach(anim => anim.pause())
+        },
+        onLeaveBack: () => {
+          floatAnims.forEach(anim => anim.resume())
         }
-      })
+      }
+    })
 
-      lamps.forEach((lamp, i) => {
+    lamps.forEach((lamp) => {
 
-        // random values har lamp ke liye
-        const xMove = gsap.utils.random(-200, 200)   // left-right
-        const yMove = gsap.utils.random(-300, -600)  // upar ki taraf
-        const rotate = gsap.utils.random(-30, 30)
-        const scale = gsap.utils.random(0.7, 1.3)
+      const offset = gsap.utils.random(0, 60)
 
-        tl.to(lamp, {
-          x: xMove,
-          y: yMove,
-          rotation: rotate,
-          scale: scale,
-          opacity: 0.5,
-          ease: "none"
-        }, 0)
+      tl.to(lamp, {
+        y: -(window.innerHeight * 1.8 + offset), // 🚀 UPWARD
+        opacity: 0.3,
+        ease: "none"
+      }, 0)
 
-        // 🔥 EXIT (screen ke bahar)
-        tl.to(lamp, {
-          y: yMove - 500,     // aur upar push
-          x: xMove * 1.5,     // aur spread
-          opacity: 0,
-          ease: "none"
-        }, 0.6) // timeline ke 60% pe start exit
-
-      })
+    })
 
     }, containerRef)
 
@@ -211,8 +176,27 @@ const HomeSection = () => {
   }, [])
 
 
-  // loveStory =================================================
 
+  const containerRefN3 = useRef(null);
+
+  useEffect(() => {
+    const el = containerRefN3.current;
+
+    // duplicate content for seamless loop
+    const totalWidth = el.scrollWidth / 2;
+
+    gsap.to(el, {
+      x: `-=${totalWidth}`,
+      duration: 20,
+      ease: "linear",
+      repeat: -1,
+      modifiers: {
+        x: (x) => {
+          return `${parseFloat(x) % totalWidth}px`;
+        },
+      },
+    });
+  }, []);
 
 
 
@@ -250,8 +234,8 @@ const HomeSection = () => {
 
         <div className='w-full h-screen fixed top-0 left-0 z-50 flex'>
           <Lamp top="80%" left="50%" translateX="-50%" translateY="-50%" rotation="20deg" URL={`/imgs/newHome/birdw.png`} name={'DemoAllItem scale-[0.8]  z-40 opacity-80 '} />
-          <Lamp top="20%" left="20%" translateX="-50%" translateY="-50%" rotation="5deg" URL={`/imgs/newHome/bird.png`} name={'DemoAllItem scale-[1.1] z-40 opacity-80 '} />
-          <Lamp top="20%" left="60%" translateX="-50%" translateY="-50%" rotation="-18deg" URL={`/imgs/newHome/bird.png`} name={'DemoAllItem scale-[1] z-40 opacity-80 '} />
+          <Lamp top="20%" left="30%" translateX="-50%" translateY="-50%" rotation="5deg" URL={`/imgs/newHome/bird.png`} name={'DemoAllItem scale-[1.1] z-40 opacity-80 '} />
+          <Lamp top="30%" left="65%" translateX="-50%" translateY="-50%" rotation="-18deg" URL={`/imgs/newHome/bird.png`} name={'DemoAllItem scale-[1] z-40 opacity-80 '} />
         </div>
 
 
@@ -265,6 +249,44 @@ const HomeSection = () => {
       <TextAnimation />
 
       <GallerySection />
+
+
+      {/* Next-3-Section */}
+      <div className="w-full min-h-screen relative bg-[#D9E5F1]">
+
+        {/* Background Move Text */}
+        <div className="w-full overflow-hidden py-6 sticky h-screen left-0  top-0 flex  items-center  ">
+          <div
+            ref={containerRefN3}
+            className="flex whitespace-nowrap  text-4xl font-bold gap-10 COLOR_TEXT_RED"
+          >
+            {/* Duplicate content for smooth infinite effect */}
+            {[...Array(2)].map((_, i) => (
+              <React.Fragment key={i}>
+                <span className="Font_Q text-[10vw] leading-[10vw]">Wedding</span>
+                <span className="Font_Q text-[10vw] leading-[10vw]">Wedding</span>
+                <span className="Font_Q text-[10vw] leading-[10vw]">Wedding</span>
+                <span className="Font_Q text-[10vw] leading-[10vw]">Wedding</span>
+                <span className="Font_Q text-[10vw] leading-[10vw]">Wedding</span>
+              </React.Fragment>
+            ))}
+          </div>
+        </div>
+
+        {/* TOP_LEVEL_CONT */}
+        <div className="w-full min-h-screen relative flex flex-col gap-[10vh] py-[10vh] z-100 justify-center items-center ">
+          {
+            [`/imgs/newHome/YH.png`, `/imgs/newHome/bbg2.png`, `/imgs/newHome/building2.png`,].map((item, index) => {
+              return (
+                <div key={index} className="w-[80%] min-h-[70vh]  overflow-hidden">
+                  <img src={item} alt="Img" className='w-full h-full object-cover object-center' />
+                </div>
+              )
+            })
+          }
+        </div>
+
+      </div>
 
 
 

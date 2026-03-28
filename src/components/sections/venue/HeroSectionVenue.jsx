@@ -57,8 +57,8 @@ const HeroSectionVenue = () => {
       <Image
         ref={imageRef}
         // src={`/imgs/RafflesUdaipur.webp`}
-        src={`/imgs/newWedding/bgWed.jpg`}
-        className='w-full h-full object-cover object-center Igm opacity-0 '
+        src={`/imgs/newExplorMarK/BB1.webp`}
+        className='w-full h-full object-cover object-top Igm opacity-0 '
         width={1000}
         height={1000}
         alt='IMG'

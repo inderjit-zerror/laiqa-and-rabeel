@@ -40,7 +40,7 @@ const TextAnimation = () => {
             <div className=' w-full h-screen sticky top-0 left-0 p-20 flex  justify-center items-center '>
 
 
-                <img src={`/imgs/newHome/GDN.png`} alt="IMG" className="w-full h-full object-center object-cover opacity-5 absolute top-0 left-0 z-[-2]" />
+                {/* <img src={`/imgs/newHome/GDN.png`} alt="IMG" className="w-full h-full object-center object-cover opacity-5 absolute top-0 left-0 z-[-2]" /> */}
 
                 <div className=' text-[4vw] leading-[4vw] flex flex-wrap justify-center items-center gap-4 Font_Q  '>
 
@@ -60,7 +60,7 @@ const TextAnimation = () => {
                     }
                 </div>
 
-                <div className='w-fit h-[150vh] bottom-[0] left-[-180] absolute z-100 rotate-z-30'>
+                <div className='w-fit h-[150vh] bottom-[-590] left-[-400] absolute z-100 rotate-z-30'>
                     <img src={`/imgs/newHome/tree1.png`} alt="IMF" className=' h-full object-center object-cover' />
                 </div>
             </div>
