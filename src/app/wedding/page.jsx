@@ -118,14 +118,29 @@ const page = () => {
     })
   }
 
+  useEffect(()=>{
+    const PG = gsap.timeline({
+      scrollTrigger:{
+        trigger:'.MMAINDDiv',
+        start:"top 10%",
+        end:'top -50%',
+        scrub:true,
+        // markers:true
+      }
+    })
+    PG.to('.CD_DIV',{
+      rotateZ:180,
+      ease:'none'
+    })
+  },[])
 
 
   return (
     <>
-      <div className="w-full min-h-screen relative">
-        <div className="w-full h-[101vh] relative">
+      <div className="w-full min-h-screen relative MMAINDDiv ">
+        <div className="w-full h-[101vh] relative ">
           {/* TEXT */}
-          <div className="w-full h-fit flex flex-col justify-center text-center items-center mt-[20vh]">
+          <div className="w-full h-fit flex flex-col justify-center text-center items-center pt-[20vh]">
             <div className="COLOR_TEXT_RED Font_Q text-[9vw] w-fit h-fit leading-[9vw] tracking-tight overflow-hidden"><span className="flex MainTI">Wedding</span></div>
             <div className="COLOR_TEXT_RED Font_Q text-[9vw] w-fit h-fit leading-[9vw] tracking-tight overflow-hidden"><span className="flex MainTI">ITINERARY.</span></div>
           </div>
@@ -153,8 +168,8 @@ const page = () => {
 
 
         {/* CD-Drive */}
-        <div className="fixed  CD_DIV top-4/6 left-1/2 -translate-x-1/2 z-[-1] -translate-y-1/3 w-[20vw] aspect-square rounded-full  overflow-hidden">
-          <img src={`/imgs/newItinerary/CD.svg`} alt="CD" className="w-full h-full object-center object-cover" />
+        <div className="fixed  CD_DIV top-4/6 left-1/2 -translate-x-1/2 z-[-1] -translate-y-1/3 rotate-z-90 w-[20vw] aspect-square rounded-full  overflow-hidden">
+          <img src={`/imgs/newItinerary/CD.svg`} alt="CD" className="w-full h-full object-center scale-[1.1] object-cover" />
         </div>
 
         {/* Next-2-Sectiom */}
@@ -281,7 +296,7 @@ const page = () => {
         <div className="w-full h-screen COLOR_BG_RED relative z-100 flex p-20 gap-10 px-10 justify-center items-center ">
 
           {/* T1 */}
-          <div className="w-1/4 aspect-4/5 py-10 px-5 relative border origin-bottom transition-all duration-600 ease-none hover:rotate-z-24  bg-[#D9E5F1]   flex flex-col justify-between">
+          <div className="w-1/4 aspect-4/5 py-10 px-5 relative  origin-bottom transition-all duration-600 ease-none hover:rotate-z-20  bg-[#D9E5F1]   flex flex-col justify-between">
             <div className="w-full h-fit flex flex-col">
               <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">Wedding</h1>
             </div>
@@ -301,7 +316,7 @@ const page = () => {
           </div>
 
           {/* T2 */}
-          <div className="w-1/4 aspect-4/5 py-10 px-5 border relative origin-bottom transition-all duration-600 ease-none hover:rotate-z-24  bg-[#D9E5F1]  flex flex-col justify-between">
+          <div className="w-1/4 aspect-4/5 py-10 px-5  relative origin-bottom transition-all duration-600 ease-none hover:rotate-z-20  bg-[#D9E5F1]  flex flex-col justify-between">
             <div className="w-full h-fit flex flex-col">
               <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">Event</h1>
             </div>
@@ -322,7 +337,7 @@ const page = () => {
           </div>
 
           {/* T3 */}
-          <div className="w-1/4 aspect-4/5 py-10 px-5 border relative origin-bottom transition-all duration-600 ease-none hover:rotate-z-24  bg-[#D9E5F1] flex flex-col justify-between">
+          <div className="w-1/4 aspect-4/5 py-10 px-5  relative origin-bottom transition-all duration-600 ease-none hover:rotate-z-20  bg-[#D9E5F1] flex flex-col justify-between">
             <div className="w-full h-fit flex flex-col">
               <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">Celebration</h1>
             </div>
@@ -342,7 +357,7 @@ const page = () => {
           </div>
 
           {/* T4 */}
-          <div className="w-1/4 aspect-4/5 py-10 px-5 border relative origin-bottom transition-all duration-600 ease-none hover:rotate-z-24  bg-[#D9E5F1]  flex flex-col justify-between">
+          <div className="w-1/4 aspect-4/5 py-10 px-5  relative origin-bottom transition-all duration-600 ease-none hover:rotate-z-20  bg-[#D9E5F1]  flex flex-col justify-between">
             <div className="w-full h-fit flex flex-col">
               <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">Celebration</h1>
             </div>

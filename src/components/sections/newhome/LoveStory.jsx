@@ -146,7 +146,7 @@ const LoveStory = () => {
                     })
                 }
 
-                {/* <div className="w-1/5 Left_1_TextWrap h-fit flex justify-center items-center absolute top-[30%] left-[10%] COLOR_TEXT_RED text-[14px]   Font_Q ">
+                <div className="w-1/5 Left_1_TextWrap h-fit flex justify-center items-center absolute top-[30%] left-[10%] COLOR_TEXT_RED text-[14px]   Font_Q ">
                     <p>1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum explicabo omnis, laudantium deserunt ut animi odit quas sit perferendis ex?</p>
                 </div>
 
@@ -156,7 +156,7 @@ const LoveStory = () => {
 
                 <div className="w-1/5 Right_1_TextWrap h-fit flex justify-center items-center absolute top-[30%] right-[10%] COLOR_TEXT_RED text-[14px]  Font_Q opacity-0">
                     <p>2. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum explicabo omnis, laudantium deserunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum explicabo omnis, laudantium deserunt.</p>
-                </div> */}
+                </div>
 
 
                 {/* <div className="pointer-events-none absolute bottom-0 left-0 w-full h-[10vh] bg-gradient-to-b from-transparent via-[#D9E5F1]/60 to-[#D9E5F1] z-40" /> */}
