@@ -169,13 +169,33 @@ const LoveStory = () => {
 
           {/* <div className="pointer-events-none absolute bottom-0 left-0 w-full h-[10vh] bg-gradient-to-b from-transparent via-[#D9E5F1]/60 to-[#D9E5F1] z-40" /> */}
 
-         
+          <div className="w-1/8  h-fit absolute top-[25%] left-[5%] scale-[0.7]">
+            <img
+              src={`/assets/s02.png`}
+              alt="IMG"
+              className="w-full  object-center object-cover "
+            />
+          </div>
+          <div className="w-1/8  h-fit absolute top-[5%] right-[5%] ">
+            <img
+              src={`/assets/s03.png`}
+              alt="IMG"
+              className="w-full  object-center object-cover "
+            />
+          </div>
         </div>
       </div>
 
-      <div className="w-full h-[80vh] relative">
+      {/* <div className="w-full h-[80vh] relative">
         <img
           src={`/imgs/newHome/FullIMG.png`}
+          alt="IMG"
+          className="w-full h-full object-center BGIMGLS object-cover absolute top-0 left-0 z-[-2]"
+        />
+      </div> */}
+      <div className="w-full h-[80vh] relative">
+        <img
+          src={`/assets/1BANNER.png`}
           alt="IMG"
           className="w-full h-full object-center BGIMGLS object-cover absolute top-0 left-0 z-[-2]"
         />

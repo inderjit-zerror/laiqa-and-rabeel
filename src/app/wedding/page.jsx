@@ -147,26 +147,24 @@ const page = () => {
       },
     });
     PG.to(".CD_DIV", {
-      y: '80%', // move down smoothly
+      y: "80%", // move down smoothly
       rotateZ: 180,
       ease: "none",
     });
-   
   }, []);
 
-
-  useEffect(()=>{
+  useEffect(() => {
     const GS = gsap.timeline({
-      scrollTrigger:{
-        trigger:'.Next3Sectiom',
-        start:'top 40%',
-        end:'top 10%',
-        scrub:true,
+      scrollTrigger: {
+        trigger: ".Next3Sectiom",
+        start: "top 40%",
+        end: "top 10%",
+        scrub: true,
         // markers:true
-      }
-    })
-   GS.to(
-      '.Clr',
+      },
+    });
+    GS.to(
+      ".Clr",
       {
         scale: 1,
         duration: 0.5,
@@ -174,14 +172,13 @@ const page = () => {
       },
       "q1",
     );
-    GS.to('.clrimg', {
+    GS.to(".clrimg", {
       delay: -0.3,
       scale: 1,
       duration: 0.5,
       ease: "none",
     });
-  },[])
-
+  }, []);
 
   const containerRefN3 = useRef(null);
 
@@ -208,7 +205,7 @@ const page = () => {
       <div className="w-full min-h-screen relative MMAINDDiv ">
         <div className="w-full h-[101vh] relative z-[-90] MMAINDDiv2">
 
-           
+          
           {/* TEXT */}
           <div className="w-full h-fit flex flex-col justify-center text-center items-center pt-[20vh]">
             <div className="COLOR_TEXT_RED Font_Q text-[9vw] w-fit h-fit leading-[9vw] tracking-tight overflow-hidden">
@@ -266,7 +263,16 @@ const page = () => {
         </div> */}
 
         {/* Next-2-Sectiom */}
-        <div className="w-full Next-2-Sectiom  h-screen COLOR_BG_RED flex z-100">
+        <div className="w-full Next-2-Sectiom  h-screen COLOR_BG_RED flex z-100 relative">
+
+           <div className="w-1/5  h-fit absolute bottom-[0%] left-[0%] scale-[0.7]">
+            <img
+              src={`/assets/s20.png`}
+              alt="IMG"
+              className="w-full  object-center object-cover "
+            />
+
+          </div>
           {/* Left */}
           <div className="w-[70%] h-fit">
             {/* Text */}
@@ -314,7 +320,7 @@ const page = () => {
           </div>
         </div>
 
-         {/* Next-4-Sectiom */}
+        {/* Next-4-Sectiom */}
         <div className="w-full h-screen COLOR_BG_RED relative z-100 flex p-20 gap-10 px-10 justify-center items-center ">
           {/* T1 */}
           <div className="w-1/4 aspect-4/5 py-10 px-5 relative  origin-bottom transition-all duration-600 ease-none hover:rotate-z-20  bg-[#D9E5F1]   flex flex-col justify-between">
@@ -425,14 +431,10 @@ const page = () => {
           </div>
         </div>
 
-
         {/* Next-3-Sectiom */}
         <div className="w-full Next3Sectiom h-screen bg-[#D9E5F1] relative z-100 flex p-20 gap-10 justify-center items-center ">
           {/* T1 */}
-          <div
-           
-            className="w-1/4 h-fit py-10 px-5 relative border gap-10  border-[#93adc5] flex flex-col justify-between"
-          >
+          <div className="w-1/4 h-fit py-10 px-5 relative border gap-10  border-[#93adc5] flex flex-col justify-between">
             <div className="w-full h-fit flex flex-col">
               <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
                 Luxury
@@ -462,10 +464,7 @@ const page = () => {
           </div>
 
           {/* T2 */}
-          <div
-           
-            className="w-1/4 h-fit py-10 px-5 relative border gap-10  border-[#93adc5] flex flex-col justify-between"
-          >
+          <div className="w-1/4 h-fit py-10 px-5 relative border gap-10  border-[#93adc5] flex flex-col justify-between">
             <div className="w-full h-fit flex flex-col">
               <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
                 Luxury
@@ -495,10 +494,7 @@ const page = () => {
           </div>
 
           {/* T3 */}
-          <div
-            
-            className="w-1/4 h-fit py-10 px-5 relative border gap-10  border-[#93adc5] flex flex-col justify-between"
-          >
+          <div className="w-1/4 h-fit py-10 px-5 relative border gap-10  border-[#93adc5] flex flex-col justify-between">
             <div className="w-full h-fit flex flex-col">
               <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
                 Luxury
@@ -528,10 +524,7 @@ const page = () => {
           </div>
 
           {/* T4 */}
-          <div
-            
-            className="w-1/4 h-fit py-10 px-5 relative border gap-10  border-[#93adc5] flex flex-col justify-between"
-          >
+          <div className="w-1/4 h-fit py-10 px-5 relative border gap-10  border-[#93adc5] flex flex-col justify-between">
             <div className="w-full h-fit flex flex-col">
               <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
                 Luxury
@@ -561,42 +554,67 @@ const page = () => {
           </div>
         </div>
 
-       
         <GallerySection />
 
-         {/* Next-3-Section */}
-      <div className="w-full min-h-screen relative bg-[#D9E5F1]">
+        {/* Next-3-Section */}
+        <div className="w-full min-h-screen relative bg-[#D9E5F1]">
+          <div className="w-full overflow-hidden py-6 sticky h-screen left-0  top-0 flex  items-center  ">
+            <div className="w-1/8  h-fit absolute top-[5%] right-[5%] ">
+              <img
+                src={`/assets/s03.png`}
+                alt="IMG"
+                className="w-full  object-center object-cover "
+              />
+            </div>
 
-        <div className="w-full overflow-hidden py-6 sticky h-screen left-0  top-0 flex  items-center  ">
-          <div
-            ref={containerRefN3}
-            className="flex whitespace-nowrap  text-4xl font-bold gap-10 COLOR_TEXT_RED"
-          >
-            {[...Array(2)].map((_, i) => (
-              <React.Fragment key={i}>
-                <span className="Font_Q text-[10vw] leading-[10vw]">Wedding</span>
-                <span className="Font_Q text-[10vw] leading-[10vw]">Wedding</span>
-                <span className="Font_Q text-[10vw] leading-[10vw]">Wedding</span>
-                <span className="Font_Q text-[10vw] leading-[10vw]">Wedding</span>
-                <span className="Font_Q text-[10vw] leading-[10vw]">Wedding</span>
-              </React.Fragment>
-            ))}
+            
+            <div
+              ref={containerRefN3}
+              className="flex whitespace-nowrap  text-4xl font-bold gap-10 COLOR_TEXT_RED"
+            >
+              {[...Array(2)].map((_, i) => (
+                <React.Fragment key={i}>
+                  <span className="Font_Q text-[10vw] leading-[10vw]">
+                    Wedding
+                  </span>
+                  <span className="Font_Q text-[10vw] leading-[10vw]">
+                    Wedding
+                  </span>
+                  <span className="Font_Q text-[10vw] leading-[10vw]">
+                    Wedding
+                  </span>
+                  <span className="Font_Q text-[10vw] leading-[10vw]">
+                    Wedding
+                  </span>
+                  <span className="Font_Q text-[10vw] leading-[10vw]">
+                    Wedding
+                  </span>
+                </React.Fragment>
+              ))}
+            </div>
+          </div>
+
+          <div className="w-full min-h-screen relative flex flex-col gap-[10vh] py-[10vh] z-100 justify-center items-center ">
+            {[
+              `/imgs/newHome/YH.png`,
+              `/imgs/newHome/bbg2.png`,
+              `/imgs/newHome/building2.png`,
+            ].map((item, index) => {
+              return (
+                <div
+                  key={index}
+                  className="w-[80%] min-h-[70vh]  overflow-hidden"
+                >
+                  <img
+                    src={item}
+                    alt="Img"
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
-
-        <div className="w-full min-h-screen relative flex flex-col gap-[10vh] py-[10vh] z-100 justify-center items-center ">
-          {
-            [`/imgs/newHome/YH.png`, `/imgs/newHome/bbg2.png`, `/imgs/newHome/building2.png`,].map((item, index) => {
-              return (
-                <div key={index} className="w-[80%] min-h-[70vh]  overflow-hidden">
-                  <img src={item} alt="Img" className='w-full h-full object-cover object-center' />
-                </div>
-              )
-            })
-          }
-        </div>
-
-      </div>
       </div>
     </>
   );

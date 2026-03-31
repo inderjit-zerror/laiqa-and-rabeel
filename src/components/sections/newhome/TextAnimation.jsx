@@ -61,6 +61,14 @@ const TextAnimation = () => {
       <div className=" w-full h-screen sticky top-0 left-0 p-20 flex  justify-center items-center ">
         {/* <img src={`/imgs/newHome/GDN.png`} alt="IMG" className="w-full h-full object-center object-cover opacity-5 absolute top-0 left-0 z-[-2]" /> */}
 
+        <div className="w-1/10  h-fit absolute bottom-[5%] right-[5%] ">
+        <img
+          src={`/assets/s05.png`}
+          alt="IMG"
+          className="w-full  object-center object-cover "
+        />
+      </div>
+
         <div className=" text-[4vw] leading-[4vw] flex flex-wrap justify-center items-center gap-4 Font_Q  ">
           {Words.map((item, index) => {
             const formatted =
