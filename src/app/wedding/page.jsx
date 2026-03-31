@@ -135,6 +135,12 @@ const page = () => {
   },[])
 
 
+
+  const imgCOL = [
+    ''
+  ]
+
+
   return (
     <>
       <div className="w-full min-h-screen relative MMAINDDiv ">

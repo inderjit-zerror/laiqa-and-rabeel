@@ -233,9 +233,9 @@ const HomeSection = () => {
 
 
         <div className='w-full h-screen fixed top-0 left-0 z-50 flex'>
-          <Lamp top="80%" left="50%" translateX="-50%" translateY="-50%" rotation="20deg" URL={`/imgs/newHome/birdw.png`} name={'DemoAllItem scale-[0.8]  z-40 opacity-80 '} />
-          <Lamp top="20%" left="30%" translateX="-50%" translateY="-50%" rotation="5deg" URL={`/imgs/newHome/bird.png`} name={'DemoAllItem scale-[1.1] z-40 opacity-80 '} />
-          <Lamp top="30%" left="65%" translateX="-50%" translateY="-50%" rotation="-18deg" URL={`/imgs/newHome/bird.png`} name={'DemoAllItem scale-[1] z-40 opacity-80 '} />
+          <Lamp top="80%" left="50%" translateX="-50%" translateY="-50%" rotation="20deg" URL={`/gif/bird.gif`} name={'DemoAllItem scale-[0.8]  z-40 opacity-80 '} />
+          <Lamp top="20%" left="30%" translateX="-50%" translateY="-50%" rotation="5deg" URL={`/gif/bird.gif`} name={'DemoAllItem scale-[1.1] z-40 opacity-80 '} />
+          <Lamp top="30%" left="65%" translateX="-50%" translateY="-50%" rotation="-18deg" URL={`/gif/bird.gif`} name={'DemoAllItem scale-[1] z-40 opacity-80 '} />
         </div>
 
 
