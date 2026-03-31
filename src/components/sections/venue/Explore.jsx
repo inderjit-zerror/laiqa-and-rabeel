@@ -68,7 +68,7 @@ const Explore = () => {
             <div className="w-fit h-fit flex  ">
               <div className="w-[413px] aspect-[4/5]  overflow-hidden img5">
                 <Image
-                  src={`/imgs/newWedding/Horeel.webp`}
+                  src={`/imgs/newExplorMarK/11T.jpg`}
                   className="w-full h-full  object-cover object-center scale-[1.2]"
                   width={1000}
                   height={1000}

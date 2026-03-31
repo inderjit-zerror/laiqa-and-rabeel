@@ -177,26 +177,26 @@ const HomeSection = () => {
 
 
 
-  const containerRefN3 = useRef(null);
+  // const containerRefN3 = useRef(null);
 
-  useEffect(() => {
-    const el = containerRefN3.current;
+  // useEffect(() => {
+  //   const el = containerRefN3.current;
 
-    // duplicate content for seamless loop
-    const totalWidth = el.scrollWidth / 2;
+  //   // duplicate content for seamless loop
+  //   const totalWidth = el.scrollWidth / 2;
 
-    gsap.to(el, {
-      x: `-=${totalWidth}`,
-      duration: 20,
-      ease: "linear",
-      repeat: -1,
-      modifiers: {
-        x: (x) => {
-          return `${parseFloat(x) % totalWidth}px`;
-        },
-      },
-    });
-  }, []);
+  //   gsap.to(el, {
+  //     x: `-=${totalWidth}`,
+  //     duration: 20,
+  //     ease: "linear",
+  //     repeat: -1,
+  //     modifiers: {
+  //       x: (x) => {
+  //         return `${parseFloat(x) % totalWidth}px`;
+  //       },
+  //     },
+  //   });
+  // }, []);
 
 
 
@@ -245,22 +245,21 @@ const HomeSection = () => {
 
       </div>
 
-      <LoveStory />
       <TextAnimation />
+      
+      <LoveStory />
 
-      <GallerySection />
+      {/* <GallerySection /> */}
 
 
       {/* Next-3-Section */}
-      <div className="w-full min-h-screen relative bg-[#D9E5F1]">
+      {/* <div className="w-full min-h-screen relative bg-[#D9E5F1]">
 
-        {/* Background Move Text */}
         <div className="w-full overflow-hidden py-6 sticky h-screen left-0  top-0 flex  items-center  ">
           <div
             ref={containerRefN3}
             className="flex whitespace-nowrap  text-4xl font-bold gap-10 COLOR_TEXT_RED"
           >
-            {/* Duplicate content for smooth infinite effect */}
             {[...Array(2)].map((_, i) => (
               <React.Fragment key={i}>
                 <span className="Font_Q text-[10vw] leading-[10vw]">Wedding</span>
@@ -273,7 +272,6 @@ const HomeSection = () => {
           </div>
         </div>
 
-        {/* TOP_LEVEL_CONT */}
         <div className="w-full min-h-screen relative flex flex-col gap-[10vh] py-[10vh] z-100 justify-center items-center ">
           {
             [`/imgs/newHome/YH.png`, `/imgs/newHome/bbg2.png`, `/imgs/newHome/building2.png`,].map((item, index) => {
@@ -286,7 +284,7 @@ const HomeSection = () => {
           }
         </div>
 
-      </div>
+      </div> */}
 
 
 

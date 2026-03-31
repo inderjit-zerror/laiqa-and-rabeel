@@ -30,6 +30,10 @@
   font-family: Font_YV_new;
   src: url('/fonts/final/new/Manrope-VariableFont_wght.ttf');
 }
+@font-face {
+  font-family:Lamour;
+  src: url('/fonts/Lamour.otf');
+}
 
 
 body {
@@ -42,6 +46,9 @@ body {
 
 
 
+.Font_L {
+  font-family:Lamour;
+}
 .Font_MLD {
   font-family: Font_MLD;
 }

@@ -15,58 +15,114 @@ const VenueGallery = () => {
     const sliderRef = useRef(null);
 
     const slideImg = [
-        "/imgs/newWedding/Horeel.webp",
-        "/imgs/newExplorMarK/BB1.webp",
-        "/imgs/newExplorMarK/DD1.jpg",
-        "/imgs/newExplorMarK/EE1.jpg",
-        "/imgs/newExplorMarK/AA2.jpg",
+        "/imgs/venue/bgG1.jpg",
+        "/imgs/venue/bgG2.jpg",
+        "/imgs/venue/bgG3.avif",
+        "/imgs/venue/wp.jpg",
+        // "/imgs/newExplorMarK/AA2.jpg",
     ];
 
     const images = [...slideImg, ...slideImg]; // duplicate
 
+    // useEffect(() => {
+    //     const slider = sliderRef.current;
+    //     const totalWidth = slider.scrollWidth / 2;
+
+    //     let x = 0;
+
+    //     // Wrap function for infinite effect
+    //     const wrap = gsap.utils.wrap(-totalWidth, 0);
+
+    //     // Auto animation (ticker)
+    //     const autoSlide = () => {
+    //         x -= 1; // speed (increase for faster)
+    //         x = wrap(x);
+    //         gsap.set(slider, { x });
+    //     };
+
+    //     gsap.ticker.add(autoSlide);
+
+    //     // Draggable
+    //     const draggable = Draggable.create(slider, {
+    //         type: "x",
+    //         inertia: true,
+    //         onPress() {
+    //             gsap.ticker.remove(autoSlide);
+    //         },
+    //         onDrag() {
+    //             x = this.x;
+    //         },
+    //         onThrowUpdate() {
+    //             x = this.x;
+    //         },
+    //         onRelease() {
+    //             gsap.ticker.add(autoSlide);
+    //         },
+    //     })[0];
+
+    //     return () => {
+    //         gsap.ticker.remove(autoSlide);
+    //         draggable.kill();
+    //     };
+    // }, []);
+
+
+
+
     useEffect(() => {
-        const slider = sliderRef.current;
-        const totalWidth = slider.scrollWidth / 2;
+    const slider = sliderRef.current;
+    const totalWidth = slider.scrollWidth / 2;
 
-        let x = 0;
+    const wrap = gsap.utils.wrap(-totalWidth, 0);
 
-        // Wrap function for infinite effect
-        const wrap = gsap.utils.wrap(-totalWidth, 0);
+    // Continuous auto animation
+    const tween = gsap.to(slider, {
+        x: `-=${totalWidth}`,
+        duration: 20,
+        ease: "none",
+        repeat: -1,
+        modifiers: {
+            x: (x) => wrap(parseFloat(x)) + "px",
+        },
+    });
 
-        // Auto animation (ticker)
-        const autoSlide = () => {
-            x -= 1; // speed (increase for faster)
-            x = wrap(x);
-            gsap.set(slider, { x });
-        };
+    const draggable = Draggable.create(slider, {
+        type: "x",
+        inertia: true,
 
-        gsap.ticker.add(autoSlide);
+        onPress() {
+            tween.pause();
+        },
 
-        // Draggable
-        const draggable = Draggable.create(slider, {
-            type: "x",
-            inertia: true,
-            onPress() {
-                gsap.ticker.remove(autoSlide);
-            },
-            onDrag() {
-                x = this.x;
-            },
-            onThrowUpdate() {
-                x = this.x;
-            },
-            onRelease() {
-                gsap.ticker.add(autoSlide);
-            },
-        })[0];
+        onDrag() {
+            gsap.set(slider, {
+                x: wrap(this.x),
+            });
+        },
 
-        return () => {
-            gsap.ticker.remove(autoSlide);
-            draggable.kill();
-        };
-    }, []);
+        onThrowUpdate() {
+            gsap.set(slider, {
+                x: wrap(this.x),
+            });
+        },
 
+        onRelease() {
+            // 🔑 Sync tween with current position BEFORE playing
+            let currentX = wrap(this.x);
 
+            gsap.set(slider, { x: currentX });
+
+            tween.progress(0); // reset internally
+            tween.invalidate(); // recalc
+            tween.play();
+        },
+    })[0];
+
+    return () => {
+        tween.kill();
+        draggable.kill();
+    };
+}, []);
     
 
 

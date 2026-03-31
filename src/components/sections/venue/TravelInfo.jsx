@@ -113,7 +113,7 @@ const TravelInfo = () => {
             Guests can fly into Marrakech Menara Airport (RAK), located about 25 minutes from the hotel
           </span>
 
-          <p className="  Font_YV  text-white mt-5 text-justify">
+          <p className="  Font_YV  text-white mt-5 ">
             Alternatively, guests may fly into Casablanca, which offers more international flight options. From Casablanca, it is either a short domestic flight to Marrakech or approximately a 2-hour car ride to the hotel.
             Transportation details will be shared with confirmed guests.
 
