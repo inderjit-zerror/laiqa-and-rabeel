@@ -6,30 +6,57 @@ gsap.registerPlugin(ScrollTrigger);
 
 const DataArr = [
   {
-    url: `/imgs/newHome/bbg2.png`,
+    url: `/assets/s30.png`,
     class: "Div1Img ImgContMainDiv",
     top: 45,
     rotate: "-1deg",
   },
   {
-    url: `/imgs/newHome/bbg3.png`,
+    url: `/assets/s40.png`,
     class: "Div2Img ImgContMainDiv",
     top: 48,
     rotate: "1deg",
   },
   {
-    url: `/imgs/newHome/building2.png`,
+    url: `/assets/s41.png`,
     class: "Div3Img ImgContMainDiv",
     top: 51,
     rotate: "-1deg",
   },
   {
-    url: `/imgs/newHome/YH.png`,
+    url: `/assets/s36.png`,
     class: "Div4Img ImgContMainDiv",
     top: 54,
     rotate: "1deg",
   },
 ];
+
+// const DataArr = [
+//   {
+//     url: `/imgs/newHome/bbg2.png`,
+//     class: "Div1Img ImgContMainDiv",
+//     top: 45,
+//     rotate: "-1deg",
+//   },
+//   {
+//     url: `/imgs/newHome/bbg3.png`,
+//     class: "Div2Img ImgContMainDiv",
+//     top: 48,
+//     rotate: "1deg",
+//   },
+//   {
+//     url: `/imgs/newHome/building2.png`,
+//     class: "Div3Img ImgContMainDiv",
+//     top: 51,
+//     rotate: "-1deg",
+//   },
+//   {
+//     url: `/imgs/newHome/YH.png`,
+//     class: "Div4Img ImgContMainDiv",
+//     top: 54,
+//     rotate: "1deg",
+//   },
+// ];
 
 const getLeftValue = (i) => {
   const pattern = [48, 52, 49, 51]; // your sequence
@@ -47,11 +74,11 @@ const ImageCollector = ({ URL, name, top, rotate, left }) => {
         }}
         className={`w-1/5 aspect-5/4 bg-[#f5f5f5] absolute px-2 pt-2 ${name}  left-1/2  `}
       >
-        <div className="w-full h-[80%]  overflow-hidden">
+        <div className="w-full h-[80%]  overflow-hidden COLOR_BG_RED flex justify-center items-center">
           <img
             src={URL}
             alt="IMG"
-            className="w-full h-full object-center object-cover"
+            className=" h-full object-center object-cover"
           />
         </div>
         <div className="w-full h-[20%] flex justify-center text-[12px] items-center COLOR_TEXT_RED">

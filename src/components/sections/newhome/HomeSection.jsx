@@ -177,28 +177,6 @@ const HomeSection = () => {
 
 
 
-  // const containerRefN3 = useRef(null);
-
-  // useEffect(() => {
-  //   const el = containerRefN3.current;
-
-  //   // duplicate content for seamless loop
-  //   const totalWidth = el.scrollWidth / 2;
-
-  //   gsap.to(el, {
-  //     x: `-=${totalWidth}`,
-  //     duration: 20,
-  //     ease: "linear",
-  //     repeat: -1,
-  //     modifiers: {
-  //       x: (x) => {
-  //         return `${parseFloat(x) % totalWidth}px`;
-  //       },
-  //     },
-  //   });
-  // }, []);
-
-
 
   return (
     <>
@@ -225,7 +203,7 @@ const HomeSection = () => {
         <div className='w-full h-screen  z-80  relative flex Font_Q justify-center pt-[40vh] font-bold'>
           <div className='w-fit h-fit flex flex-col namerDiv -rotate-z-25  justify-center items-center  COLOR_TEXT_RED tracking-tight'>
             <div className='text-[5vw] uppercase leading-[5vw]'>Laiqa</div>
-            <div className='text-[1vw] leading-[1vw] mt-5'>Wed's</div>
+            <div className='text-[1vw] leading-[1vw] my-5'>Wed's</div>
             <div className='text-[5vw] uppercase leading-[5vw]'>Rabeel</div>
           </div>
         </div>
@@ -249,45 +227,7 @@ const HomeSection = () => {
       
       <LoveStory />
 
-      {/* <GallerySection /> */}
-
-
-      {/* Next-3-Section */}
-      {/* <div className="w-full min-h-screen relative bg-[#D9E5F1]">
-
-        <div className="w-full overflow-hidden py-6 sticky h-screen left-0  top-0 flex  items-center  ">
-          <div
-            ref={containerRefN3}
-            className="flex whitespace-nowrap  text-4xl font-bold gap-10 COLOR_TEXT_RED"
-          >
-            {[...Array(2)].map((_, i) => (
-              <React.Fragment key={i}>
-                <span className="Font_Q text-[10vw] leading-[10vw]">Wedding</span>
-                <span className="Font_Q text-[10vw] leading-[10vw]">Wedding</span>
-                <span className="Font_Q text-[10vw] leading-[10vw]">Wedding</span>
-                <span className="Font_Q text-[10vw] leading-[10vw]">Wedding</span>
-                <span className="Font_Q text-[10vw] leading-[10vw]">Wedding</span>
-              </React.Fragment>
-            ))}
-          </div>
-        </div>
-
-        <div className="w-full min-h-screen relative flex flex-col gap-[10vh] py-[10vh] z-100 justify-center items-center ">
-          {
-            [`/imgs/newHome/YH.png`, `/imgs/newHome/bbg2.png`, `/imgs/newHome/building2.png`,].map((item, index) => {
-              return (
-                <div key={index} className="w-[80%] min-h-[70vh]  overflow-hidden">
-                  <img src={item} alt="Img" className='w-full h-full object-cover object-center' />
-                </div>
-              )
-            })
-          }
-        </div>
-
-      </div> */}
-
-
-
+    
     </>
   )
 }

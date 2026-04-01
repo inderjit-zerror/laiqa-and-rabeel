@@ -182,24 +182,24 @@ const page = () => {
 
   const containerRefN3 = useRef(null);
 
-  useEffect(() => {
-    const el = containerRefN3.current;
+  // useEffect(() => {
+  //   const el = containerRefN3.current;
 
-    // duplicate content for seamless loop
-    const totalWidth = el.scrollWidth / 2;
+  //   // duplicate content for seamless loop
+  //   const totalWidth = el.scrollWidth / 2;
 
-    gsap.to(el, {
-      x: `-=${totalWidth}`,
-      duration: 20,
-      ease: "linear",
-      repeat: -1,
-      modifiers: {
-        x: (x) => {
-          return `${parseFloat(x) % totalWidth}px`;
-        },
-      },
-    });
-  }, []);
+  //   gsap.to(el, {
+  //     x: `-=${totalWidth}`,
+  //     duration: 20,
+  //     ease: "linear",
+  //     repeat: -1,
+  //     modifiers: {
+  //       x: (x) => {
+  //         return `${parseFloat(x) % totalWidth}px`;
+  //       },
+  //     },
+  //   });
+  // }, []);
   return (
     <>
       <div className="w-full min-h-screen relative MMAINDDiv ">
@@ -219,32 +219,34 @@ const page = () => {
           {/* InfoImg */}
 
           {/* Right TOP */}
-          <div className=" absolute top-[5%] overflow-hidden right-[2%] w-[10vw] aspect-3/4 COLOR_BG_RED">
+          <div className=" absolute top-[5%] overflow-hidden right-[2%] w-[10vw] aspect-3/4">
             <div className="w-full h-full absolute top-0 left-0 bg-[#D9E5F1] revelINMGI z-100"></div>
             <img
-              src={`/imgs/newItinerary/h6.webp`}
+              // src={`/imgs/newItinerary/h6.webp`}
+              src={`/assets/s23.png`}
               alt="CD"
               className="w-full refBackImg h-full object-center object-cover"
             />
           </div>
 
           {/* Right Bottom */}
-          <div className=" absolute top-[55%] overflow-hidden right-[10%] w-[10vw] aspect-3/4 COLOR_BG_RED">
+          <div className=" absolute top-[55%] overflow-hidden right-[10%] w-[10vw] aspect-3/4 ">
             <div className="w-full h-full absolute top-0 left-0 bg-[#D9E5F1] revelINMGI z-100"></div>
             <img
-              src={`/imgs/newItinerary/h7.webp`}
+              // src={`/imgs/newItinerary/h7.webp`}
+              src={`/assets/s19.png`}
               alt="CD"
-              className="w-full refBackImg h-full object-center object-cover"
+              className="w-full refBackImg h-full object-left object-cover"
             />
           </div>
 
           {/* Left-Medium */}
-          <div className=" absolute top-[20%] overflow-hidden left-[5%] w-[10vw] aspect-3/4 COLOR_BG_RED">
+          <div className=" absolute top-[20%] overflow-hidden left-[5%] w-[10vw] aspect-3/4 ">
             <div className="w-full absolute top-0 left-0 h-full bg-[#D9E5F1] revelINMGI z-[100]"></div>
             <img
-              src={`/imgs/newItinerary/h7.webp`}
+              src={`/assets/s36.png`}
               alt="CD"
-              className="w-full refBackImg h-full object-center object-cover"
+              className="w-full refBackImg h-full  object-center object-cover"
             />
           </div>
 
@@ -309,12 +311,13 @@ const page = () => {
 
           {/* Right */}
           <div className="w-[30%] h-screen  p-10 flex justify-end items-end z-[100]">
-            <div className="w-full h-2/3 overflow-hidden relative">
-              <div className="w-full absolute top-0 left-0 h-full COLOR_BG_RED NextSImg z-[100]"></div>
+            <div className="w-full h-2/3 overflow-hidden relative flex justify-center items-center">
+              {/* <div className="w-full absolute top-0 left-0 h-full COLOR_BG_RED NextSImg z-[100]"></div> */}
               <img
-                src={`/imgs/newItinerary/h6.webp`}
+                // src={`/imgs/newItinerary/h6.webp`}
+                src={`/assets/s9.png`}
                 alt="IMG"
-                className="w-full h-full object-cover z-[90] NextSImgMain object-center"
+                className=" h-full object-cover z-[90] NextSImgMain object-center"
               />
             </div>
           </div>
@@ -332,7 +335,8 @@ const page = () => {
 
             <div className="w-full aspect-2/1  flex justify-center relative item overflow-hidden ">
               <img
-                src={`/imgs/newExplorMarK/Wedding2.jpg`}
+                // src={`/imgs/newExplorMarK/Wedding2.jpg`}
+                src={`/assets/s29.png`}
                 alt="IMg"
                 className="w-full h-full object-cover object-center"
               />
@@ -359,7 +363,8 @@ const page = () => {
 
             <div className="w-full aspect-2/1  flex justify-center relative item overflow-hidden ">
               <img
-                src={`/imgs/newItinerary/h8.webp`}
+                // src={`/imgs/newItinerary/h8.webp`}
+                src={`/assets/s30.png`}
                 alt="IMg"
                 className="w-full h-full object-cover object-center"
               />
@@ -386,7 +391,8 @@ const page = () => {
 
             <div className="w-full aspect-2/1  flex justify-center relative item overflow-hidden ">
               <img
-                src={`/imgs/newItinerary/h7.webp`}
+                // src={`/imgs/newItinerary/h7.webp`}
+                src={`/assets/2BANNER.png`}
                 alt="IMg"
                 className="w-full h-full object-cover object-center"
               />
@@ -413,7 +419,7 @@ const page = () => {
 
             <div className="w-full aspect-2/1  flex justify-center relative item overflow-hidden ">
               <img
-                src={`/imgs/newItinerary/h6.webp`}
+                src={`/assets/1BANNER.png`}
                 alt="IMg"
                 className="w-full h-full object-cover object-center"
               />
@@ -448,7 +454,7 @@ const page = () => {
               <div className="w-full h-full absolute top-1/2 left-1/2  -translate-x-1/2 scale-0 -translate-y-1/2 COLOR_BG_RED z-80 BBDIV1 Clr"></div>
               <div className="w-full h-full absolute top-1/2 left-1/2  -translate-x-1/2 scale-0 -translate-y-1/2 justify-center flex items-center COLOR_BG_RED z-90 IBD1 clrimg">
                 <img
-                  src={`/imgs/newHome/bbg2.png`}
+                  src={`/assets/1BANNER.png`}
                   alt="IMg"
                   className=" h-full object-cover object-center"
                 />
@@ -478,9 +484,9 @@ const page = () => {
               <div className="w-full h-full absolute top-1/2 left-1/2  -translate-x-1/2 scale-0 -translate-y-1/2 COLOR_BG_RED z-80 BBDIV2 Clr"></div>
               <div className="w-full h-full absolute top-1/2 left-1/2  -translate-x-1/2 scale-0 flex justify-center items-center -translate-y-1/2 COLOR_BG_RED z-90 IBD2 clrimg">
                 <img
-                  src={`/imgs/newHome/bbg3.png`}
+                  src={`/assets/s30.png`}
                   alt="IMg"
-                  className=" h-full object-cover object-center"
+                  className=" w-full h-full object-cover object-center"
                 />
               </div>
             </div>
@@ -508,7 +514,7 @@ const page = () => {
               <div className="w-full h-full absolute top-1/2 left-1/2  -translate-x-1/2 scale-0 -translate-y-1/2 COLOR_BG_RED z-80 BBDIV3 Clr"></div>
               <div className="w-full h-full absolute top-1/2 left-1/2  -translate-x-1/2 scale-0 -translate-y-1/2 COLOR_BG_RED z-90 IBD3 clrimg">
                 <img
-                  src={`/imgs/newHome/building2.png`}
+                  src={`/assets/2BANNER.png`}
                   alt="IMg"
                   className="w-full h-full object-cover object-center"
                 />
@@ -538,7 +544,7 @@ const page = () => {
               <div className="w-full h-full absolute top-1/2 left-1/2  -translate-x-1/2 scale-0 -translate-y-1/2 COLOR_BG_RED z-80 BBDIV3 Clr"></div>
               <div className="w-full h-full absolute top-1/2 left-1/2  -translate-x-1/2 scale-0 -translate-y-1/2 COLOR_BG_RED z-90 IBD3 clrimg">
                 <img
-                  src={`/imgs/newHome/YH.png`}
+                  src={`/assets/s29.png`}
                   alt="IMg"
                   className="w-full h-full object-cover object-center"
                 />
@@ -557,7 +563,7 @@ const page = () => {
         <GallerySection />
 
         {/* Next-3-Section */}
-        <div className="w-full min-h-screen relative bg-[#D9E5F1]">
+        {/* <div className="w-full min-h-screen relative bg-[#D9E5F1]">
           <div className="w-full overflow-hidden py-6 sticky h-screen left-0  top-0 flex  items-center  ">
             <div className="w-1/8  h-fit absolute top-[5%] right-[5%] ">
               <img
@@ -614,7 +620,7 @@ const page = () => {
               );
             })}
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
