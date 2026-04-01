@@ -305,3 +305,8 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   position: fixed;
   width: 100%;
 }
+
+
+.b_SHD{
+  box-shadow: rgb(217, 229, 241, 0.4) 0px 8px 24px;
+}

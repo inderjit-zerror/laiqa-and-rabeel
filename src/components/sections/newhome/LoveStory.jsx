@@ -72,9 +72,9 @@ const ImageCollector = ({ URL, name, top, rotate, left }) => {
           left: `${left}%`,
           transform: `translateX(-50%) rotate(${rotate})`,
         }}
-        className={`w-1/5 aspect-5/4 bg-[#f5f5f5] absolute px-2 pt-2 ${name}  left-1/2  `}
+        className={`w-1/5 aspect-5/4 COLOR_BG_RED absolute px-2 pt-2 ${name}  left-1/2 b_SHD border border-[#D9E5F1]  `}
       >
-        <div className="w-full h-[80%]  overflow-hidden COLOR_BG_RED flex justify-center items-center">
+        <div className="w-full h-[80%]  overflow-hidden  flex justify-center items-center">
           <img
             src={URL}
             alt="IMG"
@@ -82,7 +82,7 @@ const ImageCollector = ({ URL, name, top, rotate, left }) => {
           />
         </div>
         <div className="w-full h-[20%] flex justify-center text-[12px] items-center COLOR_TEXT_RED">
-          <p className="Font_YV capitalize font-light ">
+          <p className="Font_YV capitalize font-light text-white ">
             Lorem ipsum dolor sit amet.
           </p>
         </div>

@@ -118,6 +118,7 @@ const NavBar = () => {
         {/* <Link href={`/`} ><div className={`w-fit ${pathname === '/' && (' border-b border-[#044BB2]')} h-fit flex flex-col group relative COLOR_TEXT_RED  select-none cursor-pointer`}> <div className=' absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out COLOR_BG_RED'></div>The Wedding</div></Link> */}
 
         <Link href={`/wedding`} ><div className={`w-fit h-fit ${pathname === '/wedding' && (' border-b border-[#044BB2]')}  flex flex-col group COLOR_TEXT_RED relative  select-none cursor-pointer`}> <div className=' absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out COLOR_BG_RED'></div> Itinerary</div></Link>
+        <Link href={`/try`} ><div className={`w-fit h-fit ${pathname === '/try' && (' border-b border-[#044BB2]')}  flex flex-col group COLOR_TEXT_RED relative  select-none cursor-pointer`}> <div className=' absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out COLOR_BG_RED'></div> Home-2</div></Link>
 
         {/* <Link href={`/`} ><div className={`w-fit h-fit ${pathname === '/wedding' && (' border-b border-[#044BB2]')}  flex flex-col group COLOR_TEXT_RED relative  select-none cursor-pointer`}> <div className=' absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out COLOR_BG_RED'></div> VENUE</div></Link> */}
 
