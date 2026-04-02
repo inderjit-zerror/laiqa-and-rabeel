@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useEffect, useRef } from "react";
@@ -7,178 +8,179 @@ import GallerySection from "@/components/sections/newhome/GallerySection";
 gsap.registerPlugin(ScrollTrigger);
 
 const page = () => {
-  useEffect(() => {
-    // intro
-    const TI = gsap.timeline();
-    TI.from(
-      ".MainTI",
-      {
-        y: "200%",
-        duration: 2,
-        ease: "power4.inOut",
-      },
-      "a1",
-    );
-    TI.to(
-      ".revelINMGI",
-      {
-        height: 0,
-        duration: 2,
-        ease: "power4.inOut",
-      },
-      "a1",
-    );
-    TI.from(
-      ".refBackImg",
-      {
-        scale: 1.5,
-        duration: 2,
-        ease: "power4.inOut",
-      },
-      "a1",
-    );
-    TI.from(
-      ".CD_DIV",
-      {
-        delay: 0.7,
-        top: "150%",
-        duration: 2,
-        ease: "power4.inOut",
-      },
-      "a1",
-    );
-  }, []);
+  // useEffect(() => {
+  //   // intro
+  //   const TI = gsap.timeline();
+    
+  //   TI.from(
+  //     ".stickyAnimation2",
+  //     {
+  //       opacity:0,
+  //       duration:1.5,
+  //       ease: "power4.inOut",
+  //     },
+  //     "a1",
+  //   );
+  //   TI.from(
+  //     ".MainTI",
+  //     {
+  //       delay:1,
+  //       y: "200%",
+  //       duration:1.5,
+  //       ease: "power4.inOut",
+  //     },
+  //     "a1",
+  //   );
+   
+  // }, []);
 
-  useEffect(() => {
-    const SecC = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".Next-2-Sectiom ",
-        start: "top `50%",
-        end: "top 10%",
-        scrub: "true",
-        // markers: true
-      },
-    });
-    SecC.to(
-      ".NextSImg",
-      {
-        height: 0,
-        ease: "none",
-      },
-      "qq",
-    );
-    SecC.from(
-      ".NextSImgMain",
-      {
-        scale: 1.5,
-        ease: "none",
-      },
-      "qq",
-    );
+  // useEffect(()=>{
+  //   const Cont = gsap.timeline({
+  //     scrollTrigger:{
+  //       trigger:'.MMAINDDiv2',
+  //       start:'top top',
+  //       end:'top -100%',
+  //       scrub:true,
+  //       // markers:true
+  //     }
+  //   }) 
+  //   Cont.to('.stickyAnimation2',{
+  //      scale:1.5,
+  //      ease:'none'
+  //   })
 
-    const counters = document.querySelectorAll(".counter");
+  // },[])
 
-    counters.forEach((el) => {
-      const endValue = parseInt(el.getAttribute("data-value"));
+  // useEffect(() => {
+  //   const SecC = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: ".Next-2-Sectiom ",
+  //       start: "top `50%",
+  //       end: "top 10%",
+  //       scrub: "true",
+  //       // markers: true
+  //     },
+  //   });
+  //   SecC.to(
+  //     ".NextSImg",
+  //     {
+  //       height: 0,
+  //       ease: "none",
+  //     },
+  //     "qq",
+  //   );
+  //   SecC.from(
+  //     ".NextSImgMain",
+  //     {
+  //       scale: 1.5,
+  //       ease: "none",
+  //     },
+  //     "qq",
+  //   );
 
-      SecC.fromTo(
-        el,
-        { innerText: 0 },
-        {
-          innerText: endValue,
-          duration: 1,
-          ease: "none",
-          snap: { innerText: 1 }, // integer increment
-          onUpdate: function () {
-            el.innerText = Math.floor(el.innerText);
-          },
-        },
-        "qq", // start at same time as image animation
-      );
-    });
-  }, []);
+  //   const counters = document.querySelectorAll(".counter");
 
-  const onEnter = (Clr, clrimg) => {
-    const w = gsap.timeline();
-    w.to(
-      Clr,
-      {
-        scale: 1,
-        duration: 0.5,
-        ease: "power2.inOut",
-      },
-      "q1",
-    );
-    w.to(clrimg, {
-      delay: -0.3,
-      scale: 1,
-      duration: 0.5,
-      ease: "power2.inOut",
-    });
-  };
-  const onleave = (Clr, clrimg) => {
-    const q = gsap.timeline();
+  //   counters.forEach((el) => {
+  //     const endValue = parseInt(el.getAttribute("data-value"));
 
-    q.to(
-      clrimg,
-      {
-        scale: 0,
-        duration: 0.5,
-        ease: "power2.inOut",
-      },
-      "w1",
-    );
-    q.to(Clr, {
-      delay: -0.3,
-      scale: 0,
-      duration: 0.5,
-      ease: "power2.inOut",
-    });
-  };
+  //     SecC.fromTo(
+  //       el,
+  //       { innerText: 0 },
+  //       {
+  //         innerText: endValue,
+  //         duration: 1,
+  //         ease: "none",
+  //         snap: { innerText: 1 }, // integer increment
+  //         onUpdate: function () {
+  //           el.innerText = Math.floor(el.innerText);
+  //         },
+  //       },
+  //       "qq", // start at same time as image animation
+  //     );
+  //   });
+  // }, []);
 
-  useEffect(() => {
-    const PG = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".MMAINDDiv",
-        start: "top 10%",
-        end: "top -50%",
-        scrub: true,
-        // markers:true
-      },
-    });
-    PG.to(".CD_DIV", {
-      y: "80%", // move down smoothly
-      rotateZ: 180,
-      ease: "none",
-    });
-  }, []);
+  // const onEnter = (Clr, clrimg) => {
+  //   const w = gsap.timeline();
+  //   w.to(
+  //     Clr,
+  //     {
+  //       scale: 1,
+  //       duration: 0.5,
+  //       ease: "power2.inOut",
+  //     },
+  //     "q1",
+  //   );
+  //   w.to(clrimg, {
+  //     delay: -0.3,
+  //     scale: 1,
+  //     duration: 0.5,
+  //     ease: "power2.inOut",
+  //   });
+  // };
+  // const onleave = (Clr, clrimg) => {
+  //   const q = gsap.timeline();
 
-  useEffect(() => {
-    const GS = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".Next3Sectiom",
-        start: "top 40%",
-        end: "top 10%",
-        scrub: true,
-        // markers:true
-      },
-    });
-    GS.to(
-      ".Clr",
-      {
-        scale: 1,
-        duration: 0.5,
-        ease: "none",
-      },
-      "q1",
-    );
-    GS.to(".clrimg", {
-      delay: -0.3,
-      scale: 1,
-      duration: 0.5,
-      ease: "none",
-    });
-  }, []);
+  //   q.to(
+  //     clrimg,
+  //     {
+  //       scale: 0,
+  //       duration: 0.5,
+  //       ease: "power2.inOut",
+  //     },
+  //     "w1",
+  //   );
+  //   q.to(Clr, {
+  //     delay: -0.3,
+  //     scale: 0,
+  //     duration: 0.5,
+  //     ease: "power2.inOut",
+  //   });
+  // };
+
+  // useEffect(() => {
+  //   const PG = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: ".MMAINDDiv",
+  //       start: "top 10%",
+  //       end: "top -50%",
+  //       scrub: true,
+  //       // markers:true
+  //     },
+  //   });
+  //   PG.to(".CD_DIV", {
+  //     y: "80%", // move down smoothly
+  //     rotateZ: 180,
+  //     ease: "none",
+  //   });
+  // }, []);
+
+  // useEffect(() => {
+  //   const GS = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: ".Next3Sectiom",
+  //       start: "top 40%",
+  //       end: "top 10%",
+  //       scrub: true,
+  //       // markers:true
+  //     },
+  //   });
+  //   GS.to(
+  //     ".Clr",
+  //     {
+  //       scale: 1,
+  //       duration: 0.5,
+  //       ease: "none",
+  //     },
+  //     "q1",
+  //   );
+  //   GS.to(".clrimg", {
+  //     delay: -0.3,
+  //     scale: 1,
+  //     duration: 0.5,
+  //     ease: "none",
+  //   });
+  // }, []);
 
   const containerRefN3 = useRef(null);
 
@@ -200,18 +202,213 @@ const page = () => {
   //     },
   //   });
   // }, []);
+
+
+  // useEffect(() => {
+  //   const handleMouseMove = (e) => {
+  //     const { innerWidth, innerHeight } = window;
+
+  //     const centerX = innerWidth / 2;
+  //     const centerY = innerHeight / 2;
+
+  //     const mouseX = e.clientX;
+  //     const mouseY = e.clientY;
+
+  //     // Normalize (-1 to 1)
+  //     const x = (mouseX - centerX) / centerX;
+  //     const y = (mouseY - centerY) / centerY;
+
+  //     // Move opposite direction (invert)
+  //     const moveX = -x * 10;
+  //     const moveY = -y * 10;
+
+  //     gsap.to(".stickyAnimation2", {
+  //       x: moveX,
+  //       y: moveY,
+  //       duration: 0.5,
+  //       ease: "power2.out",
+  //     });
+  //     gsap.to(".LTM, .RTM, .GatImg, .DemoAllItem, .NAMEWED", {
+  //       // x: moveX,
+  //       y: moveY,
+  //       duration: 0.5,
+  //       ease: "power2.out",
+  //     });
+  //   };
+
+  //   window.addEventListener("mousemove", handleMouseMove);
+
+  //   return () => {
+  //     window.removeEventListener("mousemove", handleMouseMove);
+  //   };
+  // }, []);
+
+
+  useEffect(() => {
+  const ctx = gsap.context(() => {
+    
+    // =========================
+    // INTRO TIMELINE
+    // =========================
+    const intro = gsap.timeline();
+
+    intro
+      .from(".stickyAnimation2", {
+        opacity: 0,
+        duration: 1.2,
+        ease: "power4.out",
+      })
+      .from(
+        ".MainTI",
+        {
+          y: "200%",
+          duration: 1.2,
+          ease: "power4.out",
+          stagger: 0.1,
+        },
+        "-=0.8"
+      );
+
+    // =========================
+    // SCROLL 1 (zoom bg)
+    // =========================
+    gsap.to(".stickyAnimation2", {
+      scale: 1.5,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".MMAINDDiv2",
+        start: "top top",
+        end: "top -100%",
+        scrub: true,
+      },
+    });
+
+    // =========================
+    // SECTION 2
+    // =========================
+    const sec2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".Next-2-Sectiom",
+        start: "top 50%",
+        end: "top 10%",
+        scrub: true,
+      },
+    });
+
+    sec2
+      .to(".NextSImg", { height: 0, ease: "none" })
+      .from(".NextSImgMain", { scale: 1.5, ease: "none" }, 0);
+
+    // counter optimized
+    gsap.utils.toArray(".counter").forEach((el) => {
+      const end = +el.dataset.value;
+
+      gsap.fromTo(
+        el,
+        { innerText: 0 },
+        {
+          innerText: end,
+          snap: { innerText: 1 },
+          ease: "none",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 80%",
+          },
+          onUpdate: function () {
+            el.innerText = Math.floor(el.innerText);
+          },
+        }
+      );
+    });
+
+    // =========================
+    // CD ROTATION
+    // =========================
+    gsap.to(".CD_DIV", {
+      y: "80%",
+      rotateZ: 180,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".MMAINDDiv",
+        start: "top 10%",
+        end: "top -50%",
+        scrub: true,
+      },
+    });
+
+    // =========================
+    // SECTION 3 (hover reveal scroll)
+    // =========================
+    gsap.to(".Clr", {
+      scale: 1,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".Next3Sectiom",
+        start: "top 40%",
+        end: "top 10%",
+        scrub: true,
+      },
+    });
+
+    gsap.to(".clrimg", {
+      scale: 1,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".Next3Sectiom",
+        start: "top 40%",
+        end: "top 10%",
+        scrub: true,
+      },
+    });
+
+    // =========================
+    // MOUSE PARALLAX (OPTIMIZED 🔥)
+    // =========================
+    let mouseX = 0;
+    let mouseY = 0;
+
+    const move = { x: 0, y: 0 };
+
+    const update = () => {
+      move.x += (mouseX - move.x) * 0.1;
+      move.y += (mouseY - move.y) * 0.1;
+
+      gsap.set(".stickyAnimation2", {
+        x: move.x,
+        y: move.y,
+      });
+
+      gsap.set(".LTM, .RTM, .GatImg, .DemoAllItem, .NAMEWED", {
+        y: move.y,
+      });
+
+      requestAnimationFrame(update);
+    };
+
+    window.addEventListener("mousemove", (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * -20;
+      const y = (e.clientY / window.innerHeight - 0.5) * -20;
+
+      mouseX = x;
+      mouseY = y;
+    });
+
+    update(); // start loop
+
+  });
+
+  return () => ctx.revert(); // 🔥 cleanup everything
+}, []);
   return (
     <>
-      <div className="w-full min-h-screen relative MMAINDDiv ">
+      <div className="w-full min-h-screen relative MMAINDDiv overflow-x-hidden ">
         <div className="w-full h-[101vh] relative z-[-90] MMAINDDiv2">
-
-          
           {/* TEXT */}
-          <div className="w-full h-fit flex flex-col justify-center text-center items-center pt-[20vh]">
-            <div className="COLOR_TEXT_RED Font_Q text-[9vw] w-fit h-fit leading-[9vw] tracking-tight overflow-hidden">
+          <div className="w-full h-fit flex flex-col justify-center text-center items-center pt-[15vh]">
+            <div className="COLOR_TEXT_RED Font_Q text-[6vw] w-fit h-fit leading-[6vw] tracking-tight overflow-hidden">
               <span className="flex MainTI">Wedding</span>
             </div>
-            <div className="COLOR_TEXT_RED Font_Q text-[9vw] w-fit h-fit leading-[9vw] tracking-tight overflow-hidden">
+            <div className="COLOR_TEXT_RED Font_Q text-[6vw] w-fit h-fit leading-[6vw] tracking-tight overflow-hidden">
               <span className="flex MainTI">ITINERARY.</span>
             </div>
           </div>
@@ -219,7 +416,7 @@ const page = () => {
           {/* InfoImg */}
 
           {/* Right TOP */}
-          <div className=" absolute top-[5%] overflow-hidden right-[2%] w-[10vw] aspect-3/4">
+          {/* <div className=" absolute top-[5%] overflow-hidden right-[2%] w-[10vw] aspect-3/4">
             <div className="w-full h-full absolute top-0 left-0 bg-[#D9E5F1] revelINMGI z-100"></div>
             <img
               // src={`/imgs/newItinerary/h6.webp`}
@@ -227,10 +424,10 @@ const page = () => {
               alt="CD"
               className="w-full refBackImg h-full object-center object-cover"
             />
-          </div>
+          </div> */}
 
           {/* Right Bottom */}
-          <div className=" absolute top-[55%] overflow-hidden right-[10%] w-[10vw] aspect-3/4 ">
+          {/* <div className=" absolute top-[55%] overflow-hidden right-[10%] w-[10vw] aspect-3/4 ">
             <div className="w-full h-full absolute top-0 left-0 bg-[#D9E5F1] revelINMGI z-100"></div>
             <img
               // src={`/imgs/newItinerary/h7.webp`}
@@ -238,42 +435,39 @@ const page = () => {
               alt="CD"
               className="w-full refBackImg h-full object-left object-cover"
             />
-          </div>
+          </div> */}
 
           {/* Left-Medium */}
-          <div className=" absolute top-[20%] overflow-hidden left-[5%] w-[10vw] aspect-3/4 ">
+          {/* <div className=" absolute top-[20%] overflow-hidden left-[5%] w-[10vw] aspect-3/4 ">
             <div className="w-full absolute top-0 left-0 h-full bg-[#D9E5F1] revelINMGI z-[100]"></div>
             <img
               src={`/assets/s36.png`}
               alt="CD"
               className="w-full refBackImg h-full  object-center object-cover"
             />
+          </div> */}
+
+          <div className="w-full h-full absolute top-0 left-0  z-[-1] overflow-hidden ">
+            <img src={`/assets/itnBG.png`} alt="Img" className="w-full h-full object-top object-cover scale-[1.1] stickyAnimation2" />
           </div>
 
-          <div className=" absolute  CD_DIV top-[60%] left-1/2 -translate-x-1/2 z-[-1] -translate-y-1/3 rotate-z-90 w-[20vw] aspect-square rounded-full  overflow-hidden">
+          {/* <div className=" absolute  CD_DIV top-[60%] left-1/2 -translate-x-1/2 z-[-1] -translate-y-1/3 rotate-z-90 w-[20vw] aspect-square rounded-full  overflow-hidden">
             <img
               src={`/imgs/newItinerary/CD.svg`}
               alt="CD"
               className="w-full h-full object-center scale-[1.1] object-cover flex CDIMh"
             />
-          </div>
+          </div> */}
         </div>
-
-        {/* CD-Drive */}
-        {/* <div className="fixed  CD_DIV top-4/6 left-1/2 -translate-x-1/2 z-[-1] -translate-y-1/3 rotate-z-90 w-[20vw] aspect-square rounded-full  overflow-hidden">
-          <img src={`/imgs/newItinerary/CD.svg`} alt="CD" className="w-full h-full object-center scale-[1.1] object-cover" />
-        </div> */}
 
         {/* Next-2-Sectiom */}
         <div className="w-full Next-2-Sectiom  h-screen COLOR_BG_RED flex z-100 relative">
-
-           <div className="w-1/5  h-fit absolute bottom-[0%] left-[0%] scale-[0.7]">
+          <div className="w-1/5  h-fit absolute bottom-[0%] left-[0%] scale-[0.7]">
             <img
               src={`/assets/s20.png`}
               alt="IMG"
               className="w-full  object-center object-cover "
             />
-
           </div>
           {/* Left */}
           <div className="w-[70%] h-fit">
@@ -311,13 +505,13 @@ const page = () => {
 
           {/* Right */}
           <div className="w-[30%] h-screen  p-10 flex justify-end items-end z-[100]">
-            <div className="w-full h-2/3 overflow-hidden relative flex justify-center items-center">
+            <div className="w-full h-2/3  relative flex justify-center items-center">
               {/* <div className="w-full absolute top-0 left-0 h-full COLOR_BG_RED NextSImg z-[100]"></div> */}
               <img
                 // src={`/imgs/newItinerary/h6.webp`}
                 src={`/assets/s9.png`}
                 alt="IMG"
-                className=" h-full object-cover z-[90] NextSImgMain object-center"
+                className=" w-full object-cover z-[90] NextSImgMain object-center"
               />
             </div>
           </div>
@@ -326,14 +520,14 @@ const page = () => {
         {/* Next-4-Sectiom */}
         <div className="w-full h-screen COLOR_BG_RED relative z-100 flex p-20 gap-10 px-10 justify-center items-center ">
           {/* T1 */}
-          <div className="w-1/4 aspect-4/5 py-10 px-5 relative  origin-bottom transition-all duration-600 ease-none hover:rotate-z-20  bg-[#D9E5F1]   flex flex-col justify-between">
+          <div className="w-1/4 aspect-4/5 py-10 px-5 relative  origin-bottom transition-all duration-600 ease-none hover:rotate-z-20  bg-[#D9E5F1] gap-10  flex flex-col justify-between">
             <div className="w-full h-fit flex flex-col">
               <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
                 Wedding
               </h1>
             </div>
 
-            <div className="w-full aspect-2/1  flex justify-center relative item overflow-hidden ">
+            <div className="w-full aspect-2/1  flex justify-center relative item  ">
               <img
                 // src={`/imgs/newExplorMarK/Wedding2.jpg`}
                 src={`/assets/s29.png`}
@@ -354,14 +548,14 @@ const page = () => {
           </div>
 
           {/* T2 */}
-          <div className="w-1/4 aspect-4/5 py-10 px-5  relative origin-bottom transition-all duration-600 ease-none hover:rotate-z-20  bg-[#D9E5F1]  flex flex-col justify-between">
+          <div className="w-1/4 aspect-4/5 py-10 px-5  relative origin-bottom transition-all duration-600 ease-none hover:rotate-z-20  bg-[#D9E5F1] gap-10 flex flex-col justify-between">
             <div className="w-full h-fit flex flex-col">
               <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
                 Event
               </h1>
             </div>
 
-            <div className="w-full aspect-2/1  flex justify-center relative item overflow-hidden ">
+            <div className="w-full aspect-2/1  flex justify-center relative item  ">
               <img
                 // src={`/imgs/newItinerary/h8.webp`}
                 src={`/assets/s30.png`}
@@ -382,17 +576,17 @@ const page = () => {
           </div>
 
           {/* T3 */}
-          <div className="w-1/4 aspect-4/5 py-10 px-5  relative origin-bottom transition-all duration-600 ease-none hover:rotate-z-20  bg-[#D9E5F1] flex flex-col justify-between">
+          <div className="w-1/4 aspect-4/5 py-10 px-5  relative origin-bottom transition-all duration-600 ease-none hover:rotate-z-20  bg-[#D9E5F1] gap-10 flex flex-col justify-between">
             <div className="w-full h-fit flex flex-col">
               <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
                 Celebration
               </h1>
             </div>
 
-            <div className="w-full aspect-2/1  flex justify-center relative item overflow-hidden ">
+            <div className="w-full aspect-2/1  flex justify-center relative item  ">
               <img
                 // src={`/imgs/newItinerary/h7.webp`}
-                src={`/assets/2BANNER.png`}
+                src={`/assets/s29.png`}
                 alt="IMg"
                 className="w-full h-full object-cover object-center"
               />
@@ -410,16 +604,16 @@ const page = () => {
           </div>
 
           {/* T4 */}
-          <div className="w-1/4 aspect-4/5 py-10 px-5  relative origin-bottom transition-all duration-600 ease-none hover:rotate-z-20  bg-[#D9E5F1]  flex flex-col justify-between">
+          <div className="w-1/4 aspect-4/5 py-10 px-5  relative origin-bottom transition-all duration-600 ease-none hover:rotate-z-20  bg-[#D9E5F1] gap-10 flex flex-col justify-between">
             <div className="w-full h-fit flex flex-col">
               <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
                 Celebration
               </h1>
             </div>
 
-            <div className="w-full aspect-2/1  flex justify-center relative item overflow-hidden ">
+            <div className="w-full aspect-2/1  flex justify-center relative item  ">
               <img
-                src={`/assets/1BANNER.png`}
+                src={`/assets/s30.png`}
                 alt="IMg"
                 className="w-full h-full object-cover object-center"
               />
@@ -560,7 +754,7 @@ const page = () => {
           </div>
         </div>
 
-        <GallerySection />
+        
 
         {/* Next-3-Section */}
         {/* <div className="w-full min-h-screen relative bg-[#D9E5F1]">
@@ -622,6 +816,7 @@ const page = () => {
           </div>
         </div> */}
       </div>
+      <GallerySection />
     </>
   );
 };

@@ -79,9 +79,9 @@ const page = () => {
       ".DemoAllItem",
       {
         filter: "blur(10px)",
-        scale:1.2,
+        scale: 1.2,
       },
-    
+
       "a1",
     );
     A.to(
@@ -122,10 +122,49 @@ const page = () => {
     });
   }, []);
 
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const { innerWidth, innerHeight } = window;
+
+      const centerX = innerWidth / 2;
+      const centerY = innerHeight / 2;
+
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
+
+      // Normalize (-1 to 1)
+      const x = (mouseX - centerX) / centerX;
+      const y = (mouseY - centerY) / centerY;
+
+      // Move opposite direction (invert)
+      const moveX = -x * 5;
+      const moveY = -y * 5;
+
+      gsap.to(".stickyAnimation", {
+        x: moveX,
+        y: moveY,
+        duration: 0.5,
+        ease: "power2.out",
+      });
+      gsap.to(".LTM, .RTM, .GatImg, .DemoAllItem, .NAMEWED", {
+        // x: moveX,
+        y: moveY,
+        duration: 0.5,
+        ease: "power2.out",
+      });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
   return (
     <>
       <div className="w-full h-[200vh] relative relMain opacity-0">
-        <div className="w-full h-screen sticky flex top-0 left-0 overflow-hidden z-20">
+        <div className="w-full h-screen sticky flex top-0 left-0 overflow-hidden z-20 stickyAnimation scale-[1.1]">
           {/* back Building */}
           <div className=" absolute top-0 left-0 w-full h-screen z-10 overflow-hidden">
             <img
@@ -134,7 +173,7 @@ const page = () => {
               className="w-full h-full BGBLD  scale-[1.2] object-top object-center"
             />
 
-            <div className="pointer-events-none absolute bottom-0 left-0 w-full h-[30vh] bg-gradient-to-b from-transparent via-[#D9E5F1]/60 to-[#D9E5F1] z-40" />
+            <div className="pointer-events-none absolute bottom-[3%] left-0 w-full h-[30vh] bg-gradient-to-b from-transparent via-[#D9E5F1]/60 to-[#D9E5F1] z-40" />
             <div className=" absolute bottom-2 left-0 w-full h-fit flex justify-center items-center Font_Q COLOR_TEXT_RED text-[8vw] z-50 NAMEWED tracking-tighter">
               LAIQA & RABEEL
             </div>
@@ -159,7 +198,7 @@ const page = () => {
             />
           </div>
 
-          <div className="w-1/2 h-screen left flex justify-end items-center LTM relative z-20 ">
+          <div className="w-1/2 h-screen left flex justify-end items-center LTM relative z-20  overflow-x-visible">
             <img
               src={`/try/Left.png`}
               alt="left"
@@ -172,7 +211,7 @@ const page = () => {
               className="h-full w-screen object-cover scale-[1] object-center flex absolute top-0 left-0 z-[-1]  "
             />
           </div>
-          <div className="w-1/2 h-screen left flex justify-start items-center RTM z-20">
+          <div className="w-1/2 h-screen left flex justify-start items-center RTM z-20 overflow-x-visible">
             <img
               src={`/try/Right.png`}
               alt="Right"

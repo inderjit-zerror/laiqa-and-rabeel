@@ -58,10 +58,10 @@ const GallerySection = () => {
   }, [])
 
   return (
-    <div className='HomeHeroMainContainer w-full h-[180vh] relative z-99 '>
+    <div className='HomeHeroMainContainer w-full h-[180vh] relative z-100 '>
       <div className="StickyContainer w-full h-svh sticky top-0 left-0 ">
 
-        <div style={{ clipPath: 'inset(0% 0% 0% 0% round 10px)' }} className="ImgContainer w-full h-full absolute top-0 left-0 overflow-hidden">
+        <div style={{ clipPath: 'inset(0% 0% 0% 0% round 10px)' }} className="ImgContainer w-full h-full absolute top-0 left-0 ">
           {/* <img src={`/imgs/newHome/bbg2.png`} alt="img" className="w-full h-full object-cover object-top" /> */}
           {/* <img src={`/imgs/newHome/FullIMG.png`} alt="img" className="w-full h-full object-cover object-top" /> */}
           <img src={`/assets/2BANNER.png`} alt="img" className="w-full h-full object-cover object-top" />
@@ -69,11 +69,11 @@ const GallerySection = () => {
 
         <div className="LeftHeroContainer w-1/3 h-full  absolute top-0 left-0 flex flex-col gap-5  items-end pt-[10vh]">
 
-          <div className="L-top w-1/2 aspect-square  rounded-[20px] overflow-hidden">
+          <div className="L-top w-1/2 aspect-square  rounded-[20px] ">
             <img src={`/assets/s29.png`} alt="img" className="w-full h-full object-cover object-center" />
           </div>
 
-          <div className="L-bottom w-1/3 aspect-square  rounded-[20px] overflow-hidden">
+          <div className="L-bottom w-1/3 aspect-square  rounded-[20px] ">
             <img src={`/assets/s38.png`} alt="img" className="w-full h-full object-cover object-center" />
           </div>
 
@@ -81,11 +81,11 @@ const GallerySection = () => {
 
         <div className="RightHeroContainer w-1/3 h-full absolute top-0 right-0 flex flex-col justify-end gap-5 pb-[10vh]">
 
-          <div className="R-top w-1/3 aspect-square  rounded-[20px] overflow-hidden">
+          <div className="R-top w-1/3 aspect-square  rounded-[20px] ">
             <img src={`/assets/s37.png`} alt="img" className="w-full h-full object-cover object-center" />
           </div>
 
-          <div className="R-bottom w-1/2 aspect-square  rounded-[20px] overflow-hidden">
+          <div className="R-bottom w-1/2 aspect-square  rounded-[20px] ">
             <img src={`/assets/s23.png`} alt="img" className="w-full h-full object-cover object-center" />
           </div>
 
