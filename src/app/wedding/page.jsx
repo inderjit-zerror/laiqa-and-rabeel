@@ -423,11 +423,11 @@ const page = () => {
         {/* Next-2-Sectiom */}
         <div className="w-full Next-2-Sectiom  h-screen COLOR_BG_RED flex z-100 relative">
           <div className="w-1/5  h-fit absolute bottom-[0%] left-[0%] scale-[0.7]">
-            <img
+            {/* <img
               src={`/assets/s39.png`}
               alt="IMG"
               className="w-full  object-center object-cover "
-            />
+            /> */}
           </div>
           {/* Left */}
           <div className="w-[70%] h-fit">
@@ -463,18 +463,26 @@ const page = () => {
             </div>
           </div>
 
+          <div className=" absolute right-0 bottom-0 w-[70%]  aspect-[3.5/2] z-[-1] flex justify-end items-center px-20">
+          <img
+              src={`/assets/s30.png`}
+              alt="IMG"
+              className="h-full  object-center object-cover "
+            />
+          </div>
+
           {/* Right */}
-          <div className="w-[30%] h-screen  p-10 flex justify-end items-end z-[100] ">
+          {/* <div className="w-[30%] h-screen  p-10 flex justify-end items-end z-[100] ">
             <div className="w-full h-2/3  relative flex justify-center items-center ">
-              {/* <div className="w-full absolute top-0 left-0 h-full COLOR_BG_RED NextSImg z-[100]"></div> */}
+             
               <img
-                // src={`/imgs/newItinerary/h6.webp`}
+               
                 src={`/assets/s29.png`}
                 alt="IMG"
                 className=" w-full object-cover z-[90]  object-center"
               />
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Next-4-Sectiom */}

@@ -6,25 +6,25 @@ gsap.registerPlugin(ScrollTrigger);
 
 const DataArr = [
   {
-    url: `/home/ci1.jpg`,
+    url: `/home/ci1.png`,
     class: "Div1Img ImgContMainDiv",
     top: 45,
     rotate: "-1deg",
   },
   {
-    url: `/home/ci2.jpg`,
+    url: `/home/ci2.png`,
     class: "Div2Img ImgContMainDiv",
     top: 48,
     rotate: "1deg",
   },
   {
-    url: `/home/ci3.jpg`,
+    url: `/home/ci3.png`,
     class: "Div3Img ImgContMainDiv",
     top: 51,
     rotate: "-1deg",
   },
   {
-    url: `/home/ci4.jpg`,
+    url: `/home/ci4.png`,
     class: "Div4Img ImgContMainDiv",
     top: 54,
     rotate: "1deg",
@@ -231,11 +231,11 @@ const LoveStory = () => {
         </div>
       </div>
 
-      <div className="w-full h-[80vh] relative">
+      <div className="w-full h-[80vh] relative ">
         <img
-          src={`/assets/2BANNER.png`}
+          src={`/home/LBackground.png`}
           alt="IMG"
-          className="w-full h-full object-center BGIMGLS object-cover absolute top-0 left-0 z-[-2]"
+          className="w-full h-full object-center BGIMGLS object-cover absolute bottom-[-10%] scale-[1.1]  left-[5%]  z-[-2]"
         />
       </div>
     </>
