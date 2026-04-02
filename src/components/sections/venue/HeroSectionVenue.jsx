@@ -57,7 +57,7 @@ const HeroSectionVenue = () => {
       <Image
         ref={imageRef}
         // src={`/imgs/RafflesUdaipur.webp`}
-        src={`/imgs/venue/wp.jpg`}
+        src={`/imgs/venue/wp.png`}
         className='w-full h-full object-cover object-center Igm opacity-0 '
         width={1000}
         height={1000}

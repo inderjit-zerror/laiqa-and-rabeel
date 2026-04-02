@@ -12,7 +12,6 @@ const Explore = () => {
   const mainContainer = useRef();
   const scrollContainer = useRef();
 
-
   useGSAP(() => {
     if (!mainContainer.current || !scrollContainer.current) return;
     const totalScrollWidth =
@@ -26,13 +25,13 @@ const Explore = () => {
         pin: true,
         scrub: true,
         // markers: true,
-      }
-    })
+      },
+    });
 
     sliderTween.to(scrollContainer.current, {
       x: -totalScrollWidth,
       ease: "none",
-    })
+    });
 
     const animate_child = document.querySelectorAll(".animate_child");
 
@@ -50,9 +49,10 @@ const Explore = () => {
             start: "left right",
             toggleActions: "play none none reverse",
           },
-        });
+        },
+      );
     });
-  })
+  });
 
   return (
     <>
@@ -60,6 +60,22 @@ const Explore = () => {
         ref={mainContainer}
         className="w-full h-screen overflow-x-hidden flex relative COLOR_BG_CREAM"
       >
+        <div className="w-2/10  h-fit fixed top-[-5%] left-[-5%] scale-x-[-1] z-100 ">
+          <img
+            src={`/assets/s01.png`}
+            alt="IMG"
+            className="w-full  object-center object-cover "
+          />
+        </div>
+
+        <div className="w-2/10  h-fit fixed top-[80%] left-[75%] scale-x-[-1]  ">
+          <img
+            src={`/assets/s23.png`}
+            alt="IMG"
+            className="w-full  object-center object-cover "
+          />
+        </div>
+
         <div
           ref={scrollContainer}
           className="w-fit h-screen flex fixed overflow-hidden top-0 left-0"
@@ -80,15 +96,16 @@ const Explore = () => {
 
           <div className="w-[50vw] h-screen  flex justify-center items-center  ">
             <div className="w-fit max-w-[665px] contA6 h-fit flex flex-col gap-6 justify-center items-center">
-              <p className=" uppercase Font_YV COLOR_TEXT_RED contA6">
-
-              </p>
+              <p className=" uppercase Font_YV COLOR_TEXT_RED contA6"></p>
               <h4 className=" text-[80px]  leading-[80px] Font_Q contA6 COLOR_TEXT_RED text-center uppercase ">
                 Marrakech
               </h4>
               <div className="w-full max-w-[460px] flex flex-col contA6 justify-center items-center gap-6">
                 <div className="text-[#395238] text-[18px] contA6 COLOR_TEXT_RED text-center Font_YV">
-                 Marrakech is one of the most vibrant and culturally rich cities in Morocco. Known as the “Red City” because of its rose-colored buildings, it blends history, culture.</div>
+                  Marrakech is one of the most vibrant and culturally rich
+                  cities in Morocco. Known as the “Red City” because of its
+                  rose-colored buildings, it blends history, culture.
+                </div>
               </div>
             </div>
           </div>
@@ -121,14 +138,17 @@ const Explore = () => {
 
           <div className=" animate_child w-[50vw] h-screen  flex justify-center items-center  ">
             <div className="w-fit max-w-[665px] contA6 h-fit flex flex-col gap-6 justify-center items-center">
-              <p className=" uppercase Font_YV COLOR_TEXT_RED contA6">
-              </p>
+              <p className=" uppercase Font_YV COLOR_TEXT_RED contA6"></p>
               <h4 className=" text-[80px]  leading-[80px] Font_Q text-center contA6 COLOR_TEXT_RED uppercase ">
-                 Jardin Majorelle
+                Jardin Majorelle
               </h4>
               <div className="w-full max-w-[460px] flex flex-col contA6 justify-center items-center gap-6">
                 <div className="text-[#395238] text-[18px] contA6 COLOR_TEXT_RED text-center Font_YV">
-                  Originally designed by French painter Jacques Majorelle in the 1920s and later rescued and restored by fashion icon Yves Saint Laurent, this botanical garden is one of Africa's most visited attractions.  </div>
+                  Originally designed by French painter Jacques Majorelle in the
+                  1920s and later rescued and restored by fashion icon Yves
+                  Saint Laurent, this botanical garden is one of Africa's most
+                  visited attractions.{" "}
+                </div>
               </div>
             </div>
           </div>
@@ -161,15 +181,16 @@ const Explore = () => {
 
           <div className=" animate_child w-[50vw] h-screen  flex justify-center items-center  ">
             <div className="w-fit max-w-[665px] contA6 h-fit flex flex-col gap-6 justify-center items-center">
-              <p className=" uppercase Font_YV COLOR_TEXT_RED contA6">
-
-              </p>
+              <p className=" uppercase Font_YV COLOR_TEXT_RED contA6"></p>
               <h4 className=" text-[80px] leading-[80px] Font_Q contA6 text-center COLOR_TEXT_RED uppercase ">
                 Bahia Palace
               </h4>
               <div className="w-full max-w-[460px] flex flex-col contA6 justify-center items-center gap-6">
                 <div className="text-[#395238] text-[18px] contA6 COLOR_TEXT_RED text-center Font_YV">
-                 Built in the late 19th century, the Bahia Palace ("Palace of the Beautiful") was intended to be the grandest palace of its time.</div>
+                  Built in the late 19th century, the Bahia Palace ("Palace of
+                  the Beautiful") was intended to be the grandest palace of its
+                  time.
+                </div>
               </div>
             </div>
           </div>
@@ -183,7 +204,6 @@ const Explore = () => {
               />
             </div>
           </div>
-
 
           <div className="animate_child w-fit mx-[5vw] h-screen flex  justify-center items-center">
             <div className="w-fit h-fit flex  ">
@@ -201,15 +221,17 @@ const Explore = () => {
 
           <div className="animate_child w-[50vw] h-screen  flex justify-center items-center  ">
             <div className="w-fit max-w-[665px] contA6 h-fit flex flex-col gap-6 justify-center items-center">
-              <p className=" uppercase Font_YV COLOR_TEXT_RED contA6">
-
-              </p>
+              <p className=" uppercase Font_YV COLOR_TEXT_RED contA6"></p>
               <h4 className=" text-[80px] leading-[80px] Font_Q contA6 COLOR_TEXT_RED uppercase text-center  ">
                 Koutoubia Mosque
               </h4>
               <div className="w-full max-w-[460px] flex flex-col contA6 justify-center items-center gap-6">
                 <div className="text-[#395238] text-[18px] contA6 COLOR_TEXT_RED text-center Font_YV">
-                  The Koutoubia Mosque is Marrakech's most iconic landmark and the largest mosque in the city. Its soaring 70-metre minaret has dominated the skyline since the 12th century and served as the architectural inspiration</div>
+                  The Koutoubia Mosque is Marrakech's most iconic landmark and
+                  the largest mosque in the city. Its soaring 70-metre minaret
+                  has dominated the skyline since the 12th century and served as
+                  the architectural inspiration
+                </div>
               </div>
             </div>
           </div>
@@ -227,7 +249,6 @@ const Explore = () => {
             </div>
           </div>
 
-
           <div className="animate_child w-fit mx-[5vw] h-screen flex  justify-center items-center">
             <div className="w-fit h-fit flex  ">
               <div className="w-[50vw] h-fit  overflow-hidden img5">
@@ -244,15 +265,17 @@ const Explore = () => {
 
           <div className=" animate_child w-[50vw] h-screen  flex justify-center items-center  ">
             <div className="w-fit max-w-[665px] contA6 h-fit flex flex-col gap-6 justify-center items-center">
-              <p className=" uppercase Font_YV COLOR_TEXT_RED contA6">
-
-              </p>
+              <p className=" uppercase Font_YV COLOR_TEXT_RED contA6"></p>
               <h4 className=" text-[80px] leading-[80px] Font_Q contA6 COLOR_TEXT_RED uppercase text-center ">
                 The Souks of the Medina
               </h4>
               <div className="w-full max-w-[460px] flex flex-col contA6 justify-center items-center gap-6">
                 <div className="text-[#395238] text-[18px] contA6 COLOR_TEXT_RED text-center Font_YV">
-                  Marrakech's old Medina is a living, breathing marketplace dating back centuries. The souks are organized loosely by trade — the dyers' souk (Souk Semmarine), the leather souk, the spice market,</div>
+                  Marrakech's old Medina is a living, breathing marketplace
+                  dating back centuries. The souks are organized loosely by
+                  trade — the dyers' souk (Souk Semmarine), the leather souk,
+                  the spice market,
+                </div>
               </div>
             </div>
           </div>
@@ -262,16 +285,12 @@ const Explore = () => {
               <img
                 src={`/imgs/newExplorMarK/EE2.jpg`}
                 className="w-full h-full object-cover  object-center"
-
                 alt="Img"
               />
             </div>
           </div>
         </div>
       </div>
-
-     
-
     </>
   );
 };

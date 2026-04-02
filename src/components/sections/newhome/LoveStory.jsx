@@ -6,25 +6,25 @@ gsap.registerPlugin(ScrollTrigger);
 
 const DataArr = [
   {
-    url: `/assets/s30.png`,
+    url: `/home/ci1.jpg`,
     class: "Div1Img ImgContMainDiv",
     top: 45,
     rotate: "-1deg",
   },
   {
-    url: `/assets/s40.png`,
+    url: `/home/ci2.jpg`,
     class: "Div2Img ImgContMainDiv",
     top: 48,
     rotate: "1deg",
   },
   {
-    url: `/assets/s41.png`,
+    url: `/home/ci3.jpg`,
     class: "Div3Img ImgContMainDiv",
     top: 51,
     rotate: "-1deg",
   },
   {
-    url: `/assets/s36.png`,
+    url: `/home/ci4.jpg`,
     class: "Div4Img ImgContMainDiv",
     top: 54,
     rotate: "1deg",
@@ -72,17 +72,17 @@ const ImageCollector = ({ URL, name, top, rotate, left }) => {
           left: `${left}%`,
           transform: `translateX(-50%) rotate(${rotate})`,
         }}
-        className={`w-1/5 aspect-5/4 COLOR_BG_RED absolute px-2 pt-2 ${name}  left-1/2 b_SHD border border-[#D9E5F1]  `}
+        className={`w-1/5 aspect-5/4  absolute px-2 pt-2 ${name}  left-1/2 b_SHD bg-[#f5f5f5]   `}
       >
         <div className="w-full h-[80%]  overflow-hidden  flex justify-center items-center">
           <img
             src={URL}
             alt="IMG"
-            className=" h-full object-center object-cover"
+            className=" h-full w-full object-center object-cover"
           />
         </div>
         <div className="w-full h-[20%] flex justify-center text-[12px] items-center COLOR_TEXT_RED">
-          <p className="Font_YV capitalize font-light text-white ">
+          <p className="Font_YV capitalize font-light COLOR_TEXT_RED ">
             Lorem ipsum dolor sit amet.
           </p>
         </div>
@@ -145,6 +145,25 @@ const LoveStory = () => {
     });
   }, []);
 
+
+   useEffect(() => {
+    const lamps = gsap.utils.toArray(".SPRO");
+    const floatAnims = [];
+
+    lamps.forEach((lamp, i) => {
+      const anim = gsap.to(lamp, {
+        y: "+=40",
+        duration: 2 + i,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+        delay: i * 0.3,
+      });
+
+      floatAnims.push(anim);
+    });
+  }, []);
+
   return (
     <>
       <div className="LS-MainContainer w-full h-[400vh] relative z-70 bg-[#D9E5F1]">
@@ -153,7 +172,7 @@ const LoveStory = () => {
 
           <div className="w-full h-fit Font_Q flex justify-center items-center pt-[20vh]">
             <h1 className="COLOR_TEXT_RED text-[7vw] leading-[7vw] tracking-tighter">
-              Our Love Story
+              Our Story
             </h1>
           </div>
 
@@ -194,35 +213,27 @@ const LoveStory = () => {
             </p>
           </div>
 
-          {/* <div className="pointer-events-none absolute bottom-0 left-0 w-full h-[10vh] bg-gradient-to-b from-transparent via-[#D9E5F1]/60 to-[#D9E5F1] z-40" /> */}
-
+         
           <div className="w-1/8  h-fit absolute top-[25%] left-[5%] scale-[0.7]">
             <img
               src={`/assets/s02.png`}
               alt="IMG"
-              className="w-full  object-center object-cover "
+              className="w-full  object-center object-cover  SPRO"
             />
           </div>
           <div className="w-1/8  h-fit absolute top-[5%] right-[5%] ">
             <img
               src={`/assets/s03.png`}
               alt="IMG"
-              className="w-full  object-center object-cover "
+              className="w-full  object-center object-cover SPRO"
             />
           </div>
         </div>
       </div>
 
-      {/* <div className="w-full h-[80vh] relative">
-        <img
-          src={`/imgs/newHome/FullIMG.png`}
-          alt="IMG"
-          className="w-full h-full object-center BGIMGLS object-cover absolute top-0 left-0 z-[-2]"
-        />
-      </div> */}
       <div className="w-full h-[80vh] relative">
         <img
-          src={`/assets/1BANNER.png`}
+          src={`/assets/2BANNER.png`}
           alt="IMG"
           className="w-full h-full object-center BGIMGLS object-cover absolute top-0 left-0 z-[-2]"
         />

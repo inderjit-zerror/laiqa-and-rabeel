@@ -413,58 +413,18 @@ const page = () => {
             </div>
           </div>
 
-          {/* InfoImg */}
-
-          {/* Right TOP */}
-          {/* <div className=" absolute top-[5%] overflow-hidden right-[2%] w-[10vw] aspect-3/4">
-            <div className="w-full h-full absolute top-0 left-0 bg-[#D9E5F1] revelINMGI z-100"></div>
-            <img
-              // src={`/imgs/newItinerary/h6.webp`}
-              src={`/assets/s23.png`}
-              alt="CD"
-              className="w-full refBackImg h-full object-center object-cover"
-            />
-          </div> */}
-
-          {/* Right Bottom */}
-          {/* <div className=" absolute top-[55%] overflow-hidden right-[10%] w-[10vw] aspect-3/4 ">
-            <div className="w-full h-full absolute top-0 left-0 bg-[#D9E5F1] revelINMGI z-100"></div>
-            <img
-              // src={`/imgs/newItinerary/h7.webp`}
-              src={`/assets/s19.png`}
-              alt="CD"
-              className="w-full refBackImg h-full object-left object-cover"
-            />
-          </div> */}
-
-          {/* Left-Medium */}
-          {/* <div className=" absolute top-[20%] overflow-hidden left-[5%] w-[10vw] aspect-3/4 ">
-            <div className="w-full absolute top-0 left-0 h-full bg-[#D9E5F1] revelINMGI z-[100]"></div>
-            <img
-              src={`/assets/s36.png`}
-              alt="CD"
-              className="w-full refBackImg h-full  object-center object-cover"
-            />
-          </div> */}
+        
 
           <div className="w-full h-full absolute top-0 left-0  z-[-1] overflow-hidden ">
             <img src={`/assets/itnBG.png`} alt="Img" className="w-full h-full object-top object-cover scale-[1.1] stickyAnimation2" />
           </div>
-
-          {/* <div className=" absolute  CD_DIV top-[60%] left-1/2 -translate-x-1/2 z-[-1] -translate-y-1/3 rotate-z-90 w-[20vw] aspect-square rounded-full  overflow-hidden">
-            <img
-              src={`/imgs/newItinerary/CD.svg`}
-              alt="CD"
-              className="w-full h-full object-center scale-[1.1] object-cover flex CDIMh"
-            />
-          </div> */}
         </div>
 
         {/* Next-2-Sectiom */}
         <div className="w-full Next-2-Sectiom  h-screen COLOR_BG_RED flex z-100 relative">
           <div className="w-1/5  h-fit absolute bottom-[0%] left-[0%] scale-[0.7]">
             <img
-              src={`/assets/s20.png`}
+              src={`/assets/s39.png`}
               alt="IMG"
               className="w-full  object-center object-cover "
             />
@@ -504,14 +464,14 @@ const page = () => {
           </div>
 
           {/* Right */}
-          <div className="w-[30%] h-screen  p-10 flex justify-end items-end z-[100]">
-            <div className="w-full h-2/3  relative flex justify-center items-center">
+          <div className="w-[30%] h-screen  p-10 flex justify-end items-end z-[100] ">
+            <div className="w-full h-2/3  relative flex justify-center items-center ">
               {/* <div className="w-full absolute top-0 left-0 h-full COLOR_BG_RED NextSImg z-[100]"></div> */}
               <img
                 // src={`/imgs/newItinerary/h6.webp`}
-                src={`/assets/s9.png`}
+                src={`/assets/s29.png`}
                 alt="IMG"
-                className=" w-full object-cover z-[90] NextSImgMain object-center"
+                className=" w-full object-cover z-[90]  object-center"
               />
             </div>
           </div>
@@ -625,9 +585,7 @@ const page = () => {
               </p>
             </div>
 
-            {/* <div className="w-[90%] h-fit py-2 mx-auto rounded-full flex justify-center items-center border border-[#044BB2]">
-              <p className="Font_Q COLOR_TEXT_RED ">Read More</p>
-            </div> */}
+            
           </div>
         </div>
 
@@ -755,68 +713,8 @@ const page = () => {
         </div>
 
         
-
-        {/* Next-3-Section */}
-        {/* <div className="w-full min-h-screen relative bg-[#D9E5F1]">
-          <div className="w-full overflow-hidden py-6 sticky h-screen left-0  top-0 flex  items-center  ">
-            <div className="w-1/8  h-fit absolute top-[5%] right-[5%] ">
-              <img
-                src={`/assets/s03.png`}
-                alt="IMG"
-                className="w-full  object-center object-cover "
-              />
-            </div>
-
-            
-            <div
-              ref={containerRefN3}
-              className="flex whitespace-nowrap  text-4xl font-bold gap-10 COLOR_TEXT_RED"
-            >
-              {[...Array(2)].map((_, i) => (
-                <React.Fragment key={i}>
-                  <span className="Font_Q text-[10vw] leading-[10vw]">
-                    Wedding
-                  </span>
-                  <span className="Font_Q text-[10vw] leading-[10vw]">
-                    Wedding
-                  </span>
-                  <span className="Font_Q text-[10vw] leading-[10vw]">
-                    Wedding
-                  </span>
-                  <span className="Font_Q text-[10vw] leading-[10vw]">
-                    Wedding
-                  </span>
-                  <span className="Font_Q text-[10vw] leading-[10vw]">
-                    Wedding
-                  </span>
-                </React.Fragment>
-              ))}
-            </div>
-          </div>
-
-          <div className="w-full min-h-screen relative flex flex-col gap-[10vh] py-[10vh] z-100 justify-center items-center ">
-            {[
-              `/imgs/newHome/YH.png`,
-              `/imgs/newHome/bbg2.png`,
-              `/imgs/newHome/building2.png`,
-            ].map((item, index) => {
-              return (
-                <div
-                  key={index}
-                  className="w-[80%] min-h-[70vh]  overflow-hidden"
-                >
-                  <img
-                    src={item}
-                    alt="Img"
-                    className="w-full h-full object-cover object-center"
-                  />
-                </div>
-              );
-            })}
-          </div>
-        </div> */}
       </div>
-      <GallerySection />
+      {/* <GallerySection /> */}
     </>
   );
 };

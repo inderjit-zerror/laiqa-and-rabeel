@@ -59,17 +59,16 @@ const TextAnimation = () => {
   return (
     <div className=" TextAnimaterContainer w-full h-[300vh] relative COLOR_BG_CREAM z-80">
       <div className=" w-full h-screen sticky top-0 left-0 p-20 flex  justify-center items-center ">
-        {/* <img src={`/imgs/newHome/GDN.png`} alt="IMG" className="w-full h-full object-center object-cover opacity-5 absolute top-0 left-0 z-[-2]" /> */}
-
-        <div className="w-1/10  h-fit absolute bottom-[5%] right-[5%] ">
+      
+        <div className="w-2/10  h-fit absolute bottom-[-5%] right-[-5%] ">
         <img
-          src={`/assets/s05.png`}
+          src={`/assets/s01.png`}
           alt="IMG"
           className="w-full  object-center object-cover "
         />
       </div>
 
-        <div className=" text-[4vw] leading-[4vw] flex flex-wrap justify-center items-center gap-4 Font_Q  ">
+        <div className=" text-[3.5vw] leading-[3.5vw] flex px-[2vw] flex-wrap justify-center items-center gap-4 Font_YV  ">
           {Words.map((item, index) => {
             const formatted =
               item.charAt(0).toUpperCase() + item.slice(1).toLowerCase();
@@ -87,28 +86,12 @@ const TextAnimation = () => {
           })}
         </div>
 
-        <div className='w-fit h-[150vh] bottom-[-590] left-[-600] absolute z-90 opacity-50 rotate-z-30 '>
-        <img src={`/imgs/newHome/tree1.png`} alt="IMF" className=' h-full object-center object-cover' />
+        <div className='w-fit h-screen bottom-[0%] left-[-20%] absolute z-90 opacity-50  rotate-z-10'>
+        <img src={`/assets/s22.png`} alt="IMF" className=' h-full object-center object-cover' />
 
         </div>
 
-        {/* <div className="w-1/2 h-[100vh] bottom-[-50] left-[-50] absolute z-90 opacity-50  "> */}
-          {/* <img src={`/imgs/newHome/tree1.png`} alt="IMF" className=' h-full object-center object-cover' /> */}
-          {/* <img
-            src={`/assets/s19.png`}
-            alt="IMF"
-            className=" h-full object-center object-cover"
-          /> */}
-        {/* </div> */}
-
-        {/* <div className="w-1/6 h-fit bottom-[0%] right-[1%] absolute z-90 opacity-50 z-[-1]  ">
-         
-          <img
-            src={`/assets/s10.png`}
-            alt="IMF"
-            className=" w-full object-center object-cover"
-          />
-        </div> */}
+       
       </div>
     </div>
   );

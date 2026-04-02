@@ -84,9 +84,25 @@ export default function FAQ() {
   return (
     <section
       id="FAQ"
-      className="min-h-screen max-sm:min-h-fit COLOR_BG_CREAM  flex items-center justify-center max-sm:py-[20vw] py-[20vh]"
+      className="min-h-screen max-sm:min-h-fit COLOR_BG_CREAM  flex items-center relative justify-center max-sm:py-[20vw] py-[20vh]"
     >
-      <div className="w-[80%] max-sm:w-full px-6 max-sm:px-[20px] flex flex-col gap-20">
+
+      <div className="w-full h-screen fixed top-0 left-0 ">
+        <img src={`/assets/s30.png`} alt="IMG" className="w-full h-full object-cover object-bottom opacity-5" />
+      </div>
+
+       <div className="w-2/10  h-fit absolute top-[-5%] right-[-5%] ">
+        <img
+          src={`/assets/s01.png`}
+          alt="IMG"
+          className="w-full  object-center object-cover "
+        />
+      </div>
+
+      
+
+
+      <div className="w-[80%] max-sm:w-full px-6 max-sm:px-[20px] flex flex-col gap-20 relative z-50">
         <h2 className="text-center Font_Q flex flex-col justify-center items-center max-sm:justify-start max-sm:mt-10 COLOR_TEXT_RED">
           FAQ
           {/* <p className="  Font_YV mt-7 font-bold sm:pt-5 max-sm:w-full max-sm:px-[10vw]">
