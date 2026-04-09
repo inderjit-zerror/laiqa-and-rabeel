@@ -192,10 +192,7 @@ const page = () => {
             {/* Text */}
             <div className="w-full h-fit flex Font_Q pl-10 pt-10 flex-col">
               <div className="text-[2.5vw] leading-[2.5vw] text-justify text-[#044BB2] w-full  ">
-                A wedding itinerary outlines the sequence of events for the
-                special day, ensuring everything runs smoothly and on time. It
-                typically begins with the bride and groom getting ready,
-                followed by the ceremony, where vows are exchanged.
+                Join us in Marrakech from November 14–16, 2026 for a weekend of celebration. Festivities begin with a Mehndi Lunch and Sangeet Dinner on Saturday, followed by our Nikkah Ceremony and an elegant Black Tie Reception on Sunday. We will conclude with a relaxed Closing Brunch on Monday. All events will take place at The Oberoi Marrakech unless otherwise noted.
               </div>
             </div>
           </div>
@@ -319,12 +316,14 @@ const page = () => {
                   />
                 </div>
 
-                <p className="text-[3vw] Font_YV COLOR_TEXT_RED"> Timing ~ 12:00 PM</p>
+                <p className="text-[3vw] Font_YV COLOR_TEXT_RED">  Saturday, November 14</p>
+                {/* <p className="text-[3vw] Font_YV COLOR_TEXT_RED">  </p> */}
               </div>
 
               {/* BACK */}
               <div className="absolute inset-0 [transform:rotateY(180deg)] backface-hidden bg-[#044BB2] text-white flex items-center justify-center p-5">
                 <p className="text-[2vw] text-center">
+                  Timing ~ 12:00 PM <br /><br />
                   A vibrant daytime celebration to welcome the wedding weekend,
                   filled with music, henna, and festive colors.
                 </p>
@@ -347,11 +346,13 @@ const page = () => {
                   />
                 </div>
 
-                <p className="text-[3vw] Font_YV COLOR_TEXT_RED"> Timing ~ 7:00 PM</p>
+                <p className="text-[3vw] Font_YV COLOR_TEXT_RED"> Saturday, November 14</p>
+                {/* <p className="text-[3vw] Font_YV COLOR_TEXT_RED"> </p> */}
               </div>
 
               <div className="absolute inset-0 [transform:rotateY(180deg)] backface-hidden bg-[#044BB2] text-white flex items-center justify-center p-5">
                 <p className="text-[2vw] text-center">
+                  Timing ~ 7:00 PM <br /><br />
                   An evening of performances, dancing, and celebration.
                 </p>
               </div>
@@ -373,11 +374,13 @@ const page = () => {
                   />
                 </div>
 
-                <p className="text-[14px] Font_YV COLOR_TEXT_RED"> Timing ~ 12:00 PM</p>
+                <p className="text-[14px] Font_YV COLOR_TEXT_RED"> Sunday, November 15</p>
+                {/* <p className="text-[14px] Font_YV COLOR_TEXT_RED"> </p> */}
               </div>
 
               <div className="absolute inset-0 [transform:rotateY(180deg)] backface-hidden bg-[#044BB2] text-white flex items-center justify-center p-5">
-                <p className="text-[2vw] text-center">Our wedding ceremony.</p>
+                
+                <p className="text-[2vw] text-center"> Timing ~ 12:00 PM <br /> <br />Our wedding ceremony.</p>
               </div>
             </div>
           </div>
@@ -395,11 +398,13 @@ const page = () => {
                   />
                 </div>
 
-                <p className="text-[14px] Font_YV COLOR_TEXT_RED">Timing ~ 6:00 PM</p>
+                <p className="text-[14px] Font_YV COLOR_TEXT_RED">Sunday, November 15</p>
+                {/* <p className="text-[14px] Font_YV COLOR_TEXT_RED"></p> */}
               </div>
 
               <div className="absolute inset-0 [transform:rotateY(180deg)] backface-hidden bg-[#044BB2] text-white flex items-center justify-center p-5">
                 <p className="text-[2vw] text-start">
+                  Timing ~ 6:00 PM <br /><br />
                   An elegant evening of dinner, speeches, and dancing. <br />
                   • Grand entrance <br />
                   • Dinner reception <br />

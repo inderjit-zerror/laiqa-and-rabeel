@@ -240,7 +240,7 @@ export default function Home() {
       <Countdown />
 
       <div className="w-full h-screen overflow-hidden"> 
-        <img src={`/assets/itnBG.png`} className="w-full h-full object-center object-cover" alt="IMG" />
+        <img src={`/lastP.png`} className="w-full h-full object-center object-cover" alt="IMG" />
       </div>
 
       {/* <LoveStory /> */}
