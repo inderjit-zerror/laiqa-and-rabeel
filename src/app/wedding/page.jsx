@@ -308,7 +308,9 @@ const page = () => {
             <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
               {/* FRONT */}
               <div className="absolute inset-0 backface-hidden bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
-                <h1 className="text-[3vw] Font_Q COLOR_TEXT_RED">Wedding</h1>
+                <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
+                  Mehndi Lunch
+                </h1>
 
                 <div className="w-full aspect-2/1">
                   <img
@@ -317,16 +319,14 @@ const page = () => {
                   />
                 </div>
 
-                <p className="text-[3vw] Font_YV COLOR_TEXT_RED">
-                  A wedding is the sacred union of two people...
-                </p>
+                <p className="text-[3vw] Font_YV COLOR_TEXT_RED"> Timing ~ 12:00 PM</p>
               </div>
 
               {/* BACK */}
               <div className="absolute inset-0 [transform:rotateY(180deg)] backface-hidden bg-[#044BB2] text-white flex items-center justify-center p-5">
                 <p className="text-[2vw] text-center">
-                  Make your dream wedding unforgettable with our expert planning
-                  and elegant designs ✨
+                  A vibrant daytime celebration to welcome the wedding weekend,
+                  filled with music, henna, and festive colors.
                 </p>
               </div>
             </div>
@@ -336,7 +336,9 @@ const page = () => {
           <div className="group w-1/4 h-[70%] [perspective:1000px]">
             <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
               <div className="absolute inset-0 backface-hidden bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
-                <h1 className="text-[3vw] Font_Q COLOR_TEXT_RED">Event</h1>
+                <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
+                  Sangeet Dinner
+                </h1>
 
                 <div className="w-full aspect-2/1">
                   <img
@@ -345,15 +347,12 @@ const page = () => {
                   />
                 </div>
 
-                <p className="text-[3vw] Font_YV COLOR_TEXT_RED">
-                  An event refers to the organized occasion...
-                </p>
+                <p className="text-[3vw] Font_YV COLOR_TEXT_RED"> Timing ~ 7:00 PM</p>
               </div>
 
               <div className="absolute inset-0 [transform:rotateY(180deg)] backface-hidden bg-[#044BB2] text-white flex items-center justify-center p-5">
                 <p className="text-[2vw] text-center">
-                  We manage every detail of your event to ensure a seamless and
-                  memorable experience 🎉
+                  An evening of performances, dancing, and celebration.
                 </p>
               </div>
             </div>
@@ -363,8 +362,8 @@ const page = () => {
           <div className="group w-1/4 h-[70%] [perspective:1000px]">
             <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
               <div className="absolute inset-0 backface-hidden bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
-                <h1 className="text-[3vw] Font_Q COLOR_TEXT_RED">
-                  Celebration
+                <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
+                  Nikkah Ceremony
                 </h1>
 
                 <div className="w-full aspect-2/1">
@@ -374,16 +373,11 @@ const page = () => {
                   />
                 </div>
 
-                <p className="text-[14px] Font_YV COLOR_TEXT_RED">
-                  A celebration is the joyful expression...
-                </p>
+                <p className="text-[14px] Font_YV COLOR_TEXT_RED"> Timing ~ 12:00 PM</p>
               </div>
 
               <div className="absolute inset-0 [transform:rotateY(180deg)] backface-hidden bg-[#044BB2] text-white flex items-center justify-center p-5">
-                <p className="text-[2vw] text-center">
-                  Celebrate every moment with joy, music, and unforgettable
-                  memories 💃
-                </p>
+                <p className="text-[2vw] text-center">Our wedding ceremony.</p>
               </div>
             </div>
           </div>
@@ -392,9 +386,7 @@ const page = () => {
           <div className="group w-1/4 h-[70%] [perspective:1000px]">
             <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
               <div className="absolute inset-0 backface-hidden bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
-                <h1 className="text-[3vw] Font_Q COLOR_TEXT_RED">
-                  Celebration
-                </h1>
+                <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">Reception</h1>
 
                 <div className="w-full aspect-2/1">
                   <img
@@ -403,14 +395,15 @@ const page = () => {
                   />
                 </div>
 
-                <p className="text-[3vw] Font_YV COLOR_TEXT_RED">
-                  A celebration is the joyful expression...
-                </p>
+                <p className="text-[14px] Font_YV COLOR_TEXT_RED">Timing ~ 6:00 PM</p>
               </div>
 
               <div className="absolute inset-0 [transform:rotateY(180deg)] backface-hidden bg-[#044BB2] text-white flex items-center justify-center p-5">
-                <p className="text-[2vw] text-center">
-                  Let’s turn your special moments into lifelong memories 🌟
+                <p className="text-[2vw] text-start">
+                  An elegant evening of dinner, speeches, and dancing. <br />
+                  • Grand entrance <br />
+                  • Dinner reception <br />
+                  • Celebration into the night <br />
                 </p>
               </div>
             </div>
