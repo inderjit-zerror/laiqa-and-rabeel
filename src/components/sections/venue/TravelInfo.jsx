@@ -62,7 +62,7 @@ const TravelInfo = () => {
     <section className="relative COLOR_BG_RED py-32 px-6 overflow-hidden ">
 
       {/* Background oversized text */}
-      <div className="absolute inset-0 flex flex-col justify-center gap-10 COLOR_TEXT_CREAM opacity-5 pointer-events-none">
+      <div className="absolute inset-0 flex flex-col justify-center gap-10 text-[#044BB2] opacity-5 pointer-events-none">
 
         {/* ROW 1 */}
         <div className="flex whitespace-nowrap uppercase Font_Q" ref={row1}>
@@ -96,24 +96,24 @@ const TravelInfo = () => {
       {/* Content */}
       <div className="relative max-w-3xl mx-auto text-center flex flex-col justify-center items-center">
 
-        <span className=" uppercase mb-6 COLOR_TEXT_CREAM">
+        <span className=" uppercase mb-6 text-[#044BB2]">
           Travel Information
         </span>
 
-        <div className="Font_Q  mb-10 flex flex-col gap-4 max-sm:gap-1 uppercase COLOR_TEXT_CREAM max-sm:text-white max-sm:uppercase">
+        <div className="Font_Q  mb-10 flex flex-col gap-4 max-sm:gap-1 uppercase text-[#044BB2] max-sm:text-[#044BB2] max-sm:uppercase">
           <h2> Arriving in Marrakech </h2>
         </div>
 
         <div className="space-y-3 max-sm:space-y-4 ">
-          {/* <p className="uppercase Font_YV COLOR_TEXT_CREAM">
+          {/* <p className="uppercase Font_YV text-[#044BB2]">
             Nearest Airport is
           </p> */}
 
-          <span className=" opacity-90 mt-4 Font_YV text-white">
+          <span className=" opacity-90 mt-4 Font_YV text-[#044BB2]">
             Guests can fly into Marrakech Menara Airport (RAK), located about 25 minutes from the hotel
           </span>
 
-          <p className="  Font_YV  text-white mt-5 ">
+          <p className="  Font_YV  text-[#044BB2] mt-5 ">
             Alternatively, guests may fly into Casablanca, which offers more international flight options. From Casablanca, it is either a short domestic flight to Marrakech or approximately a 2-hour car ride to the hotel.
             Transportation details will be shared with confirmed guests.
 

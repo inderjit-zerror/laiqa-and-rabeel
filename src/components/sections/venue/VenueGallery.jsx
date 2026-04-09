@@ -128,7 +128,7 @@ const VenueGallery = () => {
 
 
     return (
-        <div className="w-full h-[60vh] overflow-hidden mb-[10vh] bg-[#D9E5F1] ">
+        <div className="w-full h-[60vh] overflow-hidden mb-[10vh] bg-[#ffffff] ">
             <div
                 ref={sliderRef}
                 className="flex gap-6 h-full cursor-grab active:cursor-grabbing "

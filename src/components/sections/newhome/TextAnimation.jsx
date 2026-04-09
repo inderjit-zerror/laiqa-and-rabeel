@@ -10,16 +10,16 @@ const Words = [
   "dolor",
   "sit",
   "amet",
-  "consectetur",
-  "adipiscing",
+  "conse ctetur",
+  "adipi scing",
   "elit",
   "sed",
   "do",
   "eiusmod",
   "tempor",
-  "incididunt",
+  "incid idunt",
   "ut",
-  "labore",
+  "lab ore",
   "et",
   "dolore",
   "magna",
@@ -31,8 +31,8 @@ const Words = [
   "veniam",
   "quis",
   "nostrud",
-  "exercitation",
-  "ullamco",
+  "exercit ation",
+  "ulla mco",
   "laboris",
   "nisi",
 ];
@@ -58,17 +58,16 @@ const TextAnimation = () => {
 
   return (
     <div className=" TextAnimaterContainer w-full h-[300vh] relative COLOR_BG_CREAM z-80">
-      <div className=" w-full h-screen sticky top-0 left-0 p-20 flex  justify-center items-center ">
-      
-        <div className="w-2/10  h-fit absolute bottom-[-5%] right-[-5%] ">
-        <img
-          src={`/assets/s01.png`}
-          alt="IMG"
-          className="w-full  object-center object-cover "
-        />
-      </div>
+      <div className=" w-full h-screen sticky top-0 left-0 p-20 flex  justify-center items-center bg-white ">
+        {/* <div className="w-2/10  h-fit absolute bottom-[-5%] right-[-5%] ">
+          <img
+            src={`/assets/s01.png`}
+            alt="IMG"
+            className="w-full  object-center object-cover "
+          />
+        </div> */}
 
-        <div className=" text-[3.5vw] leading-[3.5vw] flex px-[2vw] flex-wrap justify-center items-center gap-4 Font_YV  ">
+        <div className=" text-[2vw] leading-[1.5vw] flex px-[2vw] flex-wrap w-[50%]  justify-end  absolute top-[10%] right-0 text-justify items-center gap-4 Font_YV  ">
           {Words.map((item, index) => {
             const formatted =
               item.charAt(0).toUpperCase() + item.slice(1).toLowerCase();
@@ -86,12 +85,20 @@ const TextAnimation = () => {
           })}
         </div>
 
-        <div className='w-fit h-screen bottom-[0%] left-[-20%] absolute z-90 opacity-50  rotate-z-10'>
-        <img src={`/assets/s22.png`} alt="IMF" className=' h-full object-center object-cover' />
-
+        <div className="w-fit h-[90vh] bottom-[0%] left-[-0%] absolute z-90 ">
+          <img
+            src={`/assets/s22.png`}
+            alt="IMF"
+            className=" h-full object-center object-cover"
+          />
         </div>
-
-       
+        <div className="w-fit h-[50vh] bottom-[2%] right-[10%] absolute z-90 ">
+          <img
+            src={`/assets/s20.png`}
+            alt="IMF"
+            className=" h-full object-center object-cover"
+          />
+        </div>
       </div>
     </div>
   );

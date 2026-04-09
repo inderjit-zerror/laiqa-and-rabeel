@@ -139,6 +139,16 @@ const NavBar = () => {
           </div>
         </Link>
 
+        <Link href={`/home2`}>
+          <div
+            className={`w-fit h-fit ${pathname === "/home2" && " border-b border-[#044BB2]"}  flex flex-col group COLOR_TEXT_RED relative  select-none cursor-pointer`}
+          >
+            {" "}
+            <div className=" absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out COLOR_BG_RED"></div>{" "}
+            Home2
+          </div>
+        </Link>
+
         <Link href={`/venue`}>
           <div
             className={`w-fit h-fit ${pathname === "/venue" && " border-b border-[#044BB2]"}  flex flex-col group relative COLOR_TEXT_RED  select-none cursor-pointer`}
@@ -184,7 +194,7 @@ const NavBar = () => {
 
         <Link target="_blank" rel="noopener noreferrer" href={``}>
           <div className="w-fit h-[46px] RVSPBTN max-md:hidden select-none cursor-pointer flex flex-col justify-center items-center px-[17px] py-[6px] text-[16px] text-white COLOR_BG_RED opacity-80 group ">
-            <div className="w-fit ">
+            <div className="w-fit text-[#1a6bbb] ">
               RSVP
               <div className="w-[0px] group-hover:w-full transition-all duration-150 ease-in h-[1px] bg-[white]"></div>
             </div>
@@ -195,7 +205,7 @@ const NavBar = () => {
       <div
         onClick={clickCheck}
         htmlFor="check"
-        className=" absolute top-1 right-8 lg:hidden  "
+        className=" absolute top-1 right-8 lg:hidden "
       >
         {isNavOpen == false ? (
           <>

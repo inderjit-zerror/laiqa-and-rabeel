@@ -58,7 +58,7 @@ const HeroSectionVenue = () => {
         ref={imageRef}
         // src={`/imgs/RafflesUdaipur.webp`}
         src={`/imgs/venue/wp.png`}
-        className='w-full h-full object-cover object-center Igm opacity-0 '
+        className='w-full h-full object-cover object-top Igm  opacity-0 '
         width={1000}
         height={1000}
         alt='IMG'
@@ -68,7 +68,7 @@ const HeroSectionVenue = () => {
 
       <div className='w-1/2 absolute top-[12%] left-1/2  justify-center items-center -translate-x-1/2 flex flex-col gap-4'>
         {/* <p className=' uppercase Font_YV  COLOR_TEXT_RED text-[6rem] leading-[6rem] max-sm:text-[15vw] max-sm:leading-[16vw] ' >THE wedding Venue</p> */}
-        <h1 className=' uppercase Font_Q COLOR_TEXT_RED text-[5.5rem] leading-[7rem] max-sm:text-[15vw] max-sm:leading-[16vw] mt-[2vh] overflow-hidden ' ><span className='flex WEDMAIMTT2 translate-y-[100%]'> Oberoi Marrakech </span></h1>
+        <h1 className=' uppercase Font_Q COLOR_TEXT_RED text-[5.5rem] leading-[7rem] max-sm:text-[15vw] max-sm:leading-[16vw] mt-[2vh] overflow-hidden ' ><span className='flex WEDMAIMTT2 translate-y-[100%]'> Official Hotel </span></h1>
       </div>
     </div>
   )

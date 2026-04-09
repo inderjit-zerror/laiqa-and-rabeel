@@ -34,9 +34,9 @@ const WeddingVenue = () => {
       <div className=" text-center COLOR_TEXT_RED  ">
 
         {/* Top label */}
-        <p className="tracking-tight uppercase mb-6 Font_YV WeddingText max-sm:font-semibold">
+        {/* <p className="tracking-tight uppercase mb-6 Font_YV WeddingText max-sm:font-semibold">
           Official Wedding Hotel
-        </p>
+        </p> */}
 
         {/* Main heading */}
         <h5 className="Font_Q  leading-none text-[7vw] max-sm:text-[10vw] tracking-wide mb-10 WeddingText uppercase">

@@ -1,4 +1,5 @@
  "use client";
+import Countdown from "@/components/sections/home/Countdown";
 import Lamp from "@/components/sections/newhome/Lamp";
 import LoveStory from "@/components/sections/newhome/LoveStory";
 import TextAnimation from "@/components/sections/newhome/TextAnimation";
@@ -98,9 +99,21 @@ export default function Home() {
     });
   }, []);
 
-  useEffect(() => {
+ useEffect(() => {
     const lamps = gsap.utils.toArray(".DemoAllItem");
     const floatAnims = [];
+    lamps.forEach((lamp, i) => {
+      gsap.fromTo(
+        lamp,
+        { x: "-100vw" }, // start from left
+        {
+          x: "100vw", // move to right
+          duration: 10, // ✅ fixed 10 seconds
+          ease: "none",
+          repeat: -1,
+        },
+      );
+    });
 
     lamps.forEach((lamp, i) => {
       const anim = gsap.to(lamp, {
@@ -170,7 +183,7 @@ export default function Home() {
               className="w-full h-full BGBLD  scale-[1.2] object-top object-center"
             />
 
-            <div className="pointer-events-none absolute bottom-[3%] left-0 w-full h-[30vh] bg-gradient-to-b from-transparent via-[#D9E5F1]/60 to-[#D9E5F1] z-40" />
+            <div className="pointer-events-none absolute bottom-[3%] left-0 w-full h-[30vh] bg-gradient-to-b from-transparent via-[#ffffff]/60 to-[#ffffff] z-40" />
             <div className=" absolute bottom-2 left-0 w-full h-fit flex justify-center items-center Font_Q COLOR_TEXT_RED text-[8vw] z-50 NAMEWED tracking-tighter">
               LAIQA & RABEEL
             </div>
@@ -224,8 +237,13 @@ export default function Home() {
       </div>
 
       <TextAnimation />
+      <Countdown />
 
-      <LoveStory />
+      <div className="w-full h-screen overflow-hidden"> 
+        <img src={`/assets/itnBG.png`} className="w-full h-full object-center object-cover" alt="IMG" />
+      </div>
+
+      {/* <LoveStory /> */}
     </>
   );
 };

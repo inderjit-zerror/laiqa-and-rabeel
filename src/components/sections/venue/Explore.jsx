@@ -68,13 +68,13 @@ const Explore = () => {
           />
         </div>
 
-        <div className="w-2/10  h-fit fixed top-[80%] left-[75%] scale-x-[-1]  ">
+        {/* <div className="w-2/10  h-fit fixed top-[80%] left-[75%] scale-x-[-1]  ">
           <img
             src={`/assets/s23.png`}
             alt="IMG"
             className="w-full  object-center object-cover "
           />
-        </div>
+        </div> */}
 
         <div
           ref={scrollContainer}

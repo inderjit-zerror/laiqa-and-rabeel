@@ -37,10 +37,12 @@
 
 
 body {
+  width: 100vw;
+  overflow-x: hidden;
   position: relative;
   font-family: Helvetica;
   scroll-behavior: smooth;
-  background-color: #D9E5F1;
+  background-color: #ffffff;
 }
 
 
@@ -104,7 +106,7 @@ p {
 
 /* OLD color ----------------------------- */
 .COLOR_BG_RED{
-  background-color: #044BB2;
+  background-color: #ffffff;
 }
 .COLOR_BG_Noise::after{
       z-index: 2;
@@ -141,13 +143,13 @@ p {
   background-color: #B97241;
 }
 .COLOR_TEXT_CREAM{
-  color: #F9F5ED;
+  color: #ffffff;
 }
 /* .COLOR_BG_CREAM{
   background-color: #F9F5ED;
 } */
 .COLOR_BG_CREAM{
-  background-color: #D9E5F1;
+  background-color: #ffffff;
 }
 
 
@@ -238,7 +240,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
   height: 25px;
   position: relative;
   color: var(--clr);
-  background-color: #EFDFCB;
+  background-color: #ffffff;
   border-radius: 50%;
   color: #551301;
   display: grid;

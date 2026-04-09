@@ -154,7 +154,7 @@ const Countdown = () => {
     }, [])
 
     return (
-        <section className="pb-[30vh] max-sm:pb-25 pt-42 max-sm:pt-20 w-full h-[40vh] select-none COLOR_BG_CREAM flex flex-col justify-center items-center text-center">
+        <section className="pb-[30vh] max-sm:pb-25 pt-42 max-sm:pt-20 w-full  h-[50vh] select-none mt-[15vh] flex flex-col justify-center items-center text-center">
             <h2 className="Font_Q tracking-widest uppercase COLOR_TEXT_RED mb-20 max-sm:mb-10 CDD1">
                 Until the wedding
             </h2>
