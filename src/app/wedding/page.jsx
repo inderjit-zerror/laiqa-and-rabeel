@@ -167,7 +167,7 @@ const page = () => {
       <div className="w-full min-h-screen relative MMAINDDiv overflow-x-hidden ">
         <div className="w-full h-[101vh] relative z-[-90] MMAINDDiv2">
           {/* TEXT */}
-          <div className="w-full h-fit flex flex-col justify-center text-center items-center pt-[15vh]">
+          <div className="w-full h-fit flex flex-col justify-center text-center items-center pt-[18vh]">
             <div className="COLOR_TEXT_RED Font_Q text-[6vw] w-fit h-fit leading-[6vw] tracking-tight overflow-hidden">
               <span className="flex MainTI">Wedding</span>
             </div>
@@ -176,32 +176,52 @@ const page = () => {
             </div>
           </div>
 
-          <div className="w-full h-full absolute top-0 left-0  z-[-1] overflow-hidden ">
+          <div className="w-full h-full absolute top-[15%] left-0  z-[-1] overflo-x-hidden ">
             <img
               src={`/assets/itnBG.png`}
               alt="Img"
-              className="w-full h-full object-top object-cover scale-[1.1] stickyAnimation2"
+              className="w-full h-full object-cover object-top scale-[1.3] stickyAnimation2"
             />
           </div>
         </div>
 
         {/* Next-2-Sectiom */}
-        <div className="w-full Next-2-Sectiom  h-screen bg-white flex z-100 relative">
-          {/* Left */}
-          <div className="w-[50%] h-fit">
-            {/* Text */}
-            <div className="w-full h-fit flex Font_Q pl-10 pt-10 flex-col">
-              <div className="text-[2.5vw] leading-[2.5vw] text-justify text-[#044BB2] w-full  ">
-                Join us in Marrakech from November 14–16, 2026 for a weekend of celebration. Festivities begin with a Mehndi Lunch and Sangeet Dinner on Saturday, followed by our Nikkah Ceremony and an elegant Black Tie Reception on Sunday. We will conclude with a relaxed Closing Brunch on Monday. All events will take place at The Oberoi Marrakech unless otherwise noted.
-              </div>
-            </div>
+        <div className="w-full Next-2-Sectiom  flex flex-col gap-10 h-screen bg-white  z-100 relative py-[40px]">
+          <div className=" absolute right-0 bottom-0 w-[20%] h-fit p-[40px]">
+            <img
+              src={`/assets/s42.png`}
+              alt="IMG"
+              className="w-full object-cover object-center"
+            />
           </div>
 
-          <div className=" h-full w-[50%]  aspect-[3.5/2] z-[-1] flex justify-end items-center px-20">
+          <div className=" absolute right-0 top-[10%] w-[20%] h-fit p-[40px]">
             <img
-              src={`/assets/s30.png`}
+              src={`/assets/s03.png`}
               alt="IMG"
-              className="h-full  object-center object-cover "
+              className="w-full object-cover scale-[0.8] object-center"
+            />
+          </div>
+
+          <div className="w-[80%] h-[90%] bg-[#044BB2] mt-auto flex justify-center items-center relative overflow-hidden">
+            <p className="Font_YV text-[white] w-[40%]  text-justify z-50">
+              Join us in Marrakech from November 14–16, 2026 for a weekend of
+              celebration. Festivities begin with a Mehndi Lunch and Sangeet
+              Dinner on Saturday, followed by our Nikkah Ceremony and an elegant
+              Black Tie Reception on Sunday. We will conclude with a relaxed
+              Closing Brunch on Monday. All events will take place at The Oberoi
+              Marrakech unless otherwise noted.
+              <br /> <br />
+              We’re so excited to celebrate our wedding with you in the magical
+              city of Marrakech. Join us for a beautiful weekend filled with
+              tradition, joy, and meaningful moments as we begin this new
+              chapter together.
+            </p>
+
+            <img
+              src={`/home/SandBG.jpg`}
+              alt="img"
+              className=" absolute w-full z-[10] h-full object-cover opacity-25 object-center top-0 left-0"
             />
           </div>
         </div>
@@ -209,123 +229,32 @@ const page = () => {
         {/* Next-4-Sectiom */}
         <div className="w-full h-screen COLOR_BG_RED relative z-100 flex p-20 gap-10 px-10 justify-center items-center ">
           {/* T1 */}
-          {/* <div className="w-1/4 aspect-4/5 py-10 px-5 relative border border-[#044BB2]  origin-bottom   bg-[#ffffff] gap-10  flex flex-col justify-between">
-            <div className="w-full h-fit flex flex-col">
-              <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
-                Wedding
-              </h1>
-            </div>
-
-            <div className="w-full aspect-2/1  flex justify-center relative item  ">
-              <img
-                src={`/assets/s10.png`}
-                alt="IMg"
-                className="w-full h-full object-cover object-center"
-              />
-            </div>
-
-            <div className="w-full h-fit flex flex-col">
-              <p className="text-[3vw] leading-[3vw] Font_YV COLOR_TEXT_RED">
-                A wedding is the sacred union of two people, symbolizing love, commitment, and the beginning of a lifelong journey together.{" "}
-              </p>
-            </div>
-          </div> */}
-
-          {/* T2 */}
-          {/* <div className="w-1/4 aspect-4/5 py-10 px-5  relative origin-bottom border border-[#044BB2]   bg-[#ffffff] gap-10 flex flex-col justify-between">
-            <div className="w-full h-fit flex flex-col">
-              <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
-                Event
-              </h1>
-            </div>
-
-            <div className="w-full aspect-2/1  flex justify-center relative item  ">
-              <img
-                src={`/assets/s41.png`}
-                alt="IMg"
-                className="w-full h-full object-cover object-center"
-              />
-            </div>
-
-            <div className="w-full h-fit flex flex-col">
-              <p className="text-[3vw] leading-[3vw] Font_YV COLOR_TEXT_RED">
-                An event refers to the organized occasion where all wedding activities take place, including the ceremony and reception.{" "}
-              </p>
-            </div>
-          </div> */}
-
-          {/* T3 */}
-          {/* <div className="w-1/4 aspect-4/5 py-10 px-5  relative origin-bottom border border-[#044BB2]  bg-[#ffffff] gap-10 flex flex-col justify-between">
-            <div className="w-full h-fit flex flex-col">
-              <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
-                Celebration
-              </h1>
-            </div>
-
-            <div className="w-full aspect-2/1  flex justify-center relative item  ">
-              <img
-                src={`/assets/s20.png`}
-                alt="IMg"
-                className="w-full h-full object-cover object-center"
-              />
-            </div>
-
-            <div className="w-full h-fit flex flex-col">
-              <p className="text-[3vw] leading-[3vw] Font_YV COLOR_TEXT_RED">
-               A celebration is the joyful expression of happiness during the wedding, filled with music, dancing, laughter, and togetherness.{" "}
-              </p>
-            </div>
-          </div> */}
-
-          {/* T4 */}
-          {/* <div className="w-1/4 aspect-4/5 py-10 px-5  relative origin-bottom border border-[#044BB2]  bg-[#ffffff] gap-10 flex flex-col justify-between">
-            <div className="w-full h-fit flex flex-col">
-              <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
-                Celebration
-              </h1>
-            </div>
-
-            <div className="w-full aspect-2/1  flex justify-center relative item  ">
-              <img
-                src={`/assets/s36.png`}
-                alt="IMg"
-                className="w-full h-full object-cover object-center"
-              />
-            </div>
-
-            <div className="w-full h-fit flex flex-col">
-              <p className="text-[3vw] leading-[3vw] Font_YV COLOR_TEXT_RED">
-                A celebration is the joyful expression of happiness during the wedding, filled with music, dancing, laughter, and togetherness.{" "}
-              </p>
-            </div>
-          </div> */}
-
-          {/* T1 */}
           <div className="group w-1/4 h-[70%] [perspective:1000px]">
             <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
               {/* FRONT */}
               <div className="absolute inset-0 backface-hidden bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
-                <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
-                  Mehndi Lunch
-                </h1>
-
-                <div className="w-full aspect-2/1">
-                  <img
-                    src="/assets/s10.png"
-                    className="w-full h-full object-cover"
-                  />
+                <div className="w-full h-fit">
+                  <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
+                    Mehndi Lunch
+                  </h1>
+                  <p className="text-[3vw] leading-[3vw] Font_YV COLOR_TEXT_RED">
+                    Saturday, November 14
+                  </p>
                 </div>
 
-                <p className="text-[3vw] Font_YV COLOR_TEXT_RED">  Saturday, November 14</p>
+                <div className="w-full aspect-2/1  flex justify-end items-end">
+                  <img src="/assets/s10.png" className="w-[70%] object-cover" />
+                </div>
+
                 {/* <p className="text-[3vw] Font_YV COLOR_TEXT_RED">  </p> */}
               </div>
 
               {/* BACK */}
               <div className="absolute inset-0 [transform:rotateY(180deg)] backface-hidden bg-[#044BB2] text-white flex items-center justify-center p-5">
-                <p className="text-[2vw] text-center">
-                  Timing ~ 12:00 PM <br /><br />
-                  A vibrant daytime celebration to welcome the wedding weekend,
-                  filled with music, henna, and festive colors.
+                <p className="text-[2vw] text-center Font_YV">
+                  Timing ~ 12:00 PM <br />
+                  <br />A vibrant daytime celebration to welcome the wedding
+                  weekend, filled with music, henna, and festive colors.
                 </p>
               </div>
             </div>
@@ -335,24 +264,26 @@ const page = () => {
           <div className="group w-1/4 h-[70%] [perspective:1000px]">
             <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
               <div className="absolute inset-0 backface-hidden bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
-                <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
-                  Sangeet Dinner
-                </h1>
-
-                <div className="w-full aspect-2/1">
-                  <img
-                    src="/assets/s41.png"
-                    className="w-full h-full object-cover"
-                  />
+                <div className="w-full h-fit">
+                  <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
+                    Sangeet Dinner
+                  </h1>
+                  <p className="text-[3vw] Font_YV COLOR_TEXT_RED">
+                    Saturday, November 14
+                  </p>
                 </div>
 
-                <p className="text-[3vw] Font_YV COLOR_TEXT_RED"> Saturday, November 14</p>
+                <div className="w-full aspect-2/1  flex justify-end items-end">
+                  <img src="/assets/s41.png" className="w-[70%] object-cover" />
+                </div>
+
                 {/* <p className="text-[3vw] Font_YV COLOR_TEXT_RED"> </p> */}
               </div>
 
               <div className="absolute inset-0 [transform:rotateY(180deg)] backface-hidden bg-[#044BB2] text-white flex items-center justify-center p-5">
-                <p className="text-[2vw] text-center">
-                  Timing ~ 7:00 PM <br /><br />
+                <p className="text-[2vw] text-center Font_YV">
+                  Timing ~ 7:00 PM <br />
+                  <br />
                   An evening of performances, dancing, and celebration.
                 </p>
               </div>
@@ -363,24 +294,29 @@ const page = () => {
           <div className="group w-1/4 h-[70%] [perspective:1000px]">
             <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
               <div className="absolute inset-0 backface-hidden bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
-                <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
-                  Nikkah Ceremony
-                </h1>
-
-                <div className="w-full aspect-2/1">
-                  <img
-                    src="/assets/s20.png"
-                    className="w-full h-full object-cover"
-                  />
+                <div className="w-full h-fit">
+                  <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
+                    Nikkah Ceremony
+                  </h1>
+                  <p className="text-[14px] Font_YV COLOR_TEXT_RED">
+                    {" "}
+                    Sunday, November 15
+                  </p>
                 </div>
 
-                <p className="text-[14px] Font_YV COLOR_TEXT_RED"> Sunday, November 15</p>
+                <div className="w-full aspect-2/1  flex justify-end items-end">
+                  <img src="/assets/s20.png" className="w-[70%] object-cover" />
+                </div>
+
                 {/* <p className="text-[14px] Font_YV COLOR_TEXT_RED"> </p> */}
               </div>
 
               <div className="absolute inset-0 [transform:rotateY(180deg)] backface-hidden bg-[#044BB2] text-white flex items-center justify-center p-5">
-                
-                <p className="text-[2vw] text-center"> Timing ~ 12:00 PM <br /> <br />Our wedding ceremony.</p>
+                <p className="text-[2vw] text-center Font_YV">
+                  {" "}
+                  Timing ~ 12:00 PM <br /> <br />
+                  Our wedding ceremony.
+                </p>
               </div>
             </div>
           </div>
@@ -389,22 +325,26 @@ const page = () => {
           <div className="group w-1/4 h-[70%] [perspective:1000px]">
             <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
               <div className="absolute inset-0 backface-hidden bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
-                <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">Reception</h1>
-
-                <div className="w-full aspect-2/1">
-                  <img
-                    src="/assets/s36.png"
-                    className="w-full h-full object-cover"
-                  />
+                <div className="w-full h-fit">
+                  <h1 className="text-[3vw] leading-[3vw] Font_Q COLOR_TEXT_RED">
+                    Reception
+                  </h1>
+                  <p className="text-[14px] Font_YV COLOR_TEXT_RED">
+                    Sunday, November 15
+                  </p>
                 </div>
 
-                <p className="text-[14px] Font_YV COLOR_TEXT_RED">Sunday, November 15</p>
+                <div className="w-full aspect-2/1  flex justify-end items-end">
+                  <img src="/assets/s36.png" className="w-[70%] object-cover" />
+                </div>
+
                 {/* <p className="text-[14px] Font_YV COLOR_TEXT_RED"></p> */}
               </div>
 
               <div className="absolute inset-0 [transform:rotateY(180deg)] backface-hidden bg-[#044BB2] text-white flex items-center justify-center p-5">
-                <p className="text-[2vw] text-start">
-                  Timing ~ 6:00 PM <br /><br />
+                <p className="text-[2vw] text-start Font_YV">
+                  Timing ~ 6:00 PM <br />
+                  <br />
                   An elegant evening of dinner, speeches, and dancing. <br />
                   • Grand entrance <br />
                   • Dinner reception <br />

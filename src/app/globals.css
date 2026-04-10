@@ -1,9 +1,6 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: Font_MLD;
-  src: url('/fonts/MonsieurLaDoulaise-Regular.ttf');
-}
+
 
 @font-face {
   font-family: Font_Q;
@@ -17,7 +14,8 @@
 
 @font-face {
   font-family: Font_YV;
-  src: url('/fonts/final/Open-Sans-Condensed.woff2');
+  src: url('/fonts/Ysabeau-VariableFont_wght.ttf');
+  
 }
 
 /* --------------------------------------------- */
@@ -28,7 +26,7 @@
 
 @font-face {
   font-family: Font_YV_new;
-  src: url('/fonts/final/new/Manrope-VariableFont_wght.ttf');
+  src: url('/fonts/Ysabeau-VariableFont_wght.ttf');
 }
 @font-face {
   font-family:Lamour;

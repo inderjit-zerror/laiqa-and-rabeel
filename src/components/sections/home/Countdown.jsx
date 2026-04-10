@@ -23,8 +23,6 @@
 //         })
 //     }, [])
 
-
-
 //     // 👉 SET YOUR FINAL DATE HERE
 //     const targetDate = new Date('2026-03-25T00:00:00')
 
@@ -99,91 +97,101 @@
 
 // export default Countdown
 
+"use client";
 
+import { useEffect, useState } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 
-
-
-
-'use client'
-
-import { useEffect, useState } from 'react'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { useGSAP } from '@gsap/react'
-
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 const Countdown = () => {
+  const targetDate = new Date("2026-11-14T00:00:00");
 
+  const calculateTimeLeft = () => {
+    const now = new Date();
+    const difference = targetDate - now;
 
-    const targetDate = new Date('2026-11-14T00:00:00')
-
-    const calculateTimeLeft = () => {
-        const now = new Date()
-        const difference = targetDate - now
-
-        if (difference <= 0) {
-            return { days: '00', hours: '00', minutes: '00', seconds: '00' }
-        }
-
-        return {
-            days: String(Math.floor(difference / (1000 * 60 * 60 * 24))).padStart(2, '0'),
-            hours: String(Math.floor((difference / (1000 * 60 * 60)) % 24)).padStart(2, '0'),
-            minutes: String(Math.floor((difference / (1000 * 60)) % 60)).padStart(2, '0'),
-            seconds: String(Math.floor((difference / 1000) % 60)).padStart(2, '0'),
-        }
+    if (difference <= 0) {
+      return { days: "00", hours: "00", minutes: "00", seconds: "00" };
     }
 
-    // 👇 IMPORTANT: stable initial state
-    const [timeLeft, setTimeLeft] = useState({
-        days: '00',
-        hours: '00',
-        minutes: '00',
-        seconds: '00',
-    })
+    return {
+      days: String(Math.floor(difference / (1000 * 60 * 60 * 24))).padStart(
+        2,
+        "0",
+      ),
+      hours: String(Math.floor((difference / (1000 * 60 * 60)) % 24)).padStart(
+        2,
+        "0",
+      ),
+      minutes: String(Math.floor((difference / (1000 * 60)) % 60)).padStart(
+        2,
+        "0",
+      ),
+      seconds: String(Math.floor((difference / 1000) % 60)).padStart(2, "0"),
+    };
+  };
 
-    useEffect(() => {
-        // run only on client
-        setTimeLeft(calculateTimeLeft())
+  // 👇 IMPORTANT: stable initial state
+  const [timeLeft, setTimeLeft] = useState({
+    days: "00",
+    hours: "00",
+    minutes: "00",
+    seconds: "00",
+  });
 
-        const timer = setInterval(() => {
-            setTimeLeft(calculateTimeLeft())
-        }, 1000)
+  useEffect(() => {
+    // run only on client
+    setTimeLeft(calculateTimeLeft());
 
-        return () => clearInterval(timer)
-    }, [])
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
 
-    return (
-        <section className="pb-[30vh] max-sm:pb-25 pt-42 max-sm:pt-20 w-full  h-[50vh] select-none mt-[15vh] flex flex-col justify-center items-center text-center">
-            <h2 className="Font_Q tracking-widest uppercase COLOR_TEXT_RED mb-20 max-sm:mb-10 CDD1">
-                Until the wedding
-            </h2>
+    return () => clearInterval(timer);
+  }, []);
 
-            <div className="w-full h-fit flex justify-center gap-10 max-sm:gap-1 COLOR_TEXT_RED CDD1">
-                {[
-                    { label: 'Days', value: timeLeft.days },
-                    { label: 'Hours', value: timeLeft.hours },
-                    { label: 'Minutes', value: timeLeft.minutes },
-                    { label: 'Seconds', value: timeLeft.seconds },
-                ].map((item, index) => (
-                    <div key={index} className="flex items-center">
-                        <div className="text-center">
-                            <div className="text-[6vw] leading-[6vw] max-sm:text-[2.5rem] max-sm:leading-[2.5rem] Font_Q font-light tracking-wide">
-                                {item.value}
-                            </div>
-                            <div className="mt-2 text-[1rem] max-sm:text-[0.7rem] max-sm:leading-[0.7rem] Font_YV font-semibold tracking-widest uppercase">
-                                {item.label}
-                            </div>
-                        </div>
+  return (
+    <>
+      <div className="w-full h-[40vh] flex justify-center items-end">
+        <div className="w-[2px] h-[80%] bg-[#044BB2]"></div>
+      </div>
+      {/* ================================================================ */}
+      <section className="pb-[30vh] max-sm:pb-25 pt-42 max-sm:pt-20 w-full  h-[50vh] select-none mt-[15vh] flex flex-col justify-center items-center text-center">
+        <h2 className="Font_Q tracking-widest uppercase COLOR_TEXT_RED mb-20 max-sm:mb-10 CDD1">
+          Until the wedding
+        </h2>
 
-                        {index !== 3 && (
-                            <div className="text-[5vw] max-sm:text-[2rem] font-serif ml-8 max-sm:mx-3">:</div>
-                        )}
-                    </div>
-                ))}
+        <div className="w-full h-fit flex justify-center gap-10 max-sm:gap-1 COLOR_TEXT_RED CDD1">
+          {[
+            { label: "Days", value: timeLeft.days },
+            { label: "Hours", value: timeLeft.hours },
+            { label: "Minutes", value: timeLeft.minutes },
+            { label: "Seconds", value: timeLeft.seconds },
+          ].map((item, index) => (
+            <div key={index} className="flex items-center">
+              <div className="text-center">
+                <div className="text-[6vw] leading-[6vw] max-sm:text-[2.5rem] max-sm:leading-[2.5rem] Font_Q font-light tracking-wide">
+                  {item.value}
+                </div>
+                <div className="mt-2 text-[1rem] max-sm:text-[0.7rem] max-sm:leading-[0.7rem] Font_YV font-semibold tracking-widest uppercase">
+                  {item.label}
+                </div>
+              </div>
+
+              {index !== 3 && (
+                <div className="text-[5vw] max-sm:text-[2rem] font-serif ml-8 max-sm:mx-3">
+                  :
+                </div>
+              )}
             </div>
-        </section>
-    )
-}
+          ))}
+        </div>
+      </section>
+    </>
+  );
+};
 
-export default Countdown
+export default Countdown;

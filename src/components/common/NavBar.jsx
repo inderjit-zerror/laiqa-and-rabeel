@@ -129,6 +129,17 @@ const NavBar = () => {
     >
       {/* Left */}
       <div className="w-1/3 h-full RVSPBTN items-center max-lg:hidden flex justify-between uppercase text-[14px] COLOR_TEXT_RED ">
+
+       <Link href={`/home2`}>
+          <div
+            className={`w-fit h-fit ${pathname === "/home2" && " border-b border-[#044BB2]"}  flex flex-col group COLOR_TEXT_RED relative  select-none cursor-pointer`}
+          >
+            {" "}
+            <div className=" absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out bg-[#044BB2] "></div>{" "}
+            Home2
+          </div>
+        </Link>
+
         <Link href={`/wedding`}>
           <div
             className={`w-fit h-fit ${pathname === "/wedding" && " border-b border-[#044BB2]"}  flex flex-col group COLOR_TEXT_RED relative  select-none cursor-pointer`}
@@ -139,15 +150,7 @@ const NavBar = () => {
           </div>
         </Link>
 
-        <Link href={`/home2`}>
-          <div
-            className={`w-fit h-fit ${pathname === "/home2" && " border-b border-[#044BB2]"}  flex flex-col group COLOR_TEXT_RED relative  select-none cursor-pointer`}
-          >
-            {" "}
-            <div className=" absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out bg-[#044BB2] "></div>{" "}
-            Home2
-          </div>
-        </Link>
+       
 
         <Link href={`/venue`}>
           <div

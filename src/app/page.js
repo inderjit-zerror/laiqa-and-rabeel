@@ -87,20 +87,35 @@ export default function Home() {
       },
       "a1",
     );
-  }, []);
 
-  //   Pre-animation
-  useEffect(() => {
-    const Pre = gsap.timeline();
+
+
+
+    // ==========================================
+     const lImg = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".LastImgCont",
+        start: "top 50%",
+        end: "top top",
+        scrub: true,
+        // markers: true,
+      },
+    })
+    lImg.from(
+      ".LastImgCont",{
+        width:'50%'
+      })
+
+      // =========================================
+       const Pre = gsap.timeline();
     Pre.to(".relMain", {
       opacity: 1,
       duration: 1,
       ease: "none",
     });
-  }, []);
 
- useEffect(() => {
-    const lamps = gsap.utils.toArray(".DemoAllItem");
+    // ==============================================
+      const lamps = gsap.utils.toArray(".DemoAllItem");
     const floatAnims = [];
     lamps.forEach((lamp, i) => {
       gsap.fromTo(
@@ -127,10 +142,9 @@ export default function Home() {
 
       floatAnims.push(anim);
     });
-  }, []);
 
-  useEffect(() => {
-    const handleMouseMove = (e) => {
+    // ===============================
+      const handleMouseMove = (e) => {
       const { innerWidth, innerHeight } = window;
 
       const centerX = innerWidth / 2;
@@ -168,6 +182,9 @@ export default function Home() {
     };
   }, []);
 
+
+
+
     
 
 
@@ -183,7 +200,7 @@ export default function Home() {
               className="w-full h-full BGBLD  scale-[1.2] object-top object-center"
             />
 
-            <div className="pointer-events-none absolute bottom-[3%] left-0 w-full h-[30vh] bg-gradient-to-b from-transparent via-[#ffffff]/60 to-[#ffffff] z-40" />
+            <div className="pointer-events-none absolute bottom-[0%] left-0 w-full h-[30vh] bg-gradient-to-b from-transparent via-[#ffffff]/60 to-[#ffffff] z-40" />
             <div className=" absolute bottom-2 left-0 w-full h-fit flex justify-center items-center Font_Q COLOR_TEXT_RED text-[8vw] z-50 NAMEWED tracking-tighter">
               LAIQA & RABEEL
             </div>
@@ -239,11 +256,10 @@ export default function Home() {
       <TextAnimation />
       <Countdown />
 
-      <div className="w-full h-screen overflow-hidden"> 
+      <div className="w-full h-screen overflow-hidden LastImgCont mx-auto"> 
         <img src={`/lastP.png`} className="w-full h-full object-center object-cover" alt="IMG" />
       </div>
 
-      {/* <LoveStory /> */}
     </>
   );
 };
