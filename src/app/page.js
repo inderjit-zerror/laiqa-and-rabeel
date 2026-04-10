@@ -67,17 +67,17 @@ const Home = () => {
 
   return (
     <>
-      <div className="w-full h-[svh] relative relMain opacity-0 overflow-hidden ">
-        <div className="w-full h-screen sticky flex top-0 left-0 overflow-hidden z-20 stickyAnimation scale-[1.1]">
+      {/* <div className="w-full h-[svh] relative relMain opacity-0 overflow-hidden "> */}
+        <div className="w-full h-screen relative flex top-0 left-0 overflow-hidden z-20 stickyAnimation scale-[1.1]">
           {/* back Building */}
           <div className=" absolute top-0 left-0 w-full h-screen z-10 overflow-hidden">
             <img
               src={`/home/SandBG.jpg`}
               alt="BGIMG"
-              className="w-full h-full BGBLD  scale-[1.2] object-top object-center"
+              className="w-full h-full BGBLD scale-[1.2]  absolute top-[13%] left-0 object-top object-covrer"
             />
 
-            <div className="pointer-events-none absolute bottom-[3%] left-0 w-full h-[30vh] bg-gradient-to-b from-transparent via-[#ffffff]/60 to-[#ffffff] z-40" />
+            <div className="pointer-events-none absolute bottom-[0%] left-0 w-full h-[30vh] bg-gradient-to-b from-transparent via-[#ffffff]/60 to-[#ffffff] z-40" />
             <div className=" absolute bottom-2 left-0 w-full h-fit flex justify-center items-center Font_Q COLOR_TEXT_RED text-[8vw] z-50 NAMEWED tracking-tighter">
               LAIQA & RABEEL
             </div>
@@ -91,7 +91,7 @@ const Home = () => {
               URL={`/gif/bird.gif`}
               name={"DemoAllItem scale-[0.8]  z-10 opacity-80 "}
             />
-            <Lamp
+            {/* <Lamp
               top="14%"
               left="40%"
               translateX="-50%"
@@ -99,10 +99,10 @@ const Home = () => {
               rotation="20deg"
               URL={`/gif/bird.gif`}
               name={"DemoAllItem scale-[0.4]  z-10 opacity-80 "}
-            />
+            /> */}
           </div>
         </div>
-      </div>
+      {/* </div> */}
 
       <TextAnimation />
 

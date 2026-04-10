@@ -159,12 +159,8 @@ const Countdown = () => {
         <div className="w-[2px] h-[80%] bg-[#044BB2]"></div>
       </div>
       {/* ================================================================ */}
-      <section className="pb-[30vh] max-sm:pb-25 pt-42 max-sm:pt-20 w-full  h-[50vh] select-none mt-[15vh] flex flex-col justify-center items-center text-center">
-        <h2 className="Font_Q tracking-widest uppercase COLOR_TEXT_RED mb-20 max-sm:mb-10 CDD1">
-          Until the wedding
-        </h2>
-
-        <div className="w-full h-fit flex justify-center gap-10 max-sm:gap-1 COLOR_TEXT_RED CDD1">
+      <section className="pb-[30vh] max-sm:pb-25 pt-42 max-sm:pt-10 w-full  h-[50vh] select-none mt-[15vh] flex flex-col justify-center items-center text-center">
+        <div className="w-full h-fit flex justify-center gap-10 max-sm:gap-1 COLOR_TEXT_RED CDD1 Font_Q">
           {[
             { label: "Days", value: timeLeft.days },
             { label: "Hours", value: timeLeft.hours },
@@ -173,10 +169,10 @@ const Countdown = () => {
           ].map((item, index) => (
             <div key={index} className="flex items-center">
               <div className="text-center">
-                <div className="text-[6vw] leading-[6vw] max-sm:text-[2.5rem] max-sm:leading-[2.5rem] Font_Q font-light tracking-wide">
+                <div className="text-[6vw]  leading-[6vw] max-sm:text-[2.5rem] max-sm:leading-[2.5rem] Font_YV  tracking-wide">
                   {item.value}
                 </div>
-                <div className="mt-2 text-[1rem] max-sm:text-[0.7rem] max-sm:leading-[0.7rem] Font_YV font-semibold tracking-widest uppercase">
+                <div className="mt-2 text-[1rem] Font_Q max-sm:text-[0.7rem] max-sm:leading-[0.7rem]   tracking-widest uppercase">
                   {item.label}
                 </div>
               </div>
@@ -189,6 +185,10 @@ const Countdown = () => {
             </div>
           ))}
         </div>
+
+        <h2 className="Font_Q tracking-widest uppercase COLOR_TEXT_RED mt-20 max-sm:mt-10 CDD1">
+          Until the wedding
+        </h2>
       </section>
     </>
   );
