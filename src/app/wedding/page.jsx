@@ -158,6 +158,8 @@ const page = () => {
       // });
 
       // update(); // start loop
+
+       
     });
 
     return () => ctx.revert(); // 🔥 cleanup everything
@@ -165,7 +167,7 @@ const page = () => {
   return (
     <>
       <div className="w-full min-h-screen relative MMAINDDiv overflow-x-hidden ">
-        <div className="w-full h-[101vh] relative z-[-90] MMAINDDiv2">
+        <div className="w-full h-[150vh] relative z-[-90] MMAINDDiv2">
           {/* TEXT */}
           <div className="w-full h-fit flex flex-col justify-center text-center items-center pt-[18vh]">
             <div className="COLOR_TEXT_RED Font_Q text-[6vw] w-fit h-fit leading-[6vw] tracking-tight overflow-hidden">
@@ -173,6 +175,14 @@ const page = () => {
             </div>
             <div className="COLOR_TEXT_RED Font_Q text-[6vw] w-fit h-fit leading-[6vw] tracking-tight overflow-hidden">
               <span className="flex MainTI">ITINERARY.</span>
+            </div>
+
+            <div className="COLOR_TEXT_RED Font_Q w-fit h-fit tracking-tight overflow-hidden">
+
+            <p className="Font_YV max-w-[600px] MainTI w-[90%] mx-auto mt-4">Join us in Marrakech from November 14–16, 2026 for a weekend of
+              celebration. Festivities begin with a Mehndi Lunch and Sangeet
+              Dinner on Saturday, followed by our Nikkah Ceremony and an elegant
+              Black Tie Reception on Sunday.</p>
             </div>
           </div>
 
@@ -182,11 +192,14 @@ const page = () => {
               alt="Img"
               className="w-full h-full object-cover object-top scale-[1.3] stickyAnimation2"
             />
+            
           </div>
+             <div className="pointer-events-none absolute bottom-[0%] left-0 w-full h-[30vh] bg-gradient-to-b from-transparent via-[#ffffff]/60 to-[#ffffff] z-100" />
+
         </div>
 
         {/* Next-2-Sectiom */}
-        <div className="w-full Next-2-Sectiom  flex flex-col gap-10 h-screen bg-white  z-100 relative py-[40px]">
+        {/* <div className="w-full Next-2-Sectiom  flex flex-col gap-10 h-screen bg-white  z-100 relative py-[40px]">
           <div className=" absolute right-0 bottom-0 w-[20%] h-fit p-[40px]">
             <img
               src={`/assets/s42.png`}
@@ -205,10 +218,7 @@ const page = () => {
 
           <div className="w-[80%] h-[90%] bg-[#044BB2] mt-auto flex justify-center items-center relative overflow-hidden">
             <p className="Font_YV text-[white] w-[40%]  text-justify z-50">
-              Join us in Marrakech from November 14–16, 2026 for a weekend of
-              celebration. Festivities begin with a Mehndi Lunch and Sangeet
-              Dinner on Saturday, followed by our Nikkah Ceremony and an elegant
-              Black Tie Reception on Sunday. We will conclude with a relaxed
+              We will conclude with a relaxed
               Closing Brunch on Monday. All events will take place at The Oberoi
               Marrakech unless otherwise noted.
               <br /> <br />
@@ -224,9 +234,9 @@ const page = () => {
               className=" absolute w-full z-[10] h-full object-cover opacity-25 object-center top-0 left-0"
             />
           </div>
-        </div>
+        </div> */}
 
-        {/* Next-4-Sectiom */}
+        {/* Next-3-Sectiom */}
         <div className="w-full h-screen COLOR_BG_RED relative z-100 flex p-20 gap-10 px-10 justify-center items-center ">
           {/* T1 */}
           <div className="group w-1/4 h-[70%] [perspective:1000px]">
@@ -355,7 +365,6 @@ const page = () => {
           </div>
         </div>
       </div>
-      {/* <GallerySection /> */}
     </>
   );
 };
