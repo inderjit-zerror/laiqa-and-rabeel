@@ -284,7 +284,7 @@ const page = () => {
                 </div>
 
                 <div className="w-full aspect-2/1  flex justify-end items-end">
-                  <img src="/assets/s41.png" className="w-[70%] object-cover" />
+                  <img src="/assets/s35.png" className="w-[70%] object-cover" />
                 </div>
 
                 {/* <p className="text-[3vw] Font_YV COLOR_TEXT_RED"> </p> */}
@@ -345,7 +345,7 @@ const page = () => {
                 </div>
 
                 <div className="w-full aspect-2/1  flex justify-end items-end">
-                  <img src="/assets/s22.png" className="w-[70%] object-cover" />
+                  <img src="/assets/s19.png" className="w-[70%] object-cover" />
                 </div>
 
                 {/* <p className="text-[14px] Font_YV COLOR_TEXT_RED"></p> */}
