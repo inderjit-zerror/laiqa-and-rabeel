@@ -174,7 +174,7 @@ const page = () => {
               <span className="flex MainTI">Wedding</span>
             </div>
             <div className="COLOR_TEXT_RED Font_Q text-[6vw] w-fit h-fit leading-[6vw] tracking-tight overflow-hidden">
-              <span className="flex MainTI">ITINERARY.</span>
+              <span className="flex MainTI">ITINERARY</span>
             </div>
 
             <div className="COLOR_TEXT_RED Font_Q w-fit h-fit tracking-tight overflow-hidden">
@@ -314,8 +314,8 @@ const page = () => {
                   </p>
                 </div>
 
-                <div className="w-full aspect-2/1  flex justify-end items-end">
-                  <img src="/assets/s20.png" className="w-[70%] object-cover" />
+                <div className="w-full h-fit flex justify-end items-end ">
+                  <img src="/assets/s05.png" className="w-[45%]  object-center object-cover" />
                 </div>
 
                 {/* <p className="text-[14px] Font_YV COLOR_TEXT_RED"> </p> */}
@@ -345,7 +345,7 @@ const page = () => {
                 </div>
 
                 <div className="w-full aspect-2/1  flex justify-end items-end">
-                  <img src="/assets/s36.png" className="w-[70%] object-cover" />
+                  <img src="/assets/s22.png" className="w-[70%] object-cover" />
                 </div>
 
                 {/* <p className="text-[14px] Font_YV COLOR_TEXT_RED"></p> */}
