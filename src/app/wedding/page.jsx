@@ -167,7 +167,7 @@ const page = () => {
   return (
     <>
       <div className="w-full min-h-screen relative MMAINDDiv overflow-x-hidden ">
-        <div className="w-full h-[150vh] relative z-[-90] MMAINDDiv2">
+        <div className="w-full h-[100vh] relative z-[-90] MMAINDDiv2">
           {/* TEXT */}
           <div className="w-full h-fit flex flex-col justify-center text-center items-center pt-[18vh]">
             <div className="COLOR_TEXT_RED Font_Q text-[6vw] w-fit h-fit leading-[6vw] tracking-tight overflow-hidden">
@@ -186,11 +186,12 @@ const page = () => {
             </div>
           </div>
 
-          <div className="w-full h-full absolute top-[15%] left-0  z-[-1] overflo-x-hidden ">
+          <div className="w-full h-full absolute top-[0%] left-0  z-[-1] overflo-x-hidden ">
             <img
-              src={`/assets/itnBG.png`}
+              // src={`/assets/itnBG.png`}
+              src={`/assets/IT2.png`}
               alt="Img"
-              className="w-full h-full object-cover object-top scale-[1.3] stickyAnimation2"
+              className="w-full h-full object-cover object-top  stickyAnimation2"
             />
             
           </div>

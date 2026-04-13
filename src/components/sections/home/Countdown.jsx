@@ -169,10 +169,10 @@ const Countdown = () => {
           ].map((item, index) => (
             <div key={index} className="flex items-center">
               <div className="text-center">
-                <div className="text-[6vw]  leading-[6vw] max-sm:text-[2.5rem] max-sm:leading-[2.5rem] Font_YV  tracking-wide">
+                <div className="text-[6vw]  leading-[6vw] max-sm:text-[2.5rem] max-sm:leading-[2.5rem] Font_Q  tracking-wide">
                   {item.value}
                 </div>
-                <div className="mt-2 text-[1rem] Font_Q max-sm:text-[0.7rem] max-sm:leading-[0.7rem]   tracking-widest uppercase">
+                <div className="mt-2 text-[1rem] Font_YV max-sm:text-[0.7rem] max-sm:leading-[0.7rem]   tracking-widest uppercase">
                   {item.label}
                 </div>
               </div>
