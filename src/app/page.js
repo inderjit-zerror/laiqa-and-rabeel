@@ -74,6 +74,9 @@ const Home = () => {
 
   return (
     <>
+    <div className="w-full h-fit overflow-hidden">
+
+   
       <div className="w-full h-screen relative flex top-0 left-0 overflow-hidden z-20 stickyAnimation scale-[1.1]">
         {/* back Building */}
         <div className=" absolute top-0 left-0 w-full h-screen z-10 overflow-hidden">
@@ -111,6 +114,7 @@ const Home = () => {
           alt="IMG"
         />
       </div>
+       </div>
     </>
   );
 };
