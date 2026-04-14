@@ -212,11 +212,11 @@ const NavBar = () => {
       >
         {isNavOpen == false ? (
           <>
-            <RiMenu4Fill className="text-[2rem]  text-[#952607]" />
+            <RiMenu4Fill className="text-[2rem]  text-[#044BB2]" />
           </>
         ) : (
           <>
-            <RiMenu3Line className="text-[2rem] text-[#952607] " />
+            <RiMenu3Line className="text-[2rem] text-[#044BB2] " />
           </>
         )}
       </div>
@@ -260,7 +260,7 @@ const NavBar = () => {
           >
             {" "}
             <div className=" absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out bg-[white]"></div>
-            Explore Udaipur
+            Explore Marrakech
           </div>
         </Link>
         <Link href={`/faq`}>
