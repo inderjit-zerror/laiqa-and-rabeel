@@ -87,7 +87,7 @@ export default function FAQ() {
       className="min-h-screen max-sm:min-h-fit COLOR_BG_CREAM  flex items-center relative justify-center max-sm:py-[20vw] py-[20vh]"
     >
 
-      <div className="w-full h-screen fixed top-0 left-0 ">
+      {/* <div className="w-full h-screen fixed top-0 left-0 ">
         <img src={`/assets/s30.png`} alt="IMG" className="w-full h-full object-cover object-bottom opacity-5" />
       </div>
 
@@ -97,7 +97,7 @@ export default function FAQ() {
           alt="IMG"
           className="w-full  object-center object-cover "
         />
-      </div>
+      </div> */}
 
       
 

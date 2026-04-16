@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 const TextAnimation = () => {
   return (
     <div className=" w-full h-fit relative p-20 max-md:px-[20px] max-md:py-[0px] flex  justify-center items-center bg-white ">
-      <div className=" flex-wrap w-[30%] max-lg:w-full max-md:mt-[2vh]   max-sm:pt-[5vh] justify-center text-center items-center mt-[10vh] Font_YV COLOR_TEXT_RED">
+      <div className=" flex-wrap w-[90%] max-lg:w-full max-md:mt-[2vh]   max-sm:pt-[5vh] justify-center text-center items-center  Font_YV COLOR_TEXT_RED">
         <span className="Font_YV text-[1.5rem] leading-[1.6rem] max-sm:text-[1rem] max-sm:leading-[1.1rem]  relative  ">
           We’re so excited to celebrate our wedding with you in the magical city
           of Marrakech. Join us for a beautiful weekend filled with tradition,
