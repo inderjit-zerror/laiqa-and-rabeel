@@ -285,7 +285,7 @@ export default function Home() {
       <div className="w-full h-screen overflow-hidden  mx-auto">
         <img
           src={`/lastP.png`}
-          className="w-full h-full object-center object-cover"
+          className="w-full h-full max-sm:object-[33%_0%] object-cover"
           alt="IMG"
         />
       </div>

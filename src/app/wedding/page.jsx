@@ -9,6 +9,8 @@ const isTouchDevice = () =>
   typeof window !== "undefined" && "ontouchstart" in window;
 
 const FlipCard = ({ children, className }) => {
+
+  
   const [revealed, setRevealed] = useState(false);
 
   const handleClick = () => {
@@ -22,6 +24,8 @@ const FlipCard = ({ children, className }) => {
   };
 
   const childArray = React.Children.toArray(children);
+  const isMobile = () =>
+  typeof window !== "undefined" && window.innerWidth < 640; // Tailwind sm
 
   return (
     <div
@@ -38,8 +42,8 @@ const FlipCard = ({ children, className }) => {
             position: "absolute",
             inset: 0,
             transition: "opacity 0.5s ease",
-            opacity: revealed ? 0 : 1,
-            pointerEvents: revealed ? "none" : "auto",
+           opacity: isMobile() ? 1 : revealed ? 0 : 1,
+  pointerEvents: isMobile() ? "auto" : revealed ? "none" : "auto",
           }}
         >
           {childArray[0]}
@@ -51,8 +55,8 @@ const FlipCard = ({ children, className }) => {
             position: "absolute",
             inset: 0,
             transition: "opacity 0.5s ease",
-            opacity: revealed ? 1 : 0,
-            pointerEvents: revealed ? "auto" : "none",
+           opacity: isMobile() ? 1 : revealed ? 0 : 1,
+  pointerEvents: isMobile() ? "auto" : revealed ? "none" : "auto",
           }}
         >
           {childArray[1]}
@@ -83,7 +87,7 @@ const page = () => {
             ease: "power4.out",
             stagger: 0.1,
           },
-          "-=0.8"
+          "-=0.8",
         );
 
       gsap.to(".stickyAnimation2", {
@@ -135,43 +139,46 @@ const page = () => {
 
         {/* Cards Section */}
         <div className="w-full h-screen max-md:h-fit COLOR_BG_RED relative z-100 flex max-md:flex-col p-20 max-md:gap-10 gap-10 px-10 justify-center items-center">
-
           {/* T1 — Mehndi Lunch */}
-          <FlipCard className="w-1/4 h-[70%] max-md:h-fit max-md:w-[90%]">
+          <FlipCard className="w-1/4 h-[70%] max-md:h-fit max-md:w-[90%] max-sm:pointer-events-none">
             {/* FRONT */}
             <div className="absolute inset-0 bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
-              <div className="w-full h-fit">
-                <h1 className="text-[3vw] leading-[3vw] max-md:text-[7vw] max-md:leading-[7vw] Font_Q COLOR_TEXT_RED">
+              <div className="w-full h-fit max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center">
+                <h1 className="text-[3vw] leading-[3vw] max-sm:text-center max-md:text-[7vw] max-md:leading-[7vw] Font_Q COLOR_TEXT_RED">
                   Mehndi Lunch
                 </h1>
-                <span className="text-[14px] leading-[16px] max-md:text-[4vw] Font_YV COLOR_TEXT_RED">
+                <span className="text-[14px] leading-[16px]  max-sm:text-center max-md:text-[4vw] Font_YV COLOR_TEXT_RED">
                   Saturday, November 14
                 </span>
               </div>
-              <div className="w-full aspect-2/1 flex justify-end items-end">
+              <div className="w-full aspect-2/1 flex justify-end max-sm:justify-center items-end">
                 <img src="/assets/s10.png" className="w-[70%] object-cover" />
               </div>
-              <span className="md:hidden text-[10px] Font_YV COLOR_TEXT_RED opacity-40 mt-1">
-                Tap to flip
-              </span>
+
+              <div className="sm:hidden  inset-0  text-[#044BB2] flex items-center justify-center ">
+                <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
+                  Timing ~ 12:00 PM <br />
+                  <br />A vibrant daytime celebration to welcome the wedding
+                  weekend, filled with music, henna, and festive colors.
+                </p>
+              </div>
             </div>
 
             {/* BACK */}
-            <div className="absolute inset-0 bg-[#044BB2] text-white flex items-center justify-center p-5">
+            <div className="max-sm:hidden absolute inset-0 bg-[#044BB2] text-white flex items-center justify-center p-5">
               <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
                 Timing ~ 12:00 PM <br />
-                <br />
-                A vibrant daytime celebration to welcome the wedding weekend,
-                filled with music, henna, and festive colors.
+                <br />A vibrant daytime celebration to welcome the wedding
+                weekend, filled with music, henna, and festive colors.
               </p>
             </div>
           </FlipCard>
 
           {/* T2 — Sangeet Dinner */}
-          <FlipCard className="w-1/4 h-[70%] max-md:h-fit max-md:w-[90%]">
+          <FlipCard className="w-1/4 h-[70%] max-md:h-fit max-md:w-[90%] max-sm:pointer-events-none">
             {/* FRONT */}
             <div className="absolute inset-0 bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
-              <div className="w-full h-fit">
+              <div className="w-full h-fit max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center">
                 <h1 className="text-[3vw] leading-[3vw] max-md:text-[7vw] max-md:leading-[7vw] Font_Q COLOR_TEXT_RED">
                   Sangeet Dinner
                 </h1>
@@ -179,16 +186,21 @@ const page = () => {
                   Saturday, November 14
                 </span>
               </div>
-              <div className="w-full aspect-2/1 flex justify-end items-end">
+              <div className="w-full aspect-2/1 flex justify-end max-sm:justify-center items-end">
                 <img src="/assets/s35.png" className="w-[70%] object-cover" />
               </div>
-              <span className="md:hidden text-[10px] Font_YV COLOR_TEXT_RED opacity-40 mt-1">
-                Tap to flip
-              </span>
+            <div className="sm:hidden  inset-0  text-[#044BB2] flex items-center justify-center">
+              <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
+                Timing ~ 7:00 PM <br />
+                <br />
+                An evening of performances, dancing, and celebration.
+              </p>
+            </div>
+              
             </div>
 
             {/* BACK */}
-            <div className="absolute inset-0 bg-[#044BB2] text-white flex items-center justify-center p-5">
+            <div className="max-sm:hidden absolute inset-0 bg-[#044BB2] text-white flex items-center justify-center p-5">
               <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
                 Timing ~ 7:00 PM <br />
                 <br />
@@ -198,10 +210,10 @@ const page = () => {
           </FlipCard>
 
           {/* T3 — Nikkah Ceremony */}
-          <FlipCard className="w-1/4 h-[70%] max-md:h-fit max-md:w-[90%]">
+          <FlipCard className="w-1/4 h-[70%] max-md:h-fit max-md:w-[90%] max-sm:pointer-events-none">
             {/* FRONT */}
             <div className="absolute inset-0 bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
-              <div className="w-full h-fit">
+              <div className="w-full h-fit max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center">
                 <h1 className="text-[3vw] leading-[3vw] max-md:text-[7vw] max-md:leading-[7vw] Font_Q COLOR_TEXT_RED">
                   Nikkah Ceremony
                 </h1>
@@ -209,19 +221,24 @@ const page = () => {
                   Sunday, November 15
                 </span>
               </div>
-              <div className="w-full h-fit flex justify-end items-end">
+              <div className="w-full h-fit flex justify-end max-sm:justify-center items-end">
                 <img
                   src="/assets/s05.png"
                   className="w-[45%] object-center object-cover"
                 />
               </div>
-              <span className="md:hidden text-[10px] Font_YV COLOR_TEXT_RED opacity-40 mt-1">
-                Tap to flip
-              </span>
+              <div className="sm:hidden inset-0  text-[#044BB2] flex items-center justify-center ">
+              <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
+                Timing ~ 12:00 PM <br />
+                <br />
+                Our wedding ceremony.
+              </p>
+            </div>
+             
             </div>
 
             {/* BACK */}
-            <div className="absolute inset-0 bg-[#044BB2] text-white flex items-center justify-center p-5">
+            <div className=" max-sm:hidden absolute inset-0 bg-[#044BB2] text-white flex items-center justify-center p-5">
               <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
                 Timing ~ 12:00 PM <br />
                 <br />
@@ -231,10 +248,10 @@ const page = () => {
           </FlipCard>
 
           {/* T4 — Reception */}
-          <FlipCard className="w-1/4 h-[70%] max-md:h-fit max-md:w-[90%]">
+          <FlipCard className="w-1/4 h-[70%] max-md:h-fit max-md:w-[90%] max-sm:pointer-events-none">
             {/* FRONT */}
             <div className="absolute inset-0 bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
-              <div className="w-full h-fit">
+              <div className="w-full h-fit max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center">
                 <h1 className="text-[3vw] leading-[3vw] max-md:text-[7vw] max-md:leading-[7vw] Font_Q COLOR_TEXT_RED">
                   Reception
                 </h1>
@@ -242,16 +259,25 @@ const page = () => {
                   Sunday, November 15
                 </span>
               </div>
-              <div className="w-full aspect-2/1 flex justify-end items-end">
+              <div className="w-full aspect-2/1 flex justify-end max-sm:justify-center items-end">
                 <img src="/assets/s19.png" className="w-[70%] object-cover" />
               </div>
-              <span className="md:hidden text-[10px] Font_YV COLOR_TEXT_RED opacity-40 mt-1">
-                Tap to flip
-              </span>
+
+              <div className="sm:hidden inset-0  text-[#044BB2] flex items-center justify-center ">
+              <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV flex flex-col justify-center items-center">
+                Timing ~ 6:00 PM <br />
+                <br />
+                An elegant evening of dinner, speeches, and dancing. <br />
+                • Grand entrance <br />
+                • Dinner reception <br />
+                • Celebration into the night <br />
+              </p>
+            </div>
+              
             </div>
 
             {/* BACK */}
-            <div className="absolute inset-0 bg-[#044BB2] text-white flex items-center justify-center p-5">
+            <div className="max-sm:hidden absolute inset-0 bg-[#044BB2] text-white flex items-center justify-center p-5">
               <p className="text-[2vw] max-md:text-[4vw] text-start Font_YV">
                 Timing ~ 6:00 PM <br />
                 <br />
@@ -262,7 +288,6 @@ const page = () => {
               </p>
             </div>
           </FlipCard>
-
         </div>
       </div>
     </>

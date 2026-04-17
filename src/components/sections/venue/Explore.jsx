@@ -437,7 +437,7 @@ const ActivityCard = ({ act }) => (
       {/* Label */}
       <div className="flex items-center gap-4">
         <div className="w-6 h-px bg-[#1727b9] flex-shrink-0 group-hover:w-10 transition-all duration-300" />
-        <span className="text-[11px] tracking-[0.5em] Font_Q uppercase text-[#1727b9] font-medium">
+        <span className="text-[16px] tracking-tight Font_YV uppercase text-[#1727b9] font-medium">
           {act.title}
         </span>
       </div>
