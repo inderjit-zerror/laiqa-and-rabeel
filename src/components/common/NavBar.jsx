@@ -149,7 +149,7 @@ const NavBar = () => {
           >
             {" "}
             <div className=" absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out bg-[#044BB2]"></div>
-            Wedding Hotel
+            Wedding Venue
           </div>
         </Link>
       </div>
@@ -241,7 +241,7 @@ const NavBar = () => {
           >
             {" "}
             <div className=" absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out bg-[white]"></div>{" "}
-            Wedding Hotel
+            Wedding Venue
           </div>
         </Link>
         <Link href={`/explore`}>

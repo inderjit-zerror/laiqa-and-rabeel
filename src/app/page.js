@@ -145,18 +145,27 @@ export default function Home() {
       )
 
         // Step 2: Flip
-        .to(lamp, {
-          rotationY: 180,
-          duration: 0.6,
-          ease: "power2.inOut",
-        },'aa1')
+        .to(
+          lamp,
+          {
+            rotationY: 180,
+            
+            ease: "power2.inOut",
+          },
+          "aa1",
+        )
 
         // Step 3: Right → Left
-        .to(lamp, {
-          x: "-100vw",
-          duration: 10,
-          ease: "none",
-        },'aa1')
+        .to(
+          lamp,
+          {
+            x: "-100vw",
+            y: "+=100vh",
+            duration: 10,
+            ease: "none",
+          },
+          "aa1",
+        )
 
         // Step 4: Flip back
         .to(lamp, {
@@ -165,14 +174,14 @@ export default function Home() {
           ease: "power2.inOut",
         });
 
-      // Floating animation (independent)
-      gsap.to(lamp, {
-        y: "+=40",
-        duration: 2 + i,
-        repeat: -1,
-        yoyo: true,
-        ease: "sine.inOut",
-      });
+      // // Floating animation (independent)
+      // gsap.to(lamp, {
+      //   y: "+=40",
+      //   duration: 2 + i,
+      //   repeat: -1,
+      //   yoyo: true,
+      //   ease: "sine.inOut",
+      // });
     });
 
     // ===============================
@@ -216,18 +225,18 @@ export default function Home() {
 
   return (
     <>
-      <div className="w-full h-[200vh] relative relMain opacity-0">
+      <div className="w-full h-[200vh]  relative relMain opacity-0 ">
         <div className="w-full h-screen sticky flex top-0 left-0 overflow-hidden z-20 stickyAnimation scale-[1.1]">
           {/* back Building */}
           <div className=" absolute top-0 left-0 w-full h-screen z-10 overflow-hidden">
             <img
-              src={`/home/SandBG.jpg`}
+              src={`/home/SandBG.png`}
               alt="BGIMG"
-              className="w-full h-full BGBLD  scale-[1.2] object-top object-center"
+              className="w-full h-full BGBLD  scale-[1.2] object-top object-cover"
             />
 
             <div className="pointer-events-none absolute bottom-[0%] left-0 w-full h-[30vh] bg-gradient-to-b from-transparent via-[#ffffff]/60 to-[#ffffff] z-40" />
-            <div className=" absolute bottom-2 left-0 w-full h-fit flex justify-center items-center Font_Q COLOR_TEXT_RED text-[8vw] z-50 NAMEWED tracking-tighter">
+            <div className=" absolute bottom-2 left-0 w-full h-fit flex justify-center items-center Font_Q COLOR_TEXT_RED text-[8vw] max-sm:text-[12vw] z-50 NAMEWED tracking-tighter">
               LAIQA & RABEEL
             </div>
 
@@ -242,11 +251,11 @@ export default function Home() {
             />
           </div>
 
-          <div className="w-1/2 h-screen left flex justify-end items-center LTM relative z-20  overflow-x-visible">
+          <div className="w-1/2 h-screen left flex justify-end items-center LTM relative z-20  overflow-x-visible max-sm:overflow-hidden">
             <img
               src={`/home/Left.png`}
               alt="left"
-              className="h-full object-cover object-center z-10 GatImg  "
+              className="h-full object-cover object-center max-sm:object-right z-10 GatImg  "
             />
 
             <img
@@ -259,7 +268,7 @@ export default function Home() {
             <img
               src={`/home/Right.png`}
               alt="Right"
-              className="h-full object-cover object-center z-10 GatImg"
+              className="h-full object-cover object-center max-sm:object-left z-10 GatImg"
             />
             <img
               src={`/home/L_N_Wall.png`}

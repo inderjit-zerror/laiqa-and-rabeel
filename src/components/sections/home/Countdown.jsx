@@ -155,11 +155,11 @@ const Countdown = () => {
 
   return (
     <>
-      <div className="w-full h-[40vh] flex justify-center items-center">
-        <div className="w-[2px] h-[80%] bg-[#044BB2]"></div>
+      <div className="w-full h-[10vh] flex justify-center items-center max-sm:my-[5vh]">
+        <div className="w-[2px] h-[100%] bg-[#044BB2]"></div>
       </div>
       {/* ================================================================ */}
-      <section className="pb-[30vh] max-md:pb-[0vh] max-sm:pb-0 pt-42 max-sm:pt-0 w-full  h-[50vh] select-none   max-md:mt-0 flex flex-col justify-center items-center text-center">
+      <section className="pb-[30vh] max-md:pb-[0vh] max-sm:pb-0 pt-42  max-sm:pt-0 w-full  h-[50vh] max-sm:h-fit max-sm:pb-[5vh] select-none   max-md:mt-0 flex flex-col justify-center items-center text-center">
         <div className="w-full h-fit flex justify-center gap-10 max-sm:gap-1 COLOR_TEXT_RED CDD1 Font_Q">
           {[
             { label: "Days", value: timeLeft.days },

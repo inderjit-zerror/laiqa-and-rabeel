@@ -16,10 +16,9 @@ const VenueGallery = () => {
 
     const slideImg = [
         "/imgs/venue/bgG1.jpg",
-        "/imgs/venue/bgG2.jpg",
         "/imgs/venue/bgG3.avif",
         "/imgs/venue/wp.jpg",
-        // "/imgs/newExplorMarK/AA2.jpg",
+        "/imgs/newExplorMarK/AA2.jpg",
     ];
 
     const images = [...slideImg, ...slideImg]; // duplicate
