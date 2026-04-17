@@ -125,10 +125,10 @@ const VenueGallery = () => {
   const sliderRef = useRef(null);
 
   const slideImg = [
-    "/imgs/venue/bgG1.jpg",
-    "/imgs/venue/bgG3.avif",
-    "/imgs/venue/wp.jpg",
-    "/imgs/newExplorMarK/AA2.jpg",
+    "/allPageImg/venu1.webp",
+    "/allPageImg/venu4.webp",
+    "/allPageImg/venu3.webp",
+    "/allPageImg/venu4.webp",
   ];
 
   const images = [...slideImg, ...slideImg]; // duplicate for loop

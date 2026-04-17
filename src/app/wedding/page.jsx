@@ -9,9 +9,15 @@ const isTouchDevice = () =>
   typeof window !== "undefined" && "ontouchstart" in window;
 
 const FlipCard = ({ children, className }) => {
-
-  
   const [revealed, setRevealed] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 640);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   const handleClick = () => {
     if (isTouchDevice()) setRevealed((prev) => !prev);
@@ -24,8 +30,6 @@ const FlipCard = ({ children, className }) => {
   };
 
   const childArray = React.Children.toArray(children);
-  const isMobile = () =>
-  typeof window !== "undefined" && window.innerWidth < 640; // Tailwind sm
 
   return (
     <div
@@ -42,8 +46,8 @@ const FlipCard = ({ children, className }) => {
             position: "absolute",
             inset: 0,
             transition: "opacity 0.5s ease",
-           opacity: isMobile() ? 1 : revealed ? 0 : 1,
-  pointerEvents: isMobile() ? "auto" : revealed ? "none" : "auto",
+            opacity: isMobile ? 1 : revealed ? 0 : 1,
+            pointerEvents: isMobile ? "auto" : revealed ? "none" : "auto",
           }}
         >
           {childArray[0]}
@@ -55,8 +59,8 @@ const FlipCard = ({ children, className }) => {
             position: "absolute",
             inset: 0,
             transition: "opacity 0.5s ease",
-           opacity: isMobile() ? 1 : revealed ? 0 : 1,
-  pointerEvents: isMobile() ? "auto" : revealed ? "none" : "auto",
+            opacity: isMobile ? 1 : revealed ? 1 : 0,   // ✅ FIXED: was `revealed ? 0 : 1`
+            pointerEvents: isMobile ? "auto" : revealed ? "auto" : "none", // ✅ FIXED: pointer events
           }}
         >
           {childArray[1]}
@@ -129,7 +133,7 @@ const page = () => {
 
           <div className="w-full h-full absolute top-[0%] left-0 z-[-1] overflow-x-hidden">
             <img
-              src={`/assets/IT3.png`}
+              src={`/allPageImg/wedding/wed1.webp`}
               alt="Img"
               className="w-full h-full object-cover object-bottom max-sm:object-[80%_0%] stickyAnimation2"
             />
@@ -189,14 +193,13 @@ const page = () => {
               <div className="w-full aspect-2/1 flex justify-end max-sm:justify-center items-end">
                 <img src="/assets/s35.png" className="w-[70%] object-cover" />
               </div>
-            <div className="sm:hidden  inset-0  text-[#044BB2] flex items-center justify-center">
-              <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
-                Timing ~ 7:00 PM <br />
-                <br />
-                An evening of performances, dancing, and celebration.
-              </p>
-            </div>
-              
+              <div className="sm:hidden  inset-0  text-[#044BB2] flex items-center justify-center">
+                <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
+                  Timing ~ 7:00 PM <br />
+                  <br />
+                  An evening of performances, dancing, and celebration.
+                </p>
+              </div>
             </div>
 
             {/* BACK */}
@@ -228,13 +231,12 @@ const page = () => {
                 />
               </div>
               <div className="sm:hidden inset-0  text-[#044BB2] flex items-center justify-center ">
-              <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
-                Timing ~ 12:00 PM <br />
-                <br />
-                Our wedding ceremony.
-              </p>
-            </div>
-             
+                <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
+                  Timing ~ 12:00 PM <br />
+                  <br />
+                  Our wedding ceremony.
+                </p>
+              </div>
             </div>
 
             {/* BACK */}
@@ -264,16 +266,15 @@ const page = () => {
               </div>
 
               <div className="sm:hidden inset-0  text-[#044BB2] flex items-center justify-center ">
-              <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV flex flex-col justify-center items-center">
-                Timing ~ 6:00 PM <br />
-                <br />
-                An elegant evening of dinner, speeches, and dancing. <br />
-                • Grand entrance <br />
-                • Dinner reception <br />
-                • Celebration into the night <br />
-              </p>
-            </div>
-              
+                <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV flex flex-col justify-center items-center">
+                  Timing ~ 6:00 PM <br />
+                  <br />
+                  An elegant evening of dinner, speeches, and dancing. <br />
+                  • Grand entrance <br />
+                  • Dinner reception <br />
+                  • Celebration into the night <br />
+                </p>
+              </div>
             </div>
 
             {/* BACK */}

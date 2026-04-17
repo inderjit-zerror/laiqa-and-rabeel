@@ -55,7 +55,7 @@ const HeroSectionVenue = () => {
   return (
     <div ref={containerRef} className='w-full h-[150vh] max-sm:h-svh flex overflow-hidden  relative COLOR_BG_CREAM'>
 
-      <img src={`/imgs/venue/wp.png`} alt='IMG' className='w-full h-full object-cover absolute top-0 left-0  object-top Igm  opacity-0 ' />
+      <img src={`/allPageImg/wp_11zon.webp`} alt='IMG' className='w-full h-full object-cover absolute top-0 left-0  object-top Igm  opacity-0 ' />
       {/* <Image
         ref={imageRef}
         // src={`/imgs/RafflesUdaipur.webp`}
