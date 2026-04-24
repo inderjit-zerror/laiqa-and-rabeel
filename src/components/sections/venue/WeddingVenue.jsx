@@ -39,7 +39,7 @@ const WeddingVenue = () => {
         </p> */}
 
         {/* Main heading */}
-        <h5 className="Font_Q  leading-none text-[7vw] max-sm:text-[10vw] tracking-wide mb-10 WeddingText uppercase">
+        <h5 className="Font_C leading-none text-[7vw] max-sm:text-[10vw] tracking-wide mb-10 WeddingText uppercase">
          Oberoi Marrakech
         </h5>
 

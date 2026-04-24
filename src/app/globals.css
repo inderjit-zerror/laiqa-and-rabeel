@@ -8,6 +8,11 @@
 }
 
 @font-face {
+  font-family: Font_C;
+  src: url('/fonts/final/Caseopia.otf');
+}
+
+@font-face {
   font-family: Font_YIV;
   src: url('/fonts/final/Parfumerie-Script-Regular.woff2');
 }
@@ -44,7 +49,9 @@ body {
 }
 
 
-
+.Font_C{
+  font-family:Font_C;
+}
 
 .Font_L {
   font-family:Lamour;

@@ -230,9 +230,9 @@ export default function Home() {
           {/* back Building */}
           <div className=" absolute top-0 left-0 w-full h-screen z-10 overflow-hidden">
             <img
-              src={`/home/SandBG.png`}
+              src={`/allPageImg/home/home.webp`}
               alt="BGIMG"
-              className="w-full h-full BGBLD  scale-[1.2] object-top object-cover"
+              className="w-full h-full  BGBLD  scale-[1] object-center object-cover"
             />
 
             <div className="pointer-events-none absolute bottom-[0%] left-0 w-full h-[30vh] bg-gradient-to-b from-transparent via-[#ffffff]/60 to-[#ffffff] z-40" />

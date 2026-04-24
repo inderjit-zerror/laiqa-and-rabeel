@@ -155,21 +155,21 @@ const Countdown = () => {
 
   return (
     <>
-      <div className="w-full h-[10vh] flex justify-center items-center max-sm:my-[5vh]">
+      <div className="w-full h-[10vh] flex justify-center items-center max-sm:my-[5vh] ">
         <div className="w-[2px] h-[100%] bg-[#044BB2]"></div>
       </div>
       {/* ================================================================ */}
       <section className="pb-[30vh] max-md:pb-[0vh] max-sm:pb-0 pt-42  max-sm:pt-0 w-full  h-[50vh] max-sm:h-fit max-sm:pb-[5vh] select-none   max-md:mt-0 flex flex-col justify-center items-center text-center">
-        <div className="w-full h-fit flex justify-center gap-10 max-sm:gap-1 COLOR_TEXT_RED CDD1 Font_Q">
+        <div className="w-full h-fit flex justify-center gap-10 max-sm:gap-1 COLOR_TEXT_RED CDD1 Font_C">
           {[
             { label: "Days", value: timeLeft.days },
             { label: "Hours", value: timeLeft.hours },
             { label: "Minutes", value: timeLeft.minutes },
             { label: "Seconds", value: timeLeft.seconds },
           ].map((item, index) => (
-            <div key={index} className="flex items-center">
-              <div className="text-center">
-                <div className="text-[6vw]  leading-[6vw] max-sm:text-[2.5rem] max-sm:leading-[2.5rem] Font_Q  tracking-wide">
+            <div key={index} className="flex items-center Font_C">
+              <div className="text-center Font_C">
+                <div className="text-[6vw]  leading-[6vw] max-sm:text-[2.5rem] max-sm:leading-[2.5rem] Font_C  tracking-wide">
                   {item.value}
                 </div>
                 <div className="mt-2 text-[1rem] Font_YV max-sm:text-[0.7rem] max-sm:leading-[0.7rem]   tracking-widest uppercase">
