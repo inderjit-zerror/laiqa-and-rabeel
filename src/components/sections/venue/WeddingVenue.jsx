@@ -44,7 +44,7 @@ const WeddingVenue = () => {
         </h5>
 
         {/* Dates */}
-        <div className="flex items-center justify-center gap-6 max-sm:gap-2 text-sm max-sm:text-[12px] tracking-wide mb-10 WeddingText">
+        {/* <div className="flex items-center justify-center gap-6 max-sm:gap-2 text-sm max-sm:text-[12px] tracking-wide mb-10 WeddingText">
           <span className="uppercase max-sm:text-[10px]  ">Check in</span>
           <span className="font-serif text-4xl max-sm:text-[20px]">14<sup className="text-xs">th</sup></span>
           <span className="uppercase max-sm:text-[10px] ">November</span>
@@ -54,12 +54,11 @@ const WeddingVenue = () => {
           <span className="uppercase max-sm:text-[10px] ">Check out</span>
           <span className="font-serif text-4xl max-sm:text-[20px]">16<sup className="text-xs">th</sup></span>
           <span className="uppercase max-sm:text-[10px] ">November</span>
-        </div>
+        </div> */}
 
         {/* Description */}
         <p className="max-w-xl mx-auto Font_YV leading-[20px] COLOR_TEXT_RED  WeddingText">
-        We’re excited to celebrate together in Marrakech — a weekend of music, color, and unforgettable moments with our closest friends and family.
-All wedding events will take place at The Oberoi Marrakech unless otherwise noted.</p>
+        All wedding events will take place at The Oberoi Marrakech — set within 28 acres of olive groves and citrus orchards, with views of the Atlas Mountains. Nestled just outside the bustling Medina, the hotel blends traditional Moroccan architecture with the elegance the Oberoi is known for. Guests will be staying across two hotels, the Oberoi and the nearby Park Hyatt. Both nights are hosted by the Shariff and Jawaid families.</p>
       </div>
     </section>
   );

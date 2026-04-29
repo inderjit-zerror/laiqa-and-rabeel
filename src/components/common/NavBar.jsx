@@ -141,6 +141,7 @@ const NavBar = () => {
           </div>
         </Link>
 
+
        
 
         <Link href={`/venue`}>
@@ -150,6 +151,17 @@ const NavBar = () => {
             {" "}
             <div className=" absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out bg-[#044BB2]"></div>
             Wedding Venue
+          </div>
+        </Link>
+
+
+        <Link href={`/guestservices`}>
+          <div
+            className={`w-fit h-fit ${pathname === "/guestservices" && " border-b border-[#044BB2]"}  flex flex-col group COLOR_TEXT_RED relative  select-none cursor-pointer`}
+          >
+            {" "}
+            <div className=" absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out bg-[#044BB2]"></div>{" "}
+            Services
           </div>
         </Link>
       </div>
@@ -242,6 +254,16 @@ const NavBar = () => {
             {" "}
             <div className=" absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out bg-[white]"></div>{" "}
             Wedding Venue
+          </div>
+        </Link>
+        <Link href={`/guestservices`}>
+          <div
+            onClick={clickCheck}
+            className="w-fit h-fit flex smNavItem opacity-0 flex-col group relative COLOR_TEXT_RED  select-none cursor-pointer"
+          >
+            {" "}
+            <div className=" absolute bottom-0 left-0 w-0 h-0.5 group-hover:w-full duration-200 ease-out bg-[white]"></div>{" "}
+            Services
           </div>
         </Link>
         <Link href={`/explore`}>

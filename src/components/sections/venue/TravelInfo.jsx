@@ -96,9 +96,9 @@ const TravelInfo = () => {
       {/* Content */}
       <div className="relative max-w-3xl mx-auto text-center flex flex-col justify-center items-center">
 
-        <span className=" uppercase mb-6 text-[#044BB2]">
+        {/* <span className=" uppercase mb-6 text-[#044BB2]">
           Travel Information
-        </span>
+        </span> */}
 
         <div className="Font_Q  mb-10 flex flex-col gap-4 max-sm:gap-1 uppercase text-[#044BB2] max-sm:text-[#044BB2] max-sm:uppercase">
           <h2> Arriving in Marrakech </h2>
@@ -110,12 +110,11 @@ const TravelInfo = () => {
           </p> */}
 
           <span className=" opacity-90 mt-4 Font_YV text-[#044BB2]">
-            Guests can fly into Marrakech Menara Airport (RAK), located about 25 minutes from the hotel
+            {/* Guests can fly into Marrakech Menara Airport (RAK), located about 25 minutes from the hotel */}
           </span>
 
           <p className="  Font_YV  text-[#044BB2] mt-5 ">
-            Alternatively, guests may fly into Casablanca, which offers more international flight options. From Casablanca, it is either a short domestic flight to Marrakech or approximately a 2-hour car ride to the hotel.
-            Transportation details will be shared with confirmed guests.
+           Guests can fly directly into Marrakech Menara Airport (RAK), approximately 25 minutes from the hotel. Alternatively, Casablanca offers more international flight connections — from there, a short domestic flight or a 2-hour drive will get you to Marrakech. Transportation details will be shared with confirmed guests.
 
           </p>
 

@@ -123,10 +123,7 @@ const page = () => {
             </div>
             <div className="COLOR_TEXT_RED Font_Q w-fit h-fit tracking-tight overflow-hidden">
               <p className="Font_YV max-w-[600px] MainTI w-[90%] mx-auto mt-4">
-                Join us in Marrakech from November 14–16, 2026 for a weekend of
-                celebration. Festivities begin with a Mehndi Lunch and Sangeet
-                Dinner on Saturday, followed by our Nikkah Ceremony and an
-                elegant Black Tie Reception on Sunday.
+                Join us in Marrakech from November 14–16, 2026 for a weekend of celebration. Festivities begin with a Mehndi Lunch and Sangeet Dinner on Saturday, followed by our Nikkah Ceremony and an elegant Black Tie Reception on Sunday.
               </p>
             </div>
           </div>
@@ -142,17 +139,17 @@ const page = () => {
         </div>
 
         {/* Cards Section */}
-        <div className="w-full h-screen max-md:h-fit COLOR_BG_RED relative z-100 flex max-md:flex-col p-20 max-md:gap-10 gap-10 px-10 justify-center items-center">
+        <div className="w-full h-screen max-md:h-fit COLOR_BG_RED relative z-100 flex max-md:flex-col p-20 max-md:gap-10 gap-5 px-10 justify-center items-center">
           {/* T1 — Mehndi Lunch */}
           <FlipCard className="w-1/4 h-[70%] max-md:h-fit max-md:w-[90%] max-sm:pointer-events-none">
             {/* FRONT */}
             <div className="absolute inset-0 bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
               <div className="w-full h-fit max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center">
                 <h1 className="text-[3vw] leading-[3vw] max-sm:text-center max-md:text-[7vw] max-md:leading-[7vw] Font_Q COLOR_TEXT_RED">
-                  Mehndi Lunch
+                  Mehendi
                 </h1>
                 <span className="text-[14px] leading-[16px]  max-sm:text-center max-md:text-[4vw] Font_YV COLOR_TEXT_RED">
-                  Saturday, November 14
+                  Saturday, November 14th, 2026
                 </span>
               </div>
               <div className="w-full aspect-2/1 flex justify-end max-sm:justify-center items-end">
@@ -162,8 +159,11 @@ const page = () => {
               <div className="sm:hidden  inset-0  text-[#044BB2] flex items-center justify-center ">
                 <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
                   Timing ~ 12:00 PM <br />
-                  <br />A vibrant daytime celebration to welcome the wedding
-                  weekend, filled with music, henna, and festive colors.
+                  <br />
+                  Main Pool & Orchards
+                  <br /><br />
+
+                  Henna, lunch, and an afternoon in the orchards.
                 </p>
               </div>
             </div>
@@ -171,9 +171,12 @@ const page = () => {
             {/* BACK */}
             <div className="max-sm:hidden absolute inset-0 bg-[#044BB2] text-white flex items-center justify-center p-5">
               <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
-                Timing ~ 12:00 PM <br />
-                <br />A vibrant daytime celebration to welcome the wedding
-                weekend, filled with music, henna, and festive colors.
+               Timing ~ 12:00 PM <br />
+                  <br />
+                  Main Pool & Orchards
+                  <br /><br />
+
+                  Henna, lunch, and an afternoon in the orchards.
               </p>
             </div>
           </FlipCard>
@@ -184,10 +187,11 @@ const page = () => {
             <div className="absolute inset-0 bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
               <div className="w-full h-fit max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center">
                 <h1 className="text-[3vw] leading-[3vw] max-md:text-[7vw] max-md:leading-[7vw] Font_Q COLOR_TEXT_RED">
-                  Sangeet Dinner
+                  Sangeet
                 </h1>
                 <span className="text-[14px] leading-[16px] max-md:text-[4vw] Font_YV COLOR_TEXT_RED">
-                  Saturday, November 14
+                  Saturday, November 14th, 2026
+
                 </span>
               </div>
               <div className="w-full aspect-2/1 flex justify-end max-sm:justify-center items-end">
@@ -195,9 +199,13 @@ const page = () => {
               </div>
               <div className="sm:hidden  inset-0  text-[#044BB2] flex items-center justify-center">
                 <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
-                  Timing ~ 7:00 PM <br />
+                 Timing ~ 7:30 PM <br />
                   <br />
-                  An evening of performances, dancing, and celebration.
+                 Secret Garden
+                  <br /><br />
+
+                   Experience the magic of Marrakech with a night of music, dance, and two families coming together in celebration
+
                 </p>
               </div>
             </div>
@@ -205,9 +213,13 @@ const page = () => {
             {/* BACK */}
             <div className="max-sm:hidden absolute inset-0 bg-[#044BB2] text-white flex items-center justify-center p-5">
               <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
-                Timing ~ 7:00 PM <br />
-                <br />
-                An evening of performances, dancing, and celebration.
+                Timing ~ 7:30 PM <br />
+                  <br />
+                 Secret Garden
+                  <br /><br />
+
+                   Experience the magic of Marrakech with a night of music, dance, and two families coming together in celebration
+
               </p>
             </div>
           </FlipCard>
@@ -218,10 +230,11 @@ const page = () => {
             <div className="absolute inset-0 bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
               <div className="w-full h-fit max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center">
                 <h1 className="text-[3vw] leading-[3vw] max-md:text-[7vw] max-md:leading-[7vw] Font_Q COLOR_TEXT_RED">
-                  Nikkah Ceremony
+                  Nikkah
                 </h1>
                 <span className="text-[14px] max-md:text-[4vw] Font_YV COLOR_TEXT_RED">
-                  Sunday, November 15
+                  Sunday, November 15th, 2026
+
                 </span>
               </div>
               <div className="w-full h-fit flex justify-end max-sm:justify-center items-end">
@@ -232,9 +245,12 @@ const page = () => {
               </div>
               <div className="sm:hidden inset-0  text-[#044BB2] flex items-center justify-center ">
                 <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
-                  Timing ~ 12:00 PM <br />
+                  Timing ~ 12:30 PM<br />
                   <br />
-                  Our wedding ceremony.
+                 Grand Canal
+                  <br /><br />
+
+                   Amidst the olive groves and still waters of the Grand Canal, the wedding ceremony takes place
                 </p>
               </div>
             </div>
@@ -242,9 +258,12 @@ const page = () => {
             {/* BACK */}
             <div className=" max-sm:hidden absolute inset-0 bg-[#044BB2] text-white flex items-center justify-center p-5">
               <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
-                Timing ~ 12:00 PM <br />
-                <br />
-                Our wedding ceremony.
+                Timing ~ 12:30 PM<br />
+                  <br />
+                 Grand Canal
+                  <br /><br />
+
+                   Amidst the olive groves and still waters of the Grand Canal, the wedding ceremony takes place
               </p>
             </div>
           </FlipCard>
@@ -255,10 +274,10 @@ const page = () => {
             <div className="absolute inset-0 bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
               <div className="w-full h-fit max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center">
                 <h1 className="text-[3vw] leading-[3vw] max-md:text-[7vw] max-md:leading-[7vw] Font_Q COLOR_TEXT_RED">
-                  Reception
+                  Reception Dinner
                 </h1>
                 <span className="text-[14px] max-md:text-[4vw] Font_YV COLOR_TEXT_RED">
-                  Sunday, November 15
+                  Sunday, November 15th, 2026
                 </span>
               </div>
               <div className="w-full aspect-2/1 flex justify-end max-sm:justify-center items-end">
@@ -267,12 +286,11 @@ const page = () => {
 
               <div className="sm:hidden inset-0  text-[#044BB2] flex items-center justify-center ">
                 <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV flex flex-col justify-center items-center">
-                  Timing ~ 6:00 PM <br />
+                 Timing ~ 7:30 PM<br />
                   <br />
-                  An elegant evening of dinner, speeches, and dancing. <br />
-                  • Grand entrance <br />
-                  • Dinner reception <br />
-                  • Celebration into the night <br />
+                 The Courtyard
+                  <br /><br />
+                   Beneath the arches of the Courtyard, an evening of dinner, toasts, and dancing
                 </p>
               </div>
             </div>
@@ -280,12 +298,51 @@ const page = () => {
             {/* BACK */}
             <div className="max-sm:hidden absolute inset-0 bg-[#044BB2] text-white flex items-center justify-center p-5">
               <p className="text-[2vw] max-md:text-[4vw] text-start Font_YV">
-                Timing ~ 6:00 PM <br />
-                <br />
-                An elegant evening of dinner, speeches, and dancing. <br />
-                • Grand entrance <br />
-                • Dinner reception <br />
-                • Celebration into the night <br />
+                Timing ~ 7:30 PM<br />
+                  <br />
+                 The Courtyard
+                  <br /><br />
+                   Beneath the arches of the Courtyard, an evening of dinner, toasts, and dancing
+              </p>
+            </div>
+          </FlipCard>
+
+          {/* T5 — Reception */}
+          <FlipCard className="w-1/4 h-[70%] max-md:h-fit max-md:w-[90%] max-sm:pointer-events-none">
+            {/* FRONT */}
+            <div className="absolute inset-0 bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
+              <div className="w-full h-fit max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center">
+                <h1 className="text-[3vw] leading-[3vw] max-md:text-[7vw] max-md:leading-[7vw] Font_Q COLOR_TEXT_RED">
+                  Farewell Breakfast
+                </h1>
+                <span className="text-[14px] max-md:text-[4vw] Font_YV COLOR_TEXT_RED">
+                  Monday, November 16th, 2026
+
+                </span>
+              </div>
+              <div className="w-full aspect-2/1 flex justify-end max-sm:justify-center items-end">
+                <img src="/assets/s20.png" className="w-[70%] object-cover" />
+              </div>
+
+              <div className="sm:hidden inset-0  text-[#044BB2] flex items-center justify-center ">
+                <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV flex flex-col justify-center items-center">
+                  Timing ~ 11:00 AM<br />
+                  <br />
+                 The Terraces
+                  <br /><br />
+                    A final farewell over breakfast on the Terrace
+                </p>
+              </div>
+            </div>
+
+            {/* BACK */}
+            <div className="max-sm:hidden absolute inset-0 bg-[#044BB2] text-white flex items-center justify-center p-5">
+              <p className="text-[2vw] max-md:text-[4vw] text-start Font_YV">
+                Timing ~ 11:00 AM<br />
+                  <br />
+                 The Terraces
+                  <br /><br />
+                    A final farewell over breakfast on the Terrace
               </p>
             </div>
           </FlipCard>

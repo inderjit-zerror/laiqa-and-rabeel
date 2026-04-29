@@ -252,28 +252,33 @@ export default function Home() {
           </div>
 
           <div className="w-1/2 h-screen left flex justify-end items-center LTM relative z-20  overflow-x-visible max-sm:overflow-hidden">
-            <img
+            {/* <img
               src={`/home/Left.png`}
+              alt="left"
+              className="h-full object-cover object-center max-sm:object-right z-10 GatImg  "
+            /> */}
+            <img
+              src={`/allPageImg/home/GL.png`}
               alt="left"
               className="h-full object-cover object-center max-sm:object-right z-10 GatImg  "
             />
 
             <img
-              src={`/home/L_N_Wall.png`}
+              src={`/allPageImg/home/L.png`}
               alt="left"
               className="h-full w-screen object-cover scale-[1] object-center flex absolute top-0 left-0 z-[-1]  "
             />
           </div>
           <div className="w-1/2 h-screen left flex justify-start items-center RTM z-20 overflow-x-visible">
             <img
-              src={`/home/Right.png`}
+              src={`/allPageImg/home/RL.png`}
               alt="Right"
               className="h-full object-cover object-center max-sm:object-left z-10 GatImg"
             />
             <img
-              src={`/home/L_N_Wall.png`}
+              src={`/allPageImg/home/R.png`}
               alt="left"
-              className="w-full h-screen object-cover scale-x-[-1] flip object-center flex absolute top-0 right-0 z-[-1]  "
+              className="w-full h-screen object-cover  object-center flex absolute top-0 right-0 z-[-1]  "
             />
           </div>
         </div>
@@ -281,6 +286,7 @@ export default function Home() {
 
       <TextAnimation />
       <Countdown />
+      
 
       <div className="w-full h-screen overflow-hidden  mx-auto">
         <img

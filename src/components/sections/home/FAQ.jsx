@@ -7,68 +7,81 @@ const faqs = [
     id: 1,
     question: "When should I arrive?",
     answer:
-      `We recommend arriving in Marrakech before or by the morning of Saturday, November 14. Wedding celebrations begin at noon on Saturday, November 14.
+      `We recommend arriving by the morning of Saturday, November 14. Celebrations begin at noon.
 `,
   },
   {
     id: 2,
-    question: "Where will I stay",
+    question: "Where will I stay?",
     answer:
-      `The Shariff and Jawaid families will be hosting all guests for both nights (Nov 14 and 15) at The Oberoi Marrakech and Park Hyatt Marrakech. 
+      `The Shariff and Jawaid families are hosting all guests for both nights across The Oberoi Marrakech and the nearby Park Hyatt Marrakech. 
 `,
   },
   {
     id: 3,
     question: "When should I depart?",
-    answer: `The final event of the weekend will be the Brunch on Monday, November 16. Guests may depart later that day or the following morning.`,
+    answer: `The weekend closes with a Farewell Breakfast on Monday, November 16. Guests are welcome to depart that afternoon.`,
   },
   {
     id: 4,
-    question: "Where will the wedding events take place?",
+    question: "Where will the wedding events take place? ",
     answer:
-      `All wedding events will take place at The Oberoi Marrakech unless otherwise noted.`,
+      `All events will be held at The Oberoi Marrakech unless otherwise noted.
+`,
   },
   {
     id: 5,
     question: "Which airport should I fly into?",
     answer:
-      `The closest airport is Marrakech Menara Airport (RAK), about 25 minutes from the hotel.
-Alternatively, guests can fly into Casablanca, which offers more international flight options. From Casablanca, it is either a short domestic flight to Marrakech or approximately a 2-hour drive to the hotel.
+      `The closest airport is Marrakech Menara Airport (RAK), approximately 25 minutes from the hotel. Casablanca is also an option for those with more international connections — from there, a short domestic flight or a 2-hour drive will get you to Marrakech.
+
 `,
   },
   {
     id: 6,
     question: "Will transportation be provided?",
     answer:
-     `Transportation will be arranged for guests staying at the hotels for all wedding events.`,
+     `Transfers will be arranged for all guests between the hotels and wedding events, including airport shuttles.
+`,
   },
   {
     id: 7,
     question: "What is the dress code?",
     answer:
-      `Dress codes will vary by event. We will be sharing a wardrobe planner soon!
+      `Dress codes vary by event. A wardrobe guide will be shared closer to the date.
+
 `,
   },
   {
     id: 8,
     question: "What will the weather be like?",
     answer:
-      `November is one of the best times to visit Marrakech.
-Expect warm sunny days (70–75°F / 21–24°C) and cooler evenings, so a light jacket is recommended for nighttime events.`,
+      `November is one of the best times to visit Marrakech — warm sunny days (21–24°C / 70–75°F) and cooler evenings. A light layer is recommended for nighttime events.
+`,
   },
   {
     id: 9,
     question: "Can I bring a guest?",
     answer:
-      `Due to the intimate nature of the celebration, invitations are limited to those listed on the invitation.
+      `Invitations are extended to named guests only. We appreciate your understanding.
+
 `,
   },
   {
     id: 10,
-    question: "Who should I contact with questions?",
-    answer: `If you have any questions, please reach out to our wedding planner:
+    question: "Can I extend my stay?",
+    answer: `If you'd like to arrive early or stay on after the festivities, we've arranged preferential rates at both hotels. Please reach out to our planning team at laiqaandrabeel@gmail.com for details.
+
 `,
     LINK: `https://indianvisaonline.gov.in/evisa/tvoa.html`,
+  },
+  {
+    id: 11,
+    question: "Who should I contact with questions? ",
+    answer:
+      `Please reach out to our wedding planning team at laiqaandrabeel@gmail.com.
+
+`,
   },
   
 ];

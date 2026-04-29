@@ -310,40 +310,32 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ACTIVITIES = [
   {
-    title: "Marrakech",
+    title: "Jardin Majorelle ",
     img: "/imgs/newExplorMarK/11T.jpg",
     link: `https://www.instagram.com/`,
-  },
-  {
-    title: "Jardin Majorelle",
-    img: "/imgs/newExplorMarK/BB1.webp",
-    link: `https://www.instagram.com/`,
+    desc: `Yves Saint Laurent's former garden, now one of the most visited spots in Morocco. Cobalt blue walls, towering cacti, and a quiet that feels worlds away from the medina just outside.`
   },
   {
     title: "Bahia Palace",
-    img: "/imgs/newExplorMarK/EE1.jpg",
+    img: "/imgs/newExplorMarK/BB1.webp",
     link: `https://www.instagram.com/`,
+    desc: `A 19th-century palace built to be paradise. Intricate tilework, painted cedar ceilings, and courtyard after courtyard — it's easy to lose track of time here.
+`
   },
   {
     title: "Koutoubia Mosque",
-    img: "/imgs/newExplorMarK/DD1.jpg",
-    link: `https://www.instagram.com/`,
-  },
-  {
-    title: "The Souks of the Medina",
     img: "/imgs/newExplorMarK/EE1.jpg",
     link: `https://www.instagram.com/`,
+    desc: `Marrakech's most iconic silhouette. Non-Muslims cannot enter, but the surrounding gardens are worth a visit — particularly at dusk when the call to prayer fills the air.
+`
   },
   {
-    title: "Marrakech",
-    img: "/imgs/newExplorMarK/11T.jpg",
+    title: "The Souks of the Medina ",
+    img: "/imgs/newExplorMarK/DD1.jpg",
     link: `https://www.instagram.com/`,
+    desc: `Leather, lanterns, spices, silk. The souks of the medina are best navigated without a plan — wander, get lost, and take your time.`
   },
-  {
-    title: "Jardin Majorelle",
-    img: "/imgs/newExplorMarK/BB1.webp",
-    link: `https://www.instagram.com/`,
-  },
+  
 ];
 
 // ─── ACTIVITIES GRID SECTION ──────────────────────────────────────────────────
@@ -401,10 +393,21 @@ const ActivitiesGrid = () => {
           Marrakech
         </h4>
         <div className="w-[90%] max-w-[740px] flex flex-col contA6 justify-center items-center gap-6">
-          <div className="text-[#395238] text-[1.5vw] leading-[1.5vw] max-sm:text-[18px] max-sm:leading-[18px] contA6 COLOR_TEXT_RED text-center Font_YV">
-            Marrakech is one of the most vibrant and culturally rich cities in
-            Morocco. Known as the “Red City” because of its rose-colored
-            buildings, it blends history, culture.
+          <div className="text-[#395238] text-[1vw] leading-[1vw] max-sm:text-[18px] max-sm:leading-[18px] contA6 COLOR_TEXT_RED text-center Font_YV gap-2">
+            The Red City. Rose-coloured walls, ancient souks, and a city where
+            Berber, Arab, and French influences meet in a way that feels
+            entirely its own. 
+            <p>
+               <br className="" />
+            To help you make the most of your time here, we've put together a
+            list of our favourite places to explore. For bookings, please reach
+            out to our experiences partner:</p> 
+            <br className="" />
+
+            Marrakech Travel Experts — Driss Zidani Alaoui{" "}
+            <p>
+            <a href="">driss@marrakeshtravelexperts.com</a> |{" "}
+            <a href=""> +212 661 222 557</a></p>
           </div>
         </div>
       </div>
@@ -437,10 +440,13 @@ const ActivityCard = ({ act }) => (
       {/* Label */}
       <div className="flex items-center gap-4">
         <div className="w-6 h-px bg-[#1727b9] flex-shrink-0 group-hover:w-10 transition-all duration-300" />
-        <span className="text-[16px] tracking-tight Font_YV uppercase text-[#1727b9] font-medium">
+        <span className="text-[16px] font-semibold tracking-tight Font_YV uppercase text-[#1727b9] font-medium">
           {act.title}
         </span>
       </div>
+        <span className="text-[12px] text-justify tracking-tight Font_YV uppercase text-[#1727b9]/70 font-medium">
+          {act.desc}
+        </span>
     </div>
   </a>
 );

@@ -9,7 +9,7 @@ import WebPageSchema from "@/components/seo/WebPageSchema";
 import { Const } from "@/components/utils/Constants";
 
 export const metadata = {
-  title: "Wedding Accommodation | Sonal & Kush",
+  title: "Wedding Venue",
   description:
     "Find recommended hotel accommodations for guests attending Sonal & Kush's wedding celebration. Location, booking details, and directions included.",
 
