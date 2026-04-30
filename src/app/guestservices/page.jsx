@@ -147,7 +147,7 @@ export default function GuestServices() {
         /* ── Page shell ── */
         .gs-page {
           min-height: 100vh;
-          background: #ffffff;
+          // background: #ffffff;
           display: flex;
           flex-direction: column;
         }
@@ -436,7 +436,12 @@ export default function GuestServices() {
         }
       `}</style>
 
-      <div className="gs-page pt-[10vh]">
+      <div className="gs-page pt-[10vh] relative">
+
+        <div className="w-full h-full absolute top-0 opacity-50 left-0 z-[-1] overflow-hidden">
+          <img src={`/allPageImg/sky.png`} alt="IMG" className="w-full h-full object-cover object-center" />
+        </div>
+
         <div className="gs-edge-top" />
 
         {/* ── HERO ── */}
@@ -444,16 +449,10 @@ export default function GuestServices() {
           <div className="gs-blob gs-blob-1" />
           <div className="gs-blob gs-blob-2" />
 
-          <div ref={heroEyebrowRef} className="gs-hero-eyebrow">
-            <span className="gs-eyebrow-line COLOR_TEXT_RED Font_YV" />
-            Marrakech · November 2025
-            <span className="gs-eyebrow-line" />
-          </div>
 
-          
 
-          <h1 ref={heroTitleRef} className="gs-hero-title COLOR_TEXT_RED Font_Q ">
-            Guest Services
+          <h1 ref={heroTitleRef} className="gs-hero-title text-center COLOR_TEXT_RED Font_Q ">
+            Guest <br/> Services
           </h1>
 
           <p ref={heroSubRef} className="gs-hero-sub COLOR_TEXT_RED Font_YV">

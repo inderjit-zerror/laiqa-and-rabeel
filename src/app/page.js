@@ -208,12 +208,7 @@ export default function Home() {
         duration: 0.5,
         ease: "power2.out",
       });
-      gsap.to(".LTM, .RTM, .GatImg, .DemoAllItem, .NAMEWED", {
-        // x: moveX,
-        y: moveY,
-        duration: 0.5,
-        ease: "power2.out",
-      });
+     
     };
 
     window.addEventListener("mousemove", handleMouseMove);
@@ -226,9 +221,9 @@ export default function Home() {
   return (
     <>
       <div className="w-full h-[200vh]  relative relMain opacity-0 ">
-        <div className="w-full h-screen sticky flex top-0 left-0 overflow-hidden z-20 stickyAnimation scale-[1.1]">
+        <div className="w-full h-screen sticky flex top-0 left-0 overflow-hidden z-20  scale-[1.1]">
           {/* back Building */}
-          <div className=" absolute top-0 left-0 w-full h-screen z-10 overflow-hidden">
+          <div className=" absolute top-0 left-0 w-full h-screen z-10 stickyAnimation overflow-hidden">
             <img
               src={`/allPageImg/home/home.webp`}
               alt="BGIMG"
@@ -251,7 +246,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="w-1/2 h-screen left flex justify-end items-center LTM relative z-20  overflow-x-visible max-sm:overflow-hidden">
+          <div className="w-1/2 h-screen  left flex justify-end items-center LTM relative z-20  overflow-x-visible max-sm:overflow-hidden">
             {/* <img
               src={`/home/Left.png`}
               alt="left"
@@ -260,25 +255,25 @@ export default function Home() {
             <img
               src={`/allPageImg/home/GL.png`}
               alt="left"
-              className="h-full object-cover object-center max-sm:object-right z-10 GatImg  "
+              className="h-full object-cover  object-center max-sm:object-right z-10 GatImg  "
             />
 
             <img
               src={`/allPageImg/home/L.png`}
               alt="left"
-              className="h-full w-screen object-cover scale-[1] object-center flex absolute top-0 left-0 z-[-1]  "
+              className="h-full w-screen object-cover scale-[1.02] object-center flex absolute top-0 left-0 z-[-1]  "
             />
           </div>
           <div className="w-1/2 h-screen left flex justify-start items-center RTM z-20 overflow-x-visible">
             <img
               src={`/allPageImg/home/RL.png`}
               alt="Right"
-              className="h-full object-cover object-center max-sm:object-left z-10 GatImg"
+              className="h-full object-cover   object-center max-sm:object-left z-10 GatImg"
             />
             <img
               src={`/allPageImg/home/R.png`}
               alt="left"
-              className="w-full h-screen object-cover  object-center flex absolute top-0 right-0 z-[-1]  "
+              className="w-full h-full object-cover scale-[1.02]  object-center flex absolute top-0 right-0 z-[-1]  "
             />
           </div>
         </div>
