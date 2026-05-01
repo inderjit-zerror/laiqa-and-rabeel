@@ -39,9 +39,9 @@ const WeddingVenue = () => {
         </p> */}
 
         {/* Main heading */}
-        <h5 className="Font_C leading-none text-[7vw] max-sm:text-[10vw] tracking-wide mb-10 WeddingText uppercase">
+        {/* <h5 className="Font_C leading-none text-[7vw] max-sm:text-[10vw] tracking-wide mb-10 WeddingText uppercase">
          Oberoi Marrakech
-        </h5>
+        </h5> */}
 
         {/* Dates */}
         {/* <div className="flex items-center justify-center gap-6 max-sm:gap-2 text-sm max-sm:text-[12px] tracking-wide mb-10 WeddingText">
