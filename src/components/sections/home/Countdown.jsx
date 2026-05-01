@@ -186,7 +186,7 @@ const Countdown = () => {
           ))}
         </div>
 
-        <h2 className="Font_Q tracking-widest uppercase COLOR_TEXT_RED mt-20 max-sm:mt-10 CDD1">
+        <h2 className="Font_C tracking-widest uppercase COLOR_TEXT_RED mt-20 max-sm:mt-10 CDD1">
           Until the wedding
         </h2>
       </section>

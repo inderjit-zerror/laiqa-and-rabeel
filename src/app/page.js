@@ -85,6 +85,7 @@ export default function Home() {
       },
       "a1",
     );
+   
 
     // ==========================================
 
@@ -95,35 +96,6 @@ export default function Home() {
       duration: 1,
       ease: "none",
     });
-
-    // ==============================================
-    //   const lamps = gsap.utils.toArray(".DemoAllItem");
-    // const floatAnims = [];
-    // lamps.forEach((lamp, i) => {
-    //   gsap.fromTo(
-    //     lamp,
-    //     { x: "-100vw" }, // start from left
-    //     {
-    //       x: "100vw", // move to right
-    //       duration: 10, // ✅ fixed 10 seconds
-    //       ease: "none",
-    //       repeat: -1,
-    //     },
-    //   );
-    // });
-
-    // lamps.forEach((lamp, i) => {
-    //   const anim = gsap.to(lamp, {
-    //     y: "+=40",
-    //     duration: 2 + i,
-    //     repeat: -1,
-    //     yoyo: true,
-    //     ease: "sine.inOut",
-    //     delay: i * 0.3,
-    //   });
-
-    //   floatAnims.push(anim);
-    // });
 
     const lamps = gsap.utils.toArray(".DemoAllItem");
 
@@ -149,7 +121,7 @@ export default function Home() {
           lamp,
           {
             rotationY: 180,
-            
+
             ease: "power2.inOut",
           },
           "aa1",
@@ -208,7 +180,6 @@ export default function Home() {
         duration: 0.5,
         ease: "power2.out",
       });
-     
     };
 
     window.addEventListener("mousemove", handleMouseMove);
@@ -252,28 +223,33 @@ export default function Home() {
               alt="left"
               className="h-full object-cover object-center max-sm:object-right z-10 GatImg  "
             /> */}
-            <img
-              src={`/allPageImg/home/GL.png`}
-              alt="left"
-              className="h-full object-cover  object-center max-sm:object-right z-10 GatImg  "
-            />
+
+            <div className=" w-1/4 max-sm:w-full h-[70vh]  absolute right-0 bottom-0 ">
+              <img
+                src={`/allPageImg/home/GL.png`}
+                alt="left"
+                className=" w-full sm:h-full object-cover object-top    flex max-sm:object-left z-10 GatImg  "
+              />
+            </div>
 
             <img
               src={`/allPageImg/home/L.png`}
               alt="left"
-              className="h-full w-screen object-cover scale-[1.02] object-center flex absolute top-0 left-0 z-[-1]  "
+              className="h-full w-screen object-cover scale-[1.03] object-center max-sm:object-right flex absolute top-0 left-0 z-[-1]  "
             />
           </div>
-          <div className="w-1/2 h-screen left flex justify-start items-center RTM z-20 overflow-x-visible">
-            <img
-              src={`/allPageImg/home/RL.png`}
-              alt="Right"
-              className="h-full object-cover   object-center max-sm:object-left z-10 GatImg"
-            />
+          <div className="w-1/2  h-screen left relative flex justify-start items-center RTM z-20 overflow-x-visible">
+            <div className=" w-1/4 max-sm:w-full h-[70vh]  absolute left-0 bottom-0 ">
+              <img
+                src={`/allPageImg/home/RL.png `}
+                alt="Right"
+                className=" w-full sm:h-full object-cover object-top    flex max-sm:object-left z-10 GatImg"
+              />
+            </div>
             <img
               src={`/allPageImg/home/R.png`}
               alt="left"
-              className="w-full h-full object-cover scale-[1.02]  object-center flex absolute top-0 right-0 z-[-1]  "
+              className="w-full h-full object-cover scale-[1.02]  object-center max-sm:object-left flex absolute top-0  right-0 z-[-1]  "
             />
           </div>
         </div>
@@ -281,7 +257,6 @@ export default function Home() {
 
       <TextAnimation />
       <Countdown />
-      
 
       <div className="w-full h-screen overflow-hidden  mx-auto">
         <img

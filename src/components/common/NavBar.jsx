@@ -125,7 +125,7 @@ const NavBar = () => {
   return (
     <div
       ref={navRef}
-      className="w-full h-[46px] mt-10 flex gap-50 justify-between fixed top-0 left-0   items-center z-100 px-20"
+      className="w-full NavMenuCont h-[46px] mt-10 flex gap-50 justify-between fixed top-0 left-0   items-center z-100 px-20"
     >
       {/* Left */}
       <div className="w-1/3 h-full RVSPBTN items-center max-lg:hidden flex justify-between uppercase text-[14px] COLOR_TEXT_RED ">
