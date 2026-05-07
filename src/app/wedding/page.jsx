@@ -114,12 +114,12 @@ const page = () => {
       <div className="w-full min-h-screen relative MMAINDDiv overflow-x-hidden">
         <div className="w-full h-[100vh] relative z-[-90] MMAINDDiv2">
           {/* TEXT */}
-          <div className="w-full h-fit flex flex-col justify-center text-center items-center pt-[18vh]">
+          <div className="w-full h-fit flex flex-col justify-center text-center items-center pt-[20vh]">
             <div className="COLOR_TEXT_RED Font_Q text-[6vw] w-fit h-fit leading-[6vw] max-md:text-[14vw] max-md:leading-[14vw] tracking-tight overflow-hidden">
-              <span className="flex MainTI">Wedding</span>
+              <span className="flex MainTI">Wedding <span className="max-sm:hidden ml-5"> ITINERARY</span></span>
             </div>
             <div className="COLOR_TEXT_RED Font_Q text-[6vw] w-fit h-fit leading-[6vw] max-md:text-[14vw] max-md:leading-[14vw] tracking-tight overflow-hidden">
-              <span className="flex MainTI">ITINERARY</span>
+              <span className="flex sm:hidden MainTI">ITINERARY</span>
             </div>
             <div className="COLOR_TEXT_RED Font_Q w-fit h-fit tracking-tight overflow-hidden">
               <p className="Font_YV max-w-[600px] MainTI w-[90%] mx-auto mt-4">
@@ -169,7 +169,8 @@ const page = () => {
             </div>
 
             {/* BACK */}
-            <div className="max-sm:hidden absolute inset-0 bg-[#044BB2] text-white flex items-center justify-center p-5">
+            <div className="max-sm:hidden absolute inset-0 text-[#044BB2] overflow-hidden  flex items-center justify-center p-5">
+              <img src={`/allPageImg/sky.png`} alt="img" className="w-full h-full absolute top-0 left-0 object-cover z-[-1] opacity-50 object-center" />
               <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
                Timing ~ 12:00 PM <br />
                   <br />
@@ -198,6 +199,7 @@ const page = () => {
                 <img src="/assets/s35.png" className="w-[70%] object-cover" />
               </div>
               <div className="sm:hidden  inset-0  text-[#044BB2] flex items-center justify-center">
+
                 <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
                  Timing ~ 7:30 PM <br />
                   <br />
@@ -211,7 +213,8 @@ const page = () => {
             </div>
 
             {/* BACK */}
-            <div className="max-sm:hidden absolute inset-0 bg-[#044BB2] text-white flex items-center justify-center p-5">
+            <div className="max-sm:hidden absolute inset-0 text-[#044BB2] overflow-hidden flex items-center justify-center p-5">
+               <img src={`/allPageImg/sky.png`} alt="img" className="w-full h-full absolute top-0 left-0 object-cover z-[-1] opacity-50 object-center" />
               <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
                 Timing ~ 7:30 PM <br />
                   <br />
@@ -256,7 +259,8 @@ const page = () => {
             </div>
 
             {/* BACK */}
-            <div className=" max-sm:hidden absolute inset-0 bg-[#044BB2] text-white flex items-center justify-center p-5">
+            <div className=" max-sm:hidden absolute inset-0 text-[#044BB2] overflow-hidden flex items-center justify-center p-5">
+               <img src={`/allPageImg/sky.png`} alt="img" className="w-full h-full absolute top-0 left-0 object-cover z-[-1] opacity-50 object-center" />
               <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
                 Timing ~ 12:30 PM<br />
                   <br />
@@ -296,8 +300,9 @@ const page = () => {
             </div>
 
             {/* BACK */}
-            <div className="max-sm:hidden absolute inset-0 bg-[#044BB2] text-white flex items-center justify-center p-5">
-              <p className="text-[2vw] max-md:text-[4vw] text-start Font_YV">
+            <div className="max-sm:hidden absolute inset-0 text-[#044BB2] overflow-hidden flex items-center justify-center p-5">
+               <img src={`/allPageImg/sky.png`} alt="img" className="w-full h-full absolute top-0 left-0 object-cover z-[-1] opacity-50 object-center" />
+              <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
                 Timing ~ 7:30 PM<br />
                   <br />
                  The Courtyard
@@ -336,8 +341,9 @@ const page = () => {
             </div>
 
             {/* BACK */}
-            <div className="max-sm:hidden absolute inset-0 bg-[#044BB2] text-white flex items-center justify-center p-5">
-              <p className="text-[2vw] max-md:text-[4vw] text-start Font_YV">
+            <div className="max-sm:hidden absolute inset-0 text-[#044BB2] overflow-hidden flex items-center justify-center p-5">
+               <img src={`/allPageImg/sky.png`} alt="img" className="w-full h-full absolute top-0 left-0 object-cover z-[-1] opacity-50 object-center" />
+              <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
                 Timing ~ 11:00 AM<br />
                   <br />
                  The Terraces

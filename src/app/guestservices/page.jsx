@@ -7,7 +7,7 @@ const TABS = [
   {
     id: "transportation",
     label: "Transportation",
-    number: "4.1",
+    number: "1",
     content: (
       <div className="gs-content">
         <h2 className="gs-section-title COLOR_TEXT_RED Font_Q">Transportation</h2>
@@ -42,7 +42,7 @@ const TABS = [
   {
     id: "style-guide",
     label: "Style Guide",
-    number: "4.2",
+    number: "2",
     content: (
       <div className="gs-content">
         <h2 className="gs-section-title COLOR_TEXT_RED Font_Q">Style Guide</h2>
@@ -55,7 +55,7 @@ const TABS = [
   {
     id: "hair-makeup",
     label: "Hair & Makeup",
-    number: "4.3",
+    number: "3",
     content: (
       <div className="gs-content">
         <h2 className="gs-section-title COLOR_TEXT_RED Font_Q">Hair & Makeup</h2>
@@ -461,7 +461,7 @@ export default function GuestServices() {
         </header>
 
         {/* ── TABS ── */}
-        <div className="gs-tabs-outer">
+        <div className="gs-tabs-outer flex justify-center items-center">
           <div className="gs-tabs-scroll">
             <div ref={tabsBarRef} className="gs-tabs-bar" role="tablist">
               {TABS.map((tab, i) => (
@@ -486,7 +486,7 @@ export default function GuestServices() {
         {/* ── PANEL ── */}
         <div
           ref={contentPanelRef}
-          className="gs-panel "
+          className="gs-panel text-center "
           role="tabpanel"
           id={`panel-${TABS[active].id}`}
         >

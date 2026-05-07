@@ -156,37 +156,37 @@ export default function Home() {
       // });
     });
 
-    // ===============================
-    const handleMouseMove = (e) => {
-      const { innerWidth, innerHeight } = window;
+    // =============================== ENVIROMENT MOVE ANIMATION
+    // const handleMouseMove = (e) => {
+    //   const { innerWidth, innerHeight } = window;
 
-      const centerX = innerWidth / 2;
-      const centerY = innerHeight / 2;
+    //   const centerX = innerWidth / 2;
+    //   const centerY = innerHeight / 2;
 
-      const mouseX = e.clientX;
-      const mouseY = e.clientY;
+    //   const mouseX = e.clientX;
+    //   const mouseY = e.clientY;
 
-      // Normalize (-1 to 1)
-      const x = (mouseX - centerX) / centerX;
-      const y = (mouseY - centerY) / centerY;
+    //   // Normalize (-1 to 1)
+    //   const x = (mouseX - centerX) / centerX;
+    //   const y = (mouseY - centerY) / centerY;
 
-      // Move opposite direction (invert)
-      const moveX = -x * 5;
-      const moveY = -y * 5;
+    //   // Move opposite direction (invert)
+    //   const moveX = -x * 5;
+    //   const moveY = -y * 5;
 
-      gsap.to(".stickyAnimation", {
-        x: moveX,
-        y: moveY,
-        duration: 0.5,
-        ease: "power2.out",
-      });
-    };
+    //   gsap.to(".stickyAnimation", {
+    //     x: moveX,
+    //     y: moveY,
+    //     duration: 0.5,
+    //     ease: "power2.out",
+    //   });
+    // };
 
-    window.addEventListener("mousemove", handleMouseMove);
+    // window.addEventListener("mousemove", handleMouseMove);
 
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
+    // return () => {
+    //   window.removeEventListener("mousemove", handleMouseMove);
+    // };
   }, []);
 
   return (
@@ -198,11 +198,11 @@ export default function Home() {
             <img
               src={`/allPageImg/home/home.webp`}
               alt="BGIMG"
-              className="w-full h-full  BGBLD  scale-[1] object-center object-cover"
+              className="w-full h-full  BGBLD   object-center object-cover"
             />
 
-            <div className="pointer-events-none absolute bottom-[0%] left-0 w-full h-[30vh] bg-gradient-to-b from-transparent via-[#ffffff]/60 to-[#ffffff] z-40" />
-            <div className=" absolute bottom-2 left-0 w-full h-fit flex justify-center items-center Font_Q COLOR_TEXT_RED text-[8vw] max-sm:text-[12vw] z-50 NAMEWED tracking-tighter">
+            <div className="pointer-events-none absolute bottom-[-0.5%] left-0 w-full h-[30vh] bg-gradient-to-b from-transparent via-[#ffffff]/65 to-[#ffffff] z-40" />
+            <div className=" absolute bottom-[-3%] left-0 w-full h-fit flex justify-center items-center Font_Q COLOR_TEXT_RED text-[8vw] max-sm:text-[12vw] z-50 NAMEWED tracking-tighter">
               LAIQA & RABEEL
             </div>
 
@@ -217,12 +217,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="w-1/2 h-screen  left flex justify-end items-center LTM relative z-20  overflow-x-visible max-sm:overflow-hidden">
-            {/* <img
-              src={`/home/Left.png`}
-              alt="left"
-              className="h-full object-cover object-center max-sm:object-right z-10 GatImg  "
-            /> */}
+          <div className="w-1/2 h-screen  left flex justify-end items-center LTM relative z-50  overflow-x-visible max-sm:overflow-hidden">
 
             <div className=" w-1/4 max-sm:w-full h-[70vh]  absolute right-0 bottom-0 ">
               <img
@@ -238,7 +233,7 @@ export default function Home() {
               className="h-full w-screen object-cover scale-[1.03] object-center max-sm:object-right flex absolute top-0 left-0 z-[-1]  "
             />
           </div>
-          <div className="w-1/2  h-screen left relative flex justify-start items-center RTM z-20 overflow-x-visible">
+          <div className="w-1/2  h-screen left relative flex justify-start items-center RTM z-50 overflow-x-visible">
             <div className=" w-1/4 max-sm:w-full h-[70vh]  absolute left-0 bottom-0 ">
               <img
                 src={`/allPageImg/home/RL.png `}

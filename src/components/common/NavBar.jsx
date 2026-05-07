@@ -13,41 +13,43 @@ gsap.registerPlugin(ScrollTrigger);
 const NavBar = () => {
   const navRef = useRef(null);
 
-  useEffect(() => {
-    if (!navRef.current) return;
+  // =========================== NAV UP ON SCROLL
 
-    let lastScroll = 0;
+  // useEffect(() => {
+  //   if (!navRef.current) return;
 
-    const trigger = ScrollTrigger.create({
-      start: 0,
-      end: "max",
-      onUpdate: (self) => {
-        const currentScroll = self.scroll();
+  //   let lastScroll = 0;
 
-        if (currentScroll > lastScroll && currentScroll > 100) {
-          // Scroll DOWN → hide navbar
-          gsap.to(navRef.current, {
-            y: "-300%",
-            duration: 0.4,
-            ease: "power3.out",
-          });
-        } else {
-          // Scroll UP → show navbar
-          gsap.to(navRef.current, {
-            y: "0%",
-            duration: 0.4,
-            ease: "power3.out",
-          });
-        }
+  //   const trigger = ScrollTrigger.create({
+  //     start: 0,
+  //     end: "max",
+  //     onUpdate: (self) => {
+  //       const currentScroll = self.scroll();
 
-        lastScroll = currentScroll;
-      },
-    });
+  //       if (currentScroll > lastScroll && currentScroll > 100) {
+  //         // Scroll DOWN → hide navbar
+  //         gsap.to(navRef.current, {
+  //           y: "-300%",
+  //           duration: 0.4,
+  //           ease: "power3.out",
+  //         });
+  //       } else {
+  //         // Scroll UP → show navbar
+  //         gsap.to(navRef.current, {
+  //           y: "0%",
+  //           duration: 0.4,
+  //           ease: "power3.out",
+  //         });
+  //       }
 
-    return () => {
-      trigger.kill();
-    };
-  }, []);
+  //       lastScroll = currentScroll;
+  //     },
+  //   });
+
+  //   return () => {
+  //     trigger.kill();
+  //   };
+  // }, []);
 
   const [isNavOpen, SetIsNavOpen] = useState(false);
 
