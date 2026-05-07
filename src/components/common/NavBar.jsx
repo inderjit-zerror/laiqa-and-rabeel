@@ -8,10 +8,13 @@ import { RiMenu3Line } from "react-icons/ri";
 import { usePathname } from "next/navigation";
 import { navigate } from "next/dist/client/components/segment-cache/navigation";
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 const NavBar = () => {
   const navRef = useRef(null);
+
+  const pathname = usePathname();
 
   // =========================== NAV UP ON SCROLL
 
@@ -111,8 +114,6 @@ const NavBar = () => {
     }
   };
 
-  const pathname = usePathname();
-  console.log(pathname);
 
   const scrollToSection = (id) => {
     const el = document.getElementById(id);
@@ -127,6 +128,7 @@ const NavBar = () => {
   return (
     <div
       ref={navRef}
+      style={{opacity: pathname === "/" ? 0 : 1}}
       className="w-full NavMenuCont h-[46px] mt-10 flex gap-50 justify-between fixed top-0 left-0   items-center z-100 px-20"
     >
       {/* Left */}

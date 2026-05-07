@@ -85,6 +85,9 @@ export default function Home() {
       },
       "a1",
     );
+    A.to('.NavMenuCont',{
+      opacity: 1
+    },"<0.2")
    
 
     // ==========================================
@@ -145,6 +148,8 @@ export default function Home() {
           duration: 0.6,
           ease: "power2.inOut",
         });
+
+      
 
       // // Floating animation (independent)
       // gsap.to(lamp, {
@@ -217,7 +222,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="w-1/2 h-screen  left flex justify-end items-center LTM relative z-50  overflow-x-visible max-sm:overflow-hidden">
+          <div className="w-1/2 h-screen  left flex justify-end items-center LTM relative z-500  overflow-x-visible max-sm:overflow-hidden">
 
             <div className=" w-1/4 max-sm:w-full h-[70vh]  absolute right-0 bottom-0 ">
               <img
@@ -233,7 +238,7 @@ export default function Home() {
               className="h-full w-screen object-cover scale-[1.03] object-center max-sm:object-right flex absolute top-0 left-0 z-[-1]  "
             />
           </div>
-          <div className="w-1/2  h-screen left relative flex justify-start items-center RTM z-50 overflow-x-visible">
+          <div className="w-1/2  h-screen left relative flex justify-start items-center RTM z-500 overflow-x-visible">
             <div className=" w-1/4 max-sm:w-full h-[70vh]  absolute left-0 bottom-0 ">
               <img
                 src={`/allPageImg/home/RL.png `}
