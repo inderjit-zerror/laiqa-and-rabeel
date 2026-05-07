@@ -53,7 +53,7 @@ const HeroSectionVenue = () => {
   return (
     <div
       ref={containerRef}
-      className="w-full h-[150vh] max-sm:h-svh flex overflow-hidden  relative COLOR_BG_CREAM"
+      className="w-full h-[150vh] max-md:h-svh flex overflow-hidden  relative COLOR_BG_CREAM"
     >
       <img
         src={`/allPageImg/wp_11zon.webp`}
@@ -61,15 +61,15 @@ const HeroSectionVenue = () => {
         className="w-full h-full object-cover absolute top-0 left-0  object-top Igm  opacity-0 "
       />
 
-      <div className="w-2/2 absolute top-[15%] left-1/2  justify-center items-center max-sm:w-full -translate-x-1/2 flex flex-col ">
-        {/* <p className=' uppercase Font_YV  COLOR_TEXT_RED text-[6rem] leading-[6rem] max-sm:text-[15vw] max-sm:leading-[16vw] ' >THE wedding Venue</p> */}
-        <h1 className=" uppercase Font_Q COLOR_TEXT_RED text-[6.5vw] leading-[6.5vw] max-sm:text-[11vw] max-sm:leading-[12vw] mt-[2vh] overflow-hidden ">
+      <div className="w-2/2 absolute top-[15%] left-1/2  justify-center items-center max-md:w-full -translate-x-1/2 flex flex-col  max-sm:px-5">
+        {/* <p className=' uppercase Font_YV  COLOR_TEXT_RED text-[6rem] leading-[6rem] max-md:text-[15vw] max-md:leading-[16vw] ' >THE wedding Venue</p> */}
+        <h1 className=" uppercase Font_Q COLOR_TEXT_RED text-[6.5vw] leading-[6.5vw] max-md:text-[10vw] max-md:leading-[12vw] mt-[2vh] overflow-hidden ">
           <span className="flex WEDMAIMTT2 translate-y-[100%]">
             wedding venue
           </span>
         </h1>
-        <h1 className=" uppercase Font_Q COLOR_TEXT_RED text-[6.5vw] leading-[6.5vw] max-sm:text-[11vw]  max-sm:leading-[12vw] mt-[2vh] max-sm:mt-[0.5vh] overflow-hidden ">
-          <span className="flex WEDMAIMTT2 translate-y-[100%] max-sm:text-center">
+        <h1 className=" uppercase Font_Q COLOR_TEXT_RED text-[6.5vw] leading-[6.5vw] max-md:text-[10vw]  max-md:leading-[12vw] mt-[2vh] max-md:mt-[0.5vh] overflow-hidden ">
+          <span className="flex WEDMAIMTT2 translate-y-[100%] max-md:text-center">
             {" "}
             oberoi marrakech
           </span>

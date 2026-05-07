@@ -387,13 +387,13 @@ const ActivitiesGrid = () => {
 
   return (
     <>
-      <div className=" w-full h-fit flex flex-col justify-center items-center py-[20vh] max-sm:pb-[10vh] ">
+      <div className=" w-full h-fit flex flex-col justify-center items-center py-[20vh] max-md:pb-[10vh] ">
         <p className=" uppercase Font_YV COLOR_TEXT_RED contA6"></p>
-        <h4 className=" text-[8vw]  leading-[8vw] max-sm:text-[12vw] max-sm:leading-[12vw] Font_Q contA6 COLOR_TEXT_RED text-center uppercase ">
+        <h4 className=" text-[8vw]  leading-[8vw] max-md:text-[12vw] max-md:leading-[12vw] Font_Q contA6 COLOR_TEXT_RED text-center uppercase ">
           Marrakech
         </h4>
         <div className="w-[90%] max-w-[740px] flex flex-col contA6 justify-center items-center gap-6">
-          <div className="text-[#395238] text-[1vw] leading-[1vw] max-sm:text-[18px] max-sm:leading-[18px] contA6 COLOR_TEXT_RED text-center Font_YV gap-2">
+          <div className="text-[#395238] text-[1vw] leading-[1vw] max-md:text-[18px] max-md:leading-[18px] contA6 COLOR_TEXT_RED text-center Font_YV gap-2">
             The Red City. Rose-coloured walls, ancient souks, and a city where
             Berber, Arab, and French influences meet in a way that feels
             entirely its own. 
@@ -412,7 +412,7 @@ const ActivitiesGrid = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-14 max-w-6xl mx-auto mb-[10vh] max-sm:p-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-14 max-w-6xl mx-auto mb-[10vh] max-md:p-5">
         {ACTIVITIES.map((act, id) => (
           <ActivityCard key={id} act={act} />
         ))}

@@ -30,7 +30,7 @@ const  WeddingHero = () => {
 
 
   return (
-    <section className="h-fit flex items-center justify-center COLOR_BG_CREAM px-4 pt-[20vh] max-sm:px-[20px] pb-[4vh]">
+    <section className="h-fit flex items-center justify-center COLOR_BG_CREAM px-4 pt-[20vh] max-md:px-[20px] pb-[4vh]">
       <div className="text-center max-w-3xl  ">
         {/* Bride Name */}
         <h1 className="Font_Q COLOR_TEXT_RED text-5xl md:text-6xl tracking-wide uppercase WHD1">

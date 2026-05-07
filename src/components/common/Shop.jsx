@@ -160,7 +160,7 @@ export default function Shop() {
   return (
    <>
    <div className="w-full h-full flex justify-center items-center COLOR_BG_RED mt-20 py-20">
-    <div className="w-[80%] max-sm:w-full px-6 max-sm:px-[20px] flex flex-col gap-20 text-white">
+    <div className="w-[80%] max-md:w-full px-6 max-md:px-[20px] flex flex-col gap-20 text-white">
        <h2 className="text-center Font_Q flex justify-center items-center">
         Shop In Udaipur
       </h2>

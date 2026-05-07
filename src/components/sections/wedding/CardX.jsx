@@ -103,12 +103,12 @@ const CardX = () => {
       {/* For Mobile */}
       <div className="w-full h-fit flex flex-col z-20 pt-20 sm:hidden COLOR_BG_CREAM space-y-10 lg:space-y-20 lg:pt-20 ">
         {/* div-1 */}
-        <div className="w-full h-fit  max-sm:min-h-fit  items-center flex max-sm:flex-col  ">
+        <div className="w-full h-fit  max-md:min-h-fit  items-center flex max-md:flex-col  ">
           {/* Left */}
-          <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit max-sm:py-[2vh] max-sm:px-[20px] max-lg:px-[4vw] flex relative COLOR_BG_CREAM flex-col COLOR_TEXT_RED justify-center items-center">
+          <div className="w-1/2 max-md:w-full h-fit max-md:h-fit max-md:py-[2vh] max-md:px-[20px] max-lg:px-[4vw] flex relative COLOR_BG_CREAM flex-col COLOR_TEXT_RED justify-center items-center">
             <p className="Font_YV font-semibold uppercase ">Day 1</p>
 
-            <div className=" text-[16px] mt-1 flex flex-col Font_YV gap-1 max-sm:text-center justify-center items-center">
+            <div className=" text-[16px] mt-1 flex flex-col Font_YV gap-1 max-md:text-center justify-center items-center">
               <span>
                 <span className="font-semibold"></span> 21/09/26
               </span>
@@ -119,7 +119,7 @@ const CardX = () => {
             </div>
 
 
-            <h5 className="Font_Q text-[40px] leading-[45px] max-sm:text-center flex-wrap  my-6 uppercase px-[10%] text-center flex justify-center items-center">
+            <h5 className="Font_Q text-[40px] leading-[45px] max-md:text-center flex-wrap  my-6 uppercase px-[10%] text-center flex justify-center items-center">
               Sangeet
             </h5>
 
@@ -134,7 +134,7 @@ const CardX = () => {
           </div>
 
           {/* right */}
-          <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit  max-sm:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
+          <div className="w-1/2 max-md:w-full h-fit max-md:h-fit  max-md:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
             <div className="w-1/2 h-fit  flex flex-col justify-center img3d-wrapper items-center">
               {/* <img
                 src={`/imgs/icon3.png`}
@@ -148,12 +148,12 @@ const CardX = () => {
         </div>
 
         {/* div-2  */}
-        <div className="w-full h-fit  max-sm:min-h-fit  flex max-sm:flex-col items-center flex-row-reverse  ">
+        <div className="w-full h-fit  max-md:min-h-fit  flex max-md:flex-col items-center flex-row-reverse  ">
           {/* Left */}
-          <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit max-sm:py-[2vh] max-sm:px-[20px] max-lg:px-[4vw] flex relative COLOR_BG_CREAM flex-col COLOR_TEXT_RED justify-center items-center">
+          <div className="w-1/2 max-md:w-full h-fit max-md:h-fit max-md:py-[2vh] max-md:px-[20px] max-lg:px-[4vw] flex relative COLOR_BG_CREAM flex-col COLOR_TEXT_RED justify-center items-center">
             <p className="Font_YV font-semibold uppercase ">Day 2</p>
 
-            <div className=" text-[16px] mt-1 flex flex-col Font_YV gap-1 max-sm:text-center justify-center items-center">
+            <div className=" text-[16px] mt-1 flex flex-col Font_YV gap-1 max-md:text-center justify-center items-center">
               <span className=" uppercase flex flex-col">
                 <span className="font-semibold"></span> 22/09/26
                 <span className="font-semibold mt-1"></span> Morning
@@ -161,7 +161,7 @@ const CardX = () => {
             </div>
 
 
-            <h5 className="Font_Q text-[40px] leading-[45px] max-sm:text-center flex flex-wrap justify-center items-center  my-6 uppercase px-[10%] text-center ">
+            <h5 className="Font_Q text-[40px] leading-[45px] max-md:text-center flex flex-wrap justify-center items-center  my-6 uppercase px-[10%] text-center ">
               Haldi
             </h5>
 
@@ -176,15 +176,15 @@ const CardX = () => {
           </div>
 
           {/* 2 */}
-          <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit max-sm:py-[2vh] max-sm:px-[20px] max-lg:px-[4vw] flex relative COLOR_BG_CREAM flex-col COLOR_TEXT_RED justify-center items-center">
+          <div className="w-1/2 max-md:w-full h-fit max-md:h-fit max-md:py-[2vh] max-md:px-[20px] max-lg:px-[4vw] flex relative COLOR_BG_CREAM flex-col COLOR_TEXT_RED justify-center items-center">
             {/* <p className="Font_YV font-semibold uppercase ">Day 2</p> */}
 
-            <h5 className="Font_Q text-[40px] leading-[45px] max-sm:text-center flex flex-wrap justify-center items-center  my-6 uppercase px-[10%] text-center ">
+            <h5 className="Font_Q text-[40px] leading-[45px] max-md:text-center flex flex-wrap justify-center items-center  my-6 uppercase px-[10%] text-center ">
               Wedding
             </h5>
 
 
-            <div className=" text-[16px] mt-1 flex flex-col Font_YV gap-1 max-sm:text-center justify-center items-center">
+            <div className=" text-[16px] mt-1 flex flex-col Font_YV gap-1 max-md:text-center justify-center items-center">
               <span className=" uppercase flex flex-col">
                 <span className="font-semibold"></span> 22/09/26
                 <span className="font-semibold mt-1"></span> Evening
@@ -205,8 +205,8 @@ const CardX = () => {
           </div>
 
           {/* right */}
-          {/* <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit max-sm:py-[0vh] max-sm:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
-            <div className="w-2/3 max-sm:w-1/2 h-fit  flex flex-col justify-center items-center img3d-wrapper">
+          {/* <div className="w-1/2 max-md:w-full h-fit max-md:h-fit max-md:py-[0vh] max-md:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
+            <div className="w-2/3 max-md:w-1/2 h-fit  flex flex-col justify-center items-center img3d-wrapper">
               <img
                 src={`/imgs/icon1.png`}
                 alt="Img"
@@ -214,7 +214,7 @@ const CardX = () => {
               />
             </div>
           </div> */}
-          <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit max-sm:pb-[2vh] max-sm:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
+          <div className="w-1/2 max-md:w-full h-fit max-md:h-fit max-md:pb-[2vh] max-md:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
             <div className="w-1/2 h-fit  flex flex-col justify-center img3d-wrapper items-center">
               {/* <img
                 src={`/imgs/icon4.png`}
@@ -228,19 +228,19 @@ const CardX = () => {
         </div>
 
         {/* div-3 */}
-        <div className="w-full h-fit  max-sm:min-h-fit   flex items-center max-sm:flex-col ">
+        <div className="w-full h-fit  max-md:min-h-fit   flex items-center max-md:flex-col ">
           {/* Left */}
-          <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit  max-sm:py-[2vh] max-sm:px-[20px] max-lg:px-[4vw] flex relative COLOR_BG_CREAM flex-col COLOR_TEXT_RED justify-center items-center">
+          <div className="w-1/2 max-md:w-full h-fit max-md:h-fit  max-md:py-[2vh] max-md:px-[20px] max-lg:px-[4vw] flex relative COLOR_BG_CREAM flex-col COLOR_TEXT_RED justify-center items-center">
             <p className="Font_YV font-semibold uppercase ">Day 3</p>
 
-            <div className=" text-[16px] mt-1 flex flex-col Font_YV gap-1 max-sm:text-center justify-center items-center">
+            <div className=" text-[16px] mt-1 flex flex-col Font_YV gap-1 max-md:text-center justify-center items-center">
               <span className=" flex flex-col uppercase">
                 <span className="font-semibold"></span> 23/09/26
                 <span className="font-semibold"></span> Morning
               </span>
             </div>
 
-            <h5 className="Font_Q text-[40px] leading-[45px] flex flex-wrap justify-center items-center max-sm:text-center  my-6 uppercase  px-[10%] text-center">
+            <h5 className="Font_Q text-[40px] leading-[45px] flex flex-wrap justify-center items-center max-md:text-center  my-6 uppercase  px-[10%] text-center">
               Pool Party
             </h5>
 
@@ -254,16 +254,16 @@ const CardX = () => {
 
 
           {/* Left 2 */}
-          <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit  max-sm:py-[2vh] max-sm:px-[20px] max-lg:px-[4vw] flex relative COLOR_BG_CREAM flex-col COLOR_TEXT_RED justify-center items-center">
+          <div className="w-1/2 max-md:w-full h-fit max-md:h-fit  max-md:py-[2vh] max-md:px-[20px] max-lg:px-[4vw] flex relative COLOR_BG_CREAM flex-col COLOR_TEXT_RED justify-center items-center">
             {/* <p className="Font_YV font-semibold uppercase ">Day 3</p> */}
 
 
 
-            <h5 className="Font_Q text-[40px] leading-[45px] flex flex-wrap justify-center items-center max-sm:text-center  my-6 uppercase  px-[10%] text-center">
+            <h5 className="Font_Q text-[40px] leading-[45px] flex flex-wrap justify-center items-center max-md:text-center  my-6 uppercase  px-[10%] text-center">
               Reception
             </h5>
 
-            <div className=" text-[16px] mt-1 flex flex-col Font_YV gap-1 max-sm:text-center justify-center items-center">
+            <div className=" text-[16px] mt-1 flex flex-col Font_YV gap-1 max-md:text-center justify-center items-center">
               <span className=" flex flex-col uppercase">
                 <span className="font-semibold"></span> 23/09/26
                 <span className="font-semibold mt-1"></span> Evening
@@ -282,16 +282,16 @@ const CardX = () => {
           </div>
 
           {/* Left 3 */}
-          <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit  max-sm:py-[2vh] max-sm:px-[20px] max-lg:px-[4vw] flex relative COLOR_BG_CREAM flex-col COLOR_TEXT_RED justify-center items-center">
+          <div className="w-1/2 max-md:w-full h-fit max-md:h-fit  max-md:py-[2vh] max-md:px-[20px] max-lg:px-[4vw] flex relative COLOR_BG_CREAM flex-col COLOR_TEXT_RED justify-center items-center">
             {/* <p className="Font_YV font-semibold uppercase ">Day 3</p> */}
 
 
 
-            <h5 className="Font_Q text-[40px] leading-[45px] flex flex-wrap justify-center items-center max-sm:text-center  my-6 uppercase  px-[10%] text-center">
+            <h5 className="Font_Q text-[40px] leading-[45px] flex flex-wrap justify-center items-center max-md:text-center  my-6 uppercase  px-[10%] text-center">
               After Party
             </h5>
 
-            <div className=" text-[16px] mt-1 flex flex-col Font_YV gap-1 max-sm:text-center justify-center items-center">
+            <div className=" text-[16px] mt-1 flex flex-col Font_YV gap-1 max-md:text-center justify-center items-center">
               <span className=" flex flex-col uppercase">
                 <span className="font-semibold"></span> 23/09/26
                 <span className="font-semibold mt-1"></span> Evening
@@ -309,7 +309,7 @@ const CardX = () => {
           </div>
 
           {/* right */}
-          {/* <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit max-sm:pb-[10vh] max-sm:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
+          {/* <div className="w-1/2 max-md:w-full h-fit max-md:h-fit max-md:pb-[10vh] max-md:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
             <div className="w-1/2 h-fit  flex flex-col justify-center img3d-wrapper items-center">
               <img
                 src={`/imgs/icon4.png`}
@@ -318,8 +318,8 @@ const CardX = () => {
               />
             </div>
           </div> */}
-          <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit  max-sm:py-[0vh] max-sm:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
-            <div className="w-2/3 max-sm:w-1/2 h-fit  flex flex-col justify-center items-center img3d-wrapper pb-10">
+          <div className="w-1/2 max-md:w-full h-fit max-md:h-fit  max-md:py-[0vh] max-md:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
+            <div className="w-2/3 max-md:w-1/2 h-fit  flex flex-col justify-center items-center img3d-wrapper pb-10">
               {/* <img
                 src={`/imgs/icon1.png`}
                 alt="Img"
@@ -333,22 +333,22 @@ const CardX = () => {
       {/* /////////////////////////////////////////////////////////////////////////</> */}
 
       {/* For PC */}
-      <div className="w-full h-fit flex flex-col z-20 max-md:overflow-hidden max-sm:hidden ">
+      <div className="w-full h-fit flex flex-col z-20 max-md:overflow-hidden max-md:hidden ">
         {/* div-1 Sangeet */}
-        <div className="w-full md:min-h-screen relative flex max-sm:flex-col-reverse ">
+        <div className="w-full md:min-h-screen relative flex max-md:flex-col-reverse ">
           {/* left */}
-          <div className="w-1/2 md:min-h-screen  max-sm:w-full  COLOR_BG_CREAM relative z-50 top-0 mt-20 md:mt-0 mr-auto max-sm:px-[0px] max-lg:px-[4vw]">
+          <div className="w-1/2 md:min-h-screen  max-md:w-full  COLOR_BG_CREAM relative z-50 top-0 mt-20 md:mt-0 mr-auto max-md:px-[0px] max-lg:px-[4vw]">
             {/* Day md:sticky */}
             <div className="w-full h-fit md:sticky top-0 left-0 flex justify-center items-center md:mt-[5vh] md:pt-[5vw] pb-[2.5vw] COLOR_BG_CREAM z-60 ">
               <h2 className="Font_Q COLOR_TEXT_RED uppercase">Day 1</h2>
             </div>
 
             {/* 1 */}
-            <div className="w-full max-sm:w-full h-fit py-[10vh] max-sm:h-fit max-sm:py-[5vh] max-sm:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
-              <h5 className="Font_Q text-[40px] max-sm:leading-[45px] uppercase mt-6 max-sm:px-[1vw] max-sm:text-center ">
+            <div className="w-full max-md:w-full h-fit py-[10vh] max-md:h-fit max-md:py-[5vh] max-md:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
+              <h5 className="Font_Q text-[40px] max-md:leading-[45px] uppercase mt-6 max-md:px-[1vw] max-md:text-center ">
                 Sangeet Dinner
               </h5>
-              <div className=" text-[16px] mt-6 flex flex-col justify-center max-sm:text-center items-center Font_YV gap-1">
+              <div className=" text-[16px] mt-6 flex flex-col justify-center max-md:text-center items-center Font_YV gap-1">
                 <span className=" uppercase">
                   <span className="font-semibold"></span> 14/11/26
                 </span>
@@ -372,11 +372,11 @@ const CardX = () => {
             </div>
 
             {/* 2 */}
-            <div className="w-full max-sm:w-full h-fit py-[10vh] max-sm:h-fit max-sm:py-[5vh] max-sm:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
-              <h5 className="Font_Q text-[40px] max-sm:leading-[45px] uppercase mt-6 max-sm:px-[1vw] max-sm:text-center ">
+            <div className="w-full max-md:w-full h-fit py-[10vh] max-md:h-fit max-md:py-[5vh] max-md:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
+              <h5 className="Font_Q text-[40px] max-md:leading-[45px] uppercase mt-6 max-md:px-[1vw] max-md:text-center ">
                 Mehndi Lunch
               </h5>
-              <div className=" text-[16px] mt-6 flex flex-col justify-center max-sm:text-center items-center Font_YV gap-1">
+              <div className=" text-[16px] mt-6 flex flex-col justify-center max-md:text-center items-center Font_YV gap-1">
                 <span className=" uppercase">
                   <span className="font-semibold"></span> 14/11/26
                 </span>
@@ -401,7 +401,7 @@ const CardX = () => {
           </div>
 
           {/* right */}
-          <div className="w-1/2 md:h-screen   max-sm:w-full max-md:mt-15 COLOR_BG_Noise  md:sticky md:top-0 md:right-0 flex justify-center items-center md:bg-[#044BB2]">
+          <div className="w-1/2 md:h-screen   max-md:w-full max-md:mt-15 COLOR_BG_Noise  md:sticky md:top-0 md:right-0 flex justify-center items-center md:bg-[#044BB2]">
             <div className="w-1/2 md:h-fit  justify-center img3d-wrapper z-100  ">
               {/* <h3 className="Font_Q COLOR_TEXT_CREAM uppercase">OutFit</h3>
 
@@ -423,9 +423,9 @@ const CardX = () => {
         </div>
 
         {/* Div - 2*/}
-        <div className="w-full md:min-h-screen  relative flex max-sm:flex-col ">
+        <div className="w-full md:min-h-screen  relative flex max-md:flex-col ">
           {/* Left */}
-          <div className="w-1/2 max-sm:w-full max-sm:h-fit max-sm:py-[0vh] COLOR_BG_Noise max-md:m-10 h-screen md:sticky top-0 left-0 flex justify-center items-center md:bg-[#044BB2]">
+          <div className="w-1/2 max-md:w-full max-md:h-fit max-md:py-[0vh] COLOR_BG_Noise max-md:m-10 h-screen md:sticky top-0 left-0 flex justify-center items-center md:bg-[#044BB2]">
             <div className="w-1/2 h-fit  flex flex-col justify-center img3d-wrapper z-100  items-center">
               {/* <h3 className="Font_Q COLOR_TEXT_CREAM uppercase">OutFit</h3>
             <p className="Font_YV COLOR_TEXT_CREAM mt-5">
@@ -444,18 +444,18 @@ const CardX = () => {
           </div>
 
           {/* Right */}
-          <div className="w-1/2 max-sm:w-full max-sm:h-fit min-h-screen  COLOR_BG_CREAM relative top-0 md:ml-auto max-sm:px-[0px] max-lg:px-[4vw]">
+          <div className="w-1/2 max-md:w-full max-md:h-fit min-h-screen  COLOR_BG_CREAM relative top-0 md:ml-auto max-md:px-[0px] max-lg:px-[4vw]">
             {/* Day md:sticky */}
             <div className="w-full h-fit md:sticky top-0 left-0 flex justify-center items-center mt-[5vh] pt-[5vw] pb-[2.5vw] COLOR_BG_CREAM z-60 ">
               <h2 className="Font_Q COLOR_TEXT_RED uppercase">Day 2</h2>
             </div>
 
             {/* 1 Detail Haldi */}
-            {/* <div className="w-full max-sm:w-full h-fit py-[10vh] max-sm:h-fit max-sm:py-[10vh] max-sm:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
-            <h5 className="Font_Q text-[40px] max-sm:leading-[45px] uppercase mt-6 max-sm:px-[1vw] max-sm:text-center ">
+            {/* <div className="w-full max-md:w-full h-fit py-[10vh] max-md:h-fit max-md:py-[10vh] max-md:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
+            <h5 className="Font_Q text-[40px] max-md:leading-[45px] uppercase mt-6 max-md:px-[1vw] max-md:text-center ">
               Chooda
             </h5>
-            <div className=" text-[16px] mt-6 flex flex-col justify-center max-sm:text-center items-center Font_YV gap-1">
+            <div className=" text-[16px] mt-6 flex flex-col justify-center max-md:text-center items-center Font_YV gap-1">
               <span className=" uppercase">
                 <span className="font-semibold"></span> 22/09/26
               </span>
@@ -476,11 +476,11 @@ const CardX = () => {
           </div> */}
 
             {/* 2 Detail */}
-            <div className="w-full max-sm:w-full h-fit md:py-[10vh] max-sm:h-fit max-sm:py-[5vh] max-sm:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
-              <h5 className="Font_Q text-[40px] max-sm:leading-[45px] uppercase mt-6 max-sm:px-[1vw] max-sm:text-center ">
+            <div className="w-full max-md:w-full h-fit md:py-[10vh] max-md:h-fit max-md:py-[5vh] max-md:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
+              <h5 className="Font_Q text-[40px] max-md:leading-[45px] uppercase mt-6 max-md:px-[1vw] max-md:text-center ">
                 Nikkah Ceremony
               </h5>
-              <div className=" text-[16px] mt-6 flex flex-col justify-center max-sm:text-center items-center Font_YV gap-1">
+              <div className=" text-[16px] mt-6 flex flex-col justify-center max-md:text-center items-center Font_YV gap-1">
                 <span>
                   <span className="font-semibold"></span> 15/11/26
                 </span>
@@ -508,11 +508,11 @@ const CardX = () => {
             </div>
 
             {/* 3 Detail Standing Barat (girls side) */}
-            {/* <div className="w-full max-sm:w-full h-fit py-[10vh] max-sm:h-fit max-sm:py-[10vh] max-sm:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
-            <h5 className="Font_Q text-[40px] max-sm:leading-[45px] uppercase mt-6 max-sm:px-[1vw] max-sm:text-center ">
+            {/* <div className="w-full max-md:w-full h-fit py-[10vh] max-md:h-fit max-md:py-[10vh] max-md:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
+            <h5 className="Font_Q text-[40px] max-md:leading-[45px] uppercase mt-6 max-md:px-[1vw] max-md:text-center ">
               Standing Barat (girls side)
             </h5>
-            <div className=" text-[16px] mt-6 flex flex-col justify-center max-sm:text-center items-center Font_YV gap-1">
+            <div className=" text-[16px] mt-6 flex flex-col justify-center max-md:text-center items-center Font_YV gap-1">
               <span>
                 <span className="font-semibold"></span> 22/09/26
               </span>
@@ -531,11 +531,11 @@ const CardX = () => {
           </div> */}
 
             {/* 4 Wedding */}
-            <div className="w-full max-sm:w-full h-fit py-[10vh] pb-[30vh] max-sm:h-fit max-sm:py-[5vh] max-sm:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
-              <h5 className="Font_Q text-[40px] max-sm:leading-[45px] uppercase mt-6 max-sm:px-[1vw] max-sm:text-center ">
+            <div className="w-full max-md:w-full h-fit py-[10vh] pb-[30vh] max-md:h-fit max-md:py-[5vh] max-md:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
+              <h5 className="Font_Q text-[40px] max-md:leading-[45px] uppercase mt-6 max-md:px-[1vw] max-md:text-center ">
                 Reception
               </h5>
-              <div className=" text-[16px] mt-6 flex flex-col justify-center max-sm:text-center items-center Font_YV gap-1">
+              <div className=" text-[16px] mt-6 flex flex-col justify-center max-md:text-center items-center Font_YV gap-1">
                 <span>
                   <span className="font-semibold"></span> 15/11/26
                 </span>
@@ -559,11 +559,11 @@ const CardX = () => {
             </div>
 
             {/* 5 Wedding Dinner*/}
-            {/* <div className="w-full max-sm:w-full h-fit py-[10vh] max-sm:h-fit max-sm:py-[10vh] max-sm:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
-            <h5 className="Font_Q text-[40px] max-sm:leading-[45px] uppercase mt-6 max-sm:px-[1vw] max-sm:text-center ">
+            {/* <div className="w-full max-md:w-full h-fit py-[10vh] max-md:h-fit max-md:py-[10vh] max-md:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
+            <h5 className="Font_Q text-[40px] max-md:leading-[45px] uppercase mt-6 max-md:px-[1vw] max-md:text-center ">
               Baraat Swagat
             </h5>
-            <div className=" text-[16px] mt-6 flex flex-col justify-center max-sm:text-center items-center Font_YV gap-1">
+            <div className=" text-[16px] mt-6 flex flex-col justify-center max-md:text-center items-center Font_YV gap-1">
               <span>
                 <span className="font-semibold"></span> 22/09/26
               </span>
@@ -582,11 +582,11 @@ const CardX = () => {
           </div> */}
 
             {/* 6 */}
-            {/* <div className="w-full max-sm:w-full h-fit py-[10vh] max-sm:h-fit max-sm:py-[10vh] max-sm:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
-            <h5 className="Font_Q text-[40px] max-sm:leading-[45px] uppercase mt-6 max-sm:px-[1vw] max-sm:text-center ">
+            {/* <div className="w-full max-md:w-full h-fit py-[10vh] max-md:h-fit max-md:py-[10vh] max-md:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
+            <h5 className="Font_Q text-[40px] max-md:leading-[45px] uppercase mt-6 max-md:px-[1vw] max-md:text-center ">
               Varmala
             </h5>
-            <div className=" text-[16px] mt-6 flex flex-col justify-center max-sm:text-center items-center Font_YV gap-1">
+            <div className=" text-[16px] mt-6 flex flex-col justify-center max-md:text-center items-center Font_YV gap-1">
               <span>
                 <span className="font-semibold"></span> 22/09/26
               </span>
@@ -607,11 +607,11 @@ const CardX = () => {
             </p>
           </div> */}
             {/* 7 */}
-            {/* <div className="w-full max-sm:w-full h-fit py-[10vh] max-sm:h-fit max-sm:py-[10vh] max-sm:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
-            <h5 className="Font_Q text-[40px] max-sm:leading-[45px] uppercase mt-6 max-sm:px-[1vw] max-sm:text-center ">
+            {/* <div className="w-full max-md:w-full h-fit py-[10vh] max-md:h-fit max-md:py-[10vh] max-md:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
+            <h5 className="Font_Q text-[40px] max-md:leading-[45px] uppercase mt-6 max-md:px-[1vw] max-md:text-center ">
               Phere
             </h5>
-            <div className=" text-[16px] mt-6 flex flex-col justify-center max-sm:text-center items-center Font_YV gap-1">
+            <div className=" text-[16px] mt-6 flex flex-col justify-center max-md:text-center items-center Font_YV gap-1">
               <span>
                 <span className="font-semibold"></span> 22/09/26
               </span>
@@ -633,11 +633,11 @@ const CardX = () => {
             </p>
           </div> */}
             {/* 8 */}
-            {/* <div className="w-full max-sm:w-full h-fit py-[10vh] max-sm:h-fit max-sm:py-[10vh] max-sm:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
-            <h5 className="Font_Q text-[40px] max-sm:leading-[45px] uppercase mt-6 max-sm:px-[1vw] max-sm:text-center ">
+            {/* <div className="w-full max-md:w-full h-fit py-[10vh] max-md:h-fit max-md:py-[10vh] max-md:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
+            <h5 className="Font_Q text-[40px] max-md:leading-[45px] uppercase mt-6 max-md:px-[1vw] max-md:text-center ">
               After Party
             </h5>
-            <div className=" text-[16px] mt-6 flex flex-col justify-center max-sm:text-center items-center Font_YV gap-1">
+            <div className=" text-[16px] mt-6 flex flex-col justify-center max-md:text-center items-center Font_YV gap-1">
               <span>
                 <span className="font-semibold"></span> 22/09/26
               </span>
@@ -658,20 +658,20 @@ const CardX = () => {
         </div>
 
         {/* Div - 3*/}
-        <div className="w-full md:min-h-screen relative flex max-sm:flex-col-reverse">
+        <div className="w-full md:min-h-screen relative flex max-md:flex-col-reverse">
           {/* left */}
-          <div className="w-1/2 md:min-h-screen max-sm:w-full  COLOR_BG_CREAM relative z-50 max-md:mt-7 top-0 mr-auto max-sm:px-[0px] max-lg:px-[4vw]">
+          <div className="w-1/2 md:min-h-screen max-md:w-full  COLOR_BG_CREAM relative z-50 max-md:mt-7 top-0 mr-auto max-md:px-[0px] max-lg:px-[4vw]">
             {/* Day md:sticky */}
-            <div className="w-full h-fit md:sticky top-0 left-0 flex justify-center items-center max-sm:mt-[2vh] md:mt-[5vh] pt-[5vw] pb-[2.5vw] COLOR_BG_CREAM z-60 ">
+            <div className="w-full h-fit md:sticky top-0 left-0 flex justify-center items-center max-md:mt-[2vh] md:mt-[5vh] pt-[5vw] pb-[2.5vw] COLOR_BG_CREAM z-60 ">
               <h2 className="Font_Q COLOR_TEXT_RED uppercase">Day 3</h2>
             </div>
 
             {/* 1 Detail Pool Party & Lunch */}
-            <div className="w-full max-sm:w-full h-fit py-[10vh] max-sm:h-fit max-sm:py-[5vh] max-sm:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
-              <h5 className="Font_Q text-[40px] max-sm:leading-[45px] uppercase mt-6 max-sm:px-[1vw] max-sm:text-center ">
+            <div className="w-full max-md:w-full h-fit py-[10vh] max-md:h-fit max-md:py-[5vh] max-md:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
+              <h5 className="Font_Q text-[40px] max-md:leading-[45px] uppercase mt-6 max-md:px-[1vw] max-md:text-center ">
                 Closing Brunch
               </h5>
-              <div className=" text-[16px] mt-6 flex flex-col justify-center max-sm:text-center items-center Font_YV gap-1">
+              <div className=" text-[16px] mt-6 flex flex-col justify-center max-md:text-center items-center Font_YV gap-1">
                 <span className=" uppercase">
                   <span className="font-semibold"></span> 16/11/26
                 </span>
@@ -689,11 +689,11 @@ const CardX = () => {
             </div>
 
             {/* 2 Detail Cocktail Hour */}
-            {/* <div className="w-full max-sm:w-full h-fit py-[10vh] max-sm:h-fit max-sm:py-[10vh] max-sm:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
-            <h5 className="Font_Q text-[40px] max-sm:leading-[45px] uppercase mt-6 max-sm:px-[1vw] max-sm:text-center ">
+            {/* <div className="w-full max-md:w-full h-fit py-[10vh] max-md:h-fit max-md:py-[10vh] max-md:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
+            <h5 className="Font_Q text-[40px] max-md:leading-[45px] uppercase mt-6 max-md:px-[1vw] max-md:text-center ">
               Cocktail Hour
             </h5>
-            <div className=" text-[16px] mt-6 flex flex-col justify-center max-sm:text-center items-center Font_YV gap-1">
+            <div className=" text-[16px] mt-6 flex flex-col justify-center max-md:text-center items-center Font_YV gap-1">
               <span className=" uppercase">
                 <span className="font-semibold"></span> 23/09/26
               </span>
@@ -713,11 +713,11 @@ const CardX = () => {
           </div> */}
 
             {/* 3 Reception */}
-            {/* <div className="w-full max-sm:w-full h-fit py-[10vh] max-sm:h-fit max-sm:py-[5vh] max-sm:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
-              <h5 className="Font_Q text-[40px] max-sm:leading-[45px] uppercase mt-6 max-sm:px-[1vw] max-sm:text-center ">
+            {/* <div className="w-full max-md:w-full h-fit py-[10vh] max-md:h-fit max-md:py-[5vh] max-md:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
+              <h5 className="Font_Q text-[40px] max-md:leading-[45px] uppercase mt-6 max-md:px-[1vw] max-md:text-center ">
                 Reception
               </h5>
-              <div className=" text-[16px] mt-6 flex flex-col justify-center max-sm:text-center items-center Font_YV gap-1">
+              <div className=" text-[16px] mt-6 flex flex-col justify-center max-md:text-center items-center Font_YV gap-1">
                 <span>
                   <span className="font-semibold"></span> 23/09/26
                 </span>
@@ -748,11 +748,11 @@ const CardX = () => {
             {/* </div> */}
 
             {/* 4 After Party */}
-            {/* <div className="w-full max-sm:w-full h-fit md:py-[10vh]  max-sm:h-fit max-sm:py-[5vh] max-sm:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
-              <h5 className="Font_Q text-[40px] max-sm:leading-[45px] uppercase mt-6 max-sm:px-[1vw] max-sm:text-center ">
+            {/* <div className="w-full max-md:w-full h-fit md:py-[10vh]  max-md:h-fit max-md:py-[5vh] max-md:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
+              <h5 className="Font_Q text-[40px] max-md:leading-[45px] uppercase mt-6 max-md:px-[1vw] max-md:text-center ">
                 After Party
               </h5>
-              <div className=" text-[16px] mt-6 flex flex-col justify-center max-sm:text-center items-center Font_YV gap-1">
+              <div className=" text-[16px] mt-6 flex flex-col justify-center max-md:text-center items-center Font_YV gap-1">
                 <span className=" uppercase">
                   <span className="font-semibold"></span> 23/09/26
                 </span>
@@ -776,11 +776,11 @@ const CardX = () => {
 
             </div> */}
             {/* CHECK OUT */}
-            {/* <div className="w-full max-sm:w-full h-fit py-[10vh] max-sm:h-fit max-sm:py-[10vh] max-sm:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
-            <h5 className="Font_Q text-[40px] max-sm:leading-[45px] uppercase mt-6 max-sm:px-[1vw] max-sm:text-center ">
+            {/* <div className="w-full max-md:w-full h-fit py-[10vh] max-md:h-fit max-md:py-[10vh] max-md:px-[20px] z-50  flex relative flex-col COLOR_TEXT_RED justify-center items-center">
+            <h5 className="Font_Q text-[40px] max-md:leading-[45px] uppercase mt-6 max-md:px-[1vw] max-md:text-center ">
               Checkouts
             </h5>
-            <div className=" text-[16px] mt-6 flex flex-col justify-center max-sm:text-center items-center Font_YV gap-1">
+            <div className=" text-[16px] mt-6 flex flex-col justify-center max-md:text-center items-center Font_YV gap-1">
               <span className=" uppercase">
                 <span className="font-semibold"></span> 24/09/26
               </span>
@@ -802,7 +802,7 @@ const CardX = () => {
           </div>
 
           {/* right */}
-          <div className="w-1/2 md:h-screen max-sm:w-full max-sm:h-fit md:sticky COLOR_BG_Noise top-0 right-0  flex justify-center items-center md:bg-[#044BB2]">
+          <div className="w-1/2 md:h-screen max-md:w-full max-md:h-fit md:sticky COLOR_BG_Noise top-0 right-0  flex justify-center items-center md:bg-[#044BB2]">
             <div className="w-1/2 h-fit  flex flex-col justify-center img3d-wrapper  z-100 items-center">
               {/* <h3 className="Font_Q COLOR_TEXT_CREAM uppercase">OutFit</h3>
 

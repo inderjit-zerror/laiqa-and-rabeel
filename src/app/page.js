@@ -3,13 +3,17 @@ import Countdown from "@/components/sections/home/Countdown";
 import Lamp from "@/components/sections/newhome/Lamp";
 import LoveStory from "@/components/sections/newhome/LoveStory";
 import TextAnimation from "@/components/sections/newhome/TextAnimation";
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { useEffect } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
+
+
   useEffect(() => {
     const A = gsap.timeline({
       scrollTrigger: {
@@ -85,14 +89,16 @@ export default function Home() {
       },
       "a1",
     );
+    
     A.to('.NavMenuCont',{
       opacity: 1
     },"<0.2")
    
+  
+    
+   
 
-    // ==========================================
-
-    // =========================================
+    // ================================================
     const Pre = gsap.timeline();
     Pre.to(".relMain", {
       opacity: 1,
@@ -105,10 +111,7 @@ export default function Home() {
     lamps.forEach((lamp, i) => {
       const tl = gsap.timeline({
         repeat: -1,
-        // delay: i * 0.3, // optional stagger
       });
-
-      // Step 1: Left → Right
       tl.fromTo(
         lamp,
         { x: "-100vw", rotationY: 0 },
@@ -118,8 +121,6 @@ export default function Home() {
           ease: "none",
         },
       )
-
-        // Step 2: Flip
         .to(
           lamp,
           {
@@ -129,8 +130,6 @@ export default function Home() {
           },
           "aa1",
         )
-
-        // Step 3: Right → Left
         .to(
           lamp,
           {
@@ -141,24 +140,11 @@ export default function Home() {
           },
           "aa1",
         )
-
-        // Step 4: Flip back
         .to(lamp, {
           rotationY: 360,
           duration: 0.6,
           ease: "power2.inOut",
         });
-
-      
-
-      // // Floating animation (independent)
-      // gsap.to(lamp, {
-      //   y: "+=40",
-      //   duration: 2 + i,
-      //   repeat: -1,
-      //   yoyo: true,
-      //   ease: "sine.inOut",
-      // });
     });
 
     // =============================== ENVIROMENT MOVE ANIMATION
@@ -192,12 +178,14 @@ export default function Home() {
     // return () => {
     //   window.removeEventListener("mousemove", handleMouseMove);
     // };
-  }, []);
+  });
+
+
 
   return (
     <>
-      <div className="w-full h-[200vh]  relative relMain opacity-0 ">
-        <div className="w-full h-screen sticky flex top-0 left-0 overflow-hidden z-20  scale-[1.1]">
+      <div  className="w-full h-[200vh]  relative relMain opacity-0 ">
+        <div className="w-full h-screen sticky flex top-0 left-0 overflow-hidden z-20  ">
           {/* back Building */}
           <div className=" absolute top-0 left-0 w-full h-screen z-10 stickyAnimation overflow-hidden">
             <img
@@ -206,10 +194,8 @@ export default function Home() {
               className="w-full h-full  BGBLD   object-center object-cover"
             />
 
-            <div className="pointer-events-none absolute bottom-[-0.5%] left-0 w-full h-[30vh] bg-gradient-to-b from-transparent via-[#ffffff]/65 to-[#ffffff] z-40" />
-            <div className=" absolute bottom-[-3%] left-0 w-full h-fit flex justify-center items-center Font_Q COLOR_TEXT_RED text-[8vw] max-sm:text-[12vw] z-50 NAMEWED tracking-tighter">
-              LAIQA & RABEEL
-            </div>
+            <div className="pointer-events-none absolute bottom-[0%] left-0 w-full h-[30vh] bg-gradient-to-b from-transparent via-[#ffffff]/65 to-[#ffffff] z-40" />
+           
 
             <Lamp
               top="10%"
@@ -222,34 +208,34 @@ export default function Home() {
             />
           </div>
 
-          <div className="w-1/2 h-screen  left flex justify-end items-center LTM relative z-500  overflow-x-visible max-sm:overflow-hidden">
+          <div className="w-1/2 h-screen  left flex justify-end items-center LTM relative z-50  overflow-x-visible max-md:overflow-hidden">
 
-            <div className=" w-1/4 max-sm:w-full h-[70vh]  absolute right-0 bottom-0 ">
+            <div className=" w-1/4 max-md:w-full h-[70vh]  absolute right-0 bottom-0 ">
               <img
                 src={`/allPageImg/home/GL.png`}
                 alt="left"
-                className=" w-full sm:h-full object-cover object-top    flex max-sm:object-left z-10 GatImg  "
+                className=" w-full sm:h-full object-cover object-top    flex max-md:object-left z-10 GatImg  "
               />
             </div>
 
             <img
               src={`/allPageImg/home/L.png`}
               alt="left"
-              className="h-full w-screen object-cover scale-[1.03] object-center max-sm:object-right flex absolute top-0 left-0 z-[-1]  "
+              className="h-full w-screen object-cover scale-[1.03] object-center max-md:object-right flex absolute top-0 left-0 z-[-1]  "
             />
           </div>
-          <div className="w-1/2  h-screen left relative flex justify-start items-center RTM z-500 overflow-x-visible">
-            <div className=" w-1/4 max-sm:w-full h-[70vh]  absolute left-0 bottom-0 ">
+          <div className="w-1/2  h-screen left relative flex justify-start items-center RTM z-50 overflow-x-visible">
+            <div className=" w-1/4 max-md:w-full h-[70vh]  absolute left-0 bottom-0 ">
               <img
                 src={`/allPageImg/home/RL.png `}
                 alt="Right"
-                className=" w-full sm:h-full object-cover object-top    flex max-sm:object-left z-10 GatImg"
+                className=" w-full sm:h-full object-cover object-top    flex max-md:object-left z-10 GatImg"
               />
             </div>
             <img
               src={`/allPageImg/home/R.png`}
               alt="left"
-              className="w-full h-full object-cover scale-[1.02]  object-center max-sm:object-left flex absolute top-0  right-0 z-[-1]  "
+              className="w-full h-full object-cover scale-[1.02]  object-center max-md:object-left flex absolute top-0  right-0 z-[-1]  "
             />
           </div>
         </div>
@@ -261,7 +247,7 @@ export default function Home() {
       <div className="w-full h-screen overflow-hidden  mx-auto">
         <img
           src={`/lastP.png`}
-          className="w-full h-full max-sm:object-[33%_0%] object-cover"
+          className="w-full h-full max-md:object-[33%_0%] object-cover"
           alt="IMG"
         />
       </div>

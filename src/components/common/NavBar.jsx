@@ -1,13 +1,13 @@
 "use client";
 import Link from "next/link";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { RiMenu4Fill } from "react-icons/ri";
 import { RiMenu3Line } from "react-icons/ri";
 import { usePathname } from "next/navigation";
 import { navigate } from "next/dist/client/components/segment-cache/navigation";
-
+import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -114,7 +114,6 @@ const NavBar = () => {
     }
   };
 
-
   const scrollToSection = (id) => {
     const el = document.getElementById(id);
     if (el) {
@@ -125,16 +124,43 @@ const NavBar = () => {
     }
   };
 
+  useLayoutEffect(() => {
+    // kill old triggers
+    ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+
+    // OTHER PAGES
+    if (pathname !== "/") {
+      gsap.set(".NavMenuCont", { opacity: 1 });
+      return;
+    }
+
+    // HOME PAGE
+    gsap.set(".NavMenuCont", { opacity: 0 });
+
+    const tween = gsap.to(".NavMenuCont", {
+      opacity: 1,
+      ease: "linear",
+      scrollTrigger: {
+        trigger: navRef.current,
+        start: "top top",
+        end: "top -50%",
+        scrub: true,
+      },
+    });
+
+    return () => {
+      tween.scrollTrigger?.kill();
+      tween.kill();
+    };
+  }, [pathname]);
+
   return (
     <div
       ref={navRef}
-      style={{opacity: pathname === "/" ? 0 : 1}}
-      className="w-full NavMenuCont h-[46px] mt-10 flex gap-50 justify-between fixed top-0 left-0   items-center z-100 px-20"
+      className="NavMenuCont w-full h-[46px] mt-10 flex gap-50 justify-between fixed top-0 left-0 items-center z-[100] px-20"
     >
       {/* Left */}
       <div className="w-1/3 h-full RVSPBTN items-center max-lg:hidden flex justify-between uppercase text-[14px] COLOR_TEXT_RED ">
-
-
         <Link href={`/wedding`}>
           <div
             className={`w-fit h-fit ${pathname === "/wedding" && " border-b border-[#044BB2]"}  flex flex-col group COLOR_TEXT_RED relative  select-none cursor-pointer`}
@@ -145,9 +171,6 @@ const NavBar = () => {
           </div>
         </Link>
 
-
-       
-
         <Link href={`/venue`}>
           <div
             className={`w-fit h-fit ${pathname === "/venue" && " border-b border-[#044BB2]"}  flex flex-col group relative COLOR_TEXT_RED  select-none cursor-pointer`}
@@ -157,7 +180,6 @@ const NavBar = () => {
             Wedding Venue
           </div>
         </Link>
-
 
         <Link href={`/guestservices`}>
           <div

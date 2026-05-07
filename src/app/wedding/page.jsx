@@ -116,7 +116,7 @@ const page = () => {
           {/* TEXT */}
           <div className="w-full h-fit flex flex-col justify-center text-center items-center pt-[20vh]">
             <div className="COLOR_TEXT_RED Font_Q text-[6vw] w-fit h-fit leading-[6vw] max-md:text-[14vw] max-md:leading-[14vw] tracking-tight overflow-hidden">
-              <span className="flex MainTI">Wedding <span className="max-sm:hidden ml-5"> ITINERARY</span></span>
+              <span className="flex MainTI">Wedding <span className="max-md:hidden ml-5"> ITINERARY</span></span>
             </div>
             <div className="COLOR_TEXT_RED Font_Q text-[6vw] w-fit h-fit leading-[6vw] max-md:text-[14vw] max-md:leading-[14vw] tracking-tight overflow-hidden">
               <span className="flex sm:hidden MainTI">ITINERARY</span>
@@ -132,27 +132,27 @@ const page = () => {
             <img
               src={`/allPageImg/wedding/wed1.webp`}
               alt="Img"
-              className="w-full h-full object-cover object-bottom max-sm:object-[80%_0%] stickyAnimation2"
+              className="w-full h-full object-cover object-bottom max-md:object-[80%_0%] stickyAnimation2"
             />
           </div>
           <div className="pointer-events-none absolute bottom-[0%] left-0 w-full h-[30vh] bg-gradient-to-b from-transparent via-[#ffffff]/60 to-[#ffffff] z-100" />
         </div>
 
         {/* Cards Section */}
-        <div className="w-full h-screen max-md:h-fit COLOR_BG_RED relative z-100 flex max-md:flex-col p-20 max-md:gap-10 gap-5 px-10 justify-center items-center">
+        <div className="w-full h-fit max-md:h-fit COLOR_BG_RED relative z-100 flex max-md:flex-col p-20 max-md:gap-10 gap-5 px-10 justify-center items-center">
           {/* T1 — Mehndi Lunch */}
-          <FlipCard className="w-1/4 h-[70%] max-md:h-fit max-md:w-[90%] max-sm:pointer-events-none">
+          <FlipCard className="w-1/4 h-[43vh] max-md:h-fit max-md:w-[90%] max-md:pointer-events-none">
             {/* FRONT */}
             <div className="absolute inset-0 bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
-              <div className="w-full h-fit max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center">
-                <h1 className="text-[3vw] leading-[3vw] max-sm:text-center max-md:text-[7vw] max-md:leading-[7vw] Font_Q COLOR_TEXT_RED">
+              <div className="w-full h-fit max-md:flex max-md:flex-col max-md:justify-center max-md:items-center">
+                <h1 className="text-[3vw] leading-[3vw] max-md:text-center max-md:text-[7vw] max-md:leading-[7vw] Font_Q COLOR_TEXT_RED">
                   Mehendi
                 </h1>
-                <span className="text-[14px] leading-[16px]  max-sm:text-center max-md:text-[4vw] Font_YV COLOR_TEXT_RED">
+                <span className="text-[14px] leading-[16px]  max-md:text-center max-md:text-[4vw] Font_YV COLOR_TEXT_RED">
                   Saturday, November 14th, 2026
                 </span>
               </div>
-              <div className="w-full aspect-2/1 flex justify-end max-sm:justify-center items-end">
+              <div className="w-full aspect-2/1 flex justify-end max-md:justify-center items-end">
                 <img src="/assets/s10.png" className="w-[70%] object-cover" />
               </div>
 
@@ -169,7 +169,7 @@ const page = () => {
             </div>
 
             {/* BACK */}
-            <div className="max-sm:hidden absolute inset-0 text-[#044BB2] overflow-hidden  flex items-center justify-center p-5">
+            <div className="max-md:hidden absolute inset-0 text-[#044BB2] overflow-hidden  flex items-center justify-center p-5">
               <img src={`/allPageImg/sky.png`} alt="img" className="w-full h-full absolute top-0 left-0 object-cover z-[-1] opacity-50 object-center" />
               <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
                Timing ~ 12:00 PM <br />
@@ -183,10 +183,10 @@ const page = () => {
           </FlipCard>
 
           {/* T2 — Sangeet Dinner */}
-          <FlipCard className="w-1/4 h-[70%] max-md:h-fit max-md:w-[90%] max-sm:pointer-events-none">
+          <FlipCard className="w-1/4 h-[43vh] max-md:h-fit max-md:w-[90%] max-md:pointer-events-none">
             {/* FRONT */}
             <div className="absolute inset-0 bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
-              <div className="w-full h-fit max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center">
+              <div className="w-full h-fit max-md:flex max-md:flex-col max-md:justify-center max-md:items-center">
                 <h1 className="text-[3vw] leading-[3vw] max-md:text-[7vw] max-md:leading-[7vw] Font_Q COLOR_TEXT_RED">
                   Sangeet
                 </h1>
@@ -195,7 +195,7 @@ const page = () => {
 
                 </span>
               </div>
-              <div className="w-full aspect-2/1 flex justify-end max-sm:justify-center items-end">
+              <div className="w-full aspect-2/1 flex justify-end max-md:justify-center items-end">
                 <img src="/assets/s35.png" className="w-[70%] object-cover" />
               </div>
               <div className="sm:hidden  inset-0  text-[#044BB2] flex items-center justify-center">
@@ -213,7 +213,7 @@ const page = () => {
             </div>
 
             {/* BACK */}
-            <div className="max-sm:hidden absolute inset-0 text-[#044BB2] overflow-hidden flex items-center justify-center p-5">
+            <div className="max-md:hidden absolute inset-0 text-[#044BB2] overflow-hidden flex items-center justify-center p-5">
                <img src={`/allPageImg/sky.png`} alt="img" className="w-full h-full absolute top-0 left-0 object-cover z-[-1] opacity-50 object-center" />
               <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
                 Timing ~ 7:30 PM <br />
@@ -228,10 +228,10 @@ const page = () => {
           </FlipCard>
 
           {/* T3 — Nikkah Ceremony */}
-          <FlipCard className="w-1/4 h-[70%] max-md:h-fit max-md:w-[90%] max-sm:pointer-events-none">
+          <FlipCard className="w-1/4 h-[43vh] max-md:h-fit max-md:w-[90%] max-md:pointer-events-none">
             {/* FRONT */}
             <div className="absolute inset-0 bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
-              <div className="w-full h-fit max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center">
+              <div className="w-full h-fit max-md:flex max-md:flex-col max-md:justify-center max-md:items-center">
                 <h1 className="text-[3vw] leading-[3vw] max-md:text-[7vw] max-md:leading-[7vw] Font_Q COLOR_TEXT_RED">
                   Nikkah
                 </h1>
@@ -240,7 +240,7 @@ const page = () => {
 
                 </span>
               </div>
-              <div className="w-full h-fit flex justify-end max-sm:justify-center items-end">
+              <div className="w-full h-fit flex justify-end max-md:justify-center items-end">
                 <img
                   src="/assets/s05.png"
                   className="w-[45%] object-center object-cover"
@@ -259,7 +259,7 @@ const page = () => {
             </div>
 
             {/* BACK */}
-            <div className=" max-sm:hidden absolute inset-0 text-[#044BB2] overflow-hidden flex items-center justify-center p-5">
+            <div className=" max-md:hidden absolute inset-0 text-[#044BB2] overflow-hidden flex items-center justify-center p-5">
                <img src={`/allPageImg/sky.png`} alt="img" className="w-full h-full absolute top-0 left-0 object-cover z-[-1] opacity-50 object-center" />
               <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
                 Timing ~ 12:30 PM<br />
@@ -273,10 +273,10 @@ const page = () => {
           </FlipCard>
 
           {/* T4 — Reception */}
-          <FlipCard className="w-1/4 h-[70%] max-md:h-fit max-md:w-[90%] max-sm:pointer-events-none">
+          <FlipCard className="w-1/4 h-[43vh] max-md:h-fit max-md:w-[90%] max-md:pointer-events-none">
             {/* FRONT */}
             <div className="absolute inset-0 bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
-              <div className="w-full h-fit max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center">
+              <div className="w-full h-fit max-md:flex max-md:flex-col max-md:justify-center max-md:items-center">
                 <h1 className="text-[3vw] leading-[3vw] max-md:text-[7vw] max-md:leading-[7vw] Font_Q COLOR_TEXT_RED">
                   Reception Dinner
                 </h1>
@@ -284,7 +284,7 @@ const page = () => {
                   Sunday, November 15th, 2026
                 </span>
               </div>
-              <div className="w-full aspect-2/1 flex justify-end max-sm:justify-center items-end">
+              <div className="w-full aspect-2/1 flex justify-end max-md:justify-center items-end">
                 <img src="/assets/s19.png" className="w-[70%] object-cover" />
               </div>
 
@@ -300,7 +300,7 @@ const page = () => {
             </div>
 
             {/* BACK */}
-            <div className="max-sm:hidden absolute inset-0 text-[#044BB2] overflow-hidden flex items-center justify-center p-5">
+            <div className="max-md:hidden absolute inset-0 text-[#044BB2] overflow-hidden flex items-center justify-center p-5">
                <img src={`/allPageImg/sky.png`} alt="img" className="w-full h-full absolute top-0 left-0 object-cover z-[-1] opacity-50 object-center" />
               <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
                 Timing ~ 7:30 PM<br />
@@ -313,10 +313,10 @@ const page = () => {
           </FlipCard>
 
           {/* T5 — Reception */}
-          <FlipCard className="w-1/4 h-[70%] max-md:h-fit max-md:w-[90%] max-sm:pointer-events-none">
+          <FlipCard className="w-1/4 h-[43vh] max-md:h-fit max-md:w-[90%] max-md:pointer-events-none">
             {/* FRONT */}
             <div className="absolute inset-0 bg-white border border-[#044BB2] py-10 px-5 flex flex-col justify-between">
-              <div className="w-full h-fit max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center">
+              <div className="w-full h-fit max-md:flex max-md:flex-col max-md:justify-center max-md:items-center">
                 <h1 className="text-[3vw] leading-[3vw] max-md:text-[7vw] max-md:leading-[7vw] Font_Q COLOR_TEXT_RED">
                   Farewell Breakfast
                 </h1>
@@ -325,7 +325,7 @@ const page = () => {
 
                 </span>
               </div>
-              <div className="w-full aspect-2/1 flex justify-end max-sm:justify-center items-end">
+              <div className="w-full aspect-2/1 flex justify-end max-md:justify-center items-end">
                 <img src="/assets/s20.png" className="w-[70%] object-cover" />
               </div>
 
@@ -341,7 +341,7 @@ const page = () => {
             </div>
 
             {/* BACK */}
-            <div className="max-sm:hidden absolute inset-0 text-[#044BB2] overflow-hidden flex items-center justify-center p-5">
+            <div className="max-md:hidden absolute inset-0 text-[#044BB2] overflow-hidden flex items-center justify-center p-5">
                <img src={`/allPageImg/sky.png`} alt="img" className="w-full h-full absolute top-0 left-0 object-cover z-[-1] opacity-50 object-center" />
               <p className="text-[2vw] max-md:text-[4vw] text-center Font_YV">
                 Timing ~ 11:00 AM<br />

@@ -64,7 +64,7 @@ const HomeHeroSection = () => {
             {/* <Image
                 ref={imageRefHome}
                 src={`/newimg/SonalKush6Img.webp`}
-                className='w-full h-full scale-[1] opacity-0 absolute top-0 left-0 z-10 object-cover object-center max-sm:object-[35%_50%] '
+                className='w-full h-full scale-[1] opacity-0 absolute top-0 left-0 z-10 object-cover object-center max-md:object-[35%_50%] '
                 width={1000}
                 height={1000}
                 alt='IMG'
@@ -72,7 +72,7 @@ const HomeHeroSection = () => {
             <Image
                 ref={imageRefHome}
                 src={`/imgs/Screenshot.png`}
-                className='w-full h-full scale-[1] opacity-0 absolute top-0 left-0 z-10 object-cover object-center max-sm:object-[35%_50%] '
+                className='w-full h-full scale-[1] opacity-0 absolute top-0 left-0 z-10 object-cover object-center max-md:object-[35%_50%] '
                 width={1000}
                 height={1000}
                 alt='IMG'
@@ -80,8 +80,8 @@ const HomeHeroSection = () => {
             <div className=' NoiseDiv absolute top-0 left-0 w-full h-full COLOR_BG_Noise z-100 pointer-events-none'>
 
             </div>
-            <div className='w-full h-full absolute top-0 left-0 z-20 flex max-sm:pb-8 justify-center items-end HOMEMAIM px-[20px] '>
-                <h1 className=' uppercase  text-[9vw] max-sm:text-[14vw] max-sm:leading-[14vw] max-sm:text-center Font_Q opacity-0 COLOR_TEXT_CREAM HOMEMAIM'> Laiqa & Rabeel</h1>
+            <div className='w-full h-full absolute top-0 left-0 z-20 flex max-md:pb-8 justify-center items-end HOMEMAIM px-[20px] '>
+                <h1 className=' uppercase  text-[9vw] max-md:text-[14vw] max-md:leading-[14vw] max-md:text-center Font_Q opacity-0 COLOR_TEXT_CREAM HOMEMAIM'> Laiqa & Rabeel</h1>
             </div>
         </div>
     )

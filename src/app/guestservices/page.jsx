@@ -10,31 +10,45 @@ const TABS = [
     number: "1",
     content: (
       <div className="gs-content">
-        <h2 className="gs-section-title COLOR_TEXT_RED Font_Q">Transportation</h2>
+        <h2 className="gs-section-title COLOR_TEXT_RED Font_Q">
+          Transportation
+        </h2>
         <p className="gs-body COLOR_TEXT_RED Font_YV">
-          Transfers will be arranged for all guests between the hotels and wedding events, including airport shuttles.
+          Transfers will be arranged for all guests between the hotels and
+          wedding events, including airport shuttles.
         </p>
         <p className="gs-body COLOR_TEXT_RED Font_YV">
-          The closest airport is Marrakech Menara Airport (RAK), approximately 25 minutes from the hotel. Casablanca is
-          also an option for those with more international connections — from there, a short domestic flight or a 2-hour
-          drive will get you to Marrakech.
+          The closest airport is Marrakech Menara Airport (RAK), approximately
+          25 minutes from the hotel. Casablanca is also an option for those with
+          more international connections — from there, a short domestic flight
+          or a 2-hour drive will get you to Marrakech.
         </p>
         <p className="gs-body COLOR_TEXT_RED Font_YV">
-          For any transportation queries, please reach out to our planning team at{" "}
-          <a href="mailto:" className="gs-link">[WEDDING TEAM EMAIL]</a>.
+          For any transportation queries, please reach out to our planning team
+          at{" "}
+          <a href="mailto:" className="gs-link">
+            [WEDDING TEAM EMAIL]
+          </a>
+          .
         </p>
         <div className="gs-divider COLOR_TEXT_RED Font_YV" />
         <p className="gs-body COLOR_TEXT_RED Font_YV">
-          Transfers will be arranged for all guests between the hotels and wedding events, including airport shuttles.
+          Transfers will be arranged for all guests between the hotels and
+          wedding events, including airport shuttles.
         </p>
         <p className="gs-body COLOR_TEXT_RED Font_YV">
-          The closest airport is Marrakech Menara Airport (RAK), approximately 25 minutes from the hotel. Casablanca is
-          also an option for those with more international connections — from there, a short domestic flight or a 2-hour
-          drive will get you to Marrakech.
+          The closest airport is Marrakech Menara Airport (RAK), approximately
+          25 minutes from the hotel. Casablanca is also an option for those with
+          more international connections — from there, a short domestic flight
+          or a 2-hour drive will get you to Marrakech.
         </p>
         <p className="gs-body COLOR_TEXT_RED Font_YV">
-          For any transportation queries, please reach out to our planning team at{" "}
-          <a href="mailto:" className="gs-link">[WEDDING TEAM EMAIL]</a>.
+          For any transportation queries, please reach out to our planning team
+          at{" "}
+          <a href="mailto:" className="gs-link">
+            [WEDDING TEAM EMAIL]
+          </a>
+          .
         </p>
       </div>
     ),
@@ -47,7 +61,8 @@ const TABS = [
       <div className="gs-content">
         <h2 className="gs-section-title COLOR_TEXT_RED Font_Q">Style Guide</h2>
         <p className="gs-body COLOR_TEXT_RED Font_YV">
-          A wardrobe guide covering dress codes and outfit inspiration for each event will be shared closer to the date.
+          A wardrobe guide covering dress codes and outfit inspiration for each
+          event will be shared closer to the date.
         </p>
       </div>
     ),
@@ -58,10 +73,13 @@ const TABS = [
     number: "3",
     content: (
       <div className="gs-content">
-        <h2 className="gs-section-title COLOR_TEXT_RED Font_Q">Hair & Makeup</h2>
+        <h2 className="gs-section-title COLOR_TEXT_RED Font_Q">
+          Hair & Makeup
+        </h2>
         <p className="gs-body COLOR_TEXT_RED Font_YV">
-          A private salon offering hair and makeup services will be available on November 14th and 15th, located at The
-          Oberoi Marrakech. Booking details will be shared closer to the date.
+          A private salon offering hair and makeup services will be available on
+          November 14th and 15th, located at The Oberoi Marrakech. Booking
+          details will be shared closer to the date.
         </p>
       </div>
     ),
@@ -94,17 +112,41 @@ export default function GuestServices() {
 
   useEffect(() => {
     const tl = gsap.timeline({ delay: 0.25, defaults: { ease: "power3.out" } });
-    tl.fromTo(heroEyebrowRef.current, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.55 })
-      .fromTo(heroLineRef.current, { scaleX: 0 }, { scaleX: 1, duration: 1.0, ease: "power4.inOut" }, "-=0.3")
-      .fromTo(heroTitleRef.current, { opacity: 0, y: 36 }, { opacity: 1, y: 0, duration: 0.6 }, "-=0.5")
-      .fromTo(heroSubRef.current, { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.6 }, "-=0.5")
+    tl.fromTo(
+      heroEyebrowRef.current,
+      { opacity: 0, y: 10 },
+      { opacity: 1, y: 0, duration: 0.55 },
+    )
+      .fromTo(
+        heroLineRef.current,
+        { scaleX: 0 },
+        { scaleX: 1, duration: 1.0, ease: "power4.inOut" },
+        "-=0.3",
+      )
+      .fromTo(
+        heroTitleRef.current,
+        { opacity: 0, y: 36 },
+        { opacity: 1, y: 0, duration: 0.6 },
+        "-=0.5",
+      )
+      .fromTo(
+        heroSubRef.current,
+        { opacity: 0, y: 14 },
+        { opacity: 1, y: 0, duration: 0.6 },
+        "-=0.5",
+      )
       .fromTo(
         tabsBarRef.current.querySelectorAll(".gs-tab"),
         { opacity: 0, y: 14 },
         { opacity: 1, y: 0, stagger: 0.09, duration: 0.48 },
-        "-=0.35"
+        "-=0.35",
       )
-      .fromTo(contentPanelRef.current, { opacity: 0, y: 22 }, { opacity: 1, y: 0, duration: 0.6 }, "-=0.25");
+      .fromTo(
+        contentPanelRef.current,
+        { opacity: 0, y: 22 },
+        { opacity: 1, y: 0, duration: 0.6 },
+        "-=0.25",
+      );
 
     setTimeout(() => moveUnderline(0, false), 60);
   }, []);
@@ -131,7 +173,7 @@ export default function GuestServices() {
         gsap.fromTo(
           contentPanelRef.current,
           { opacity: 0, y: 14 },
-          { opacity: 1, y: 0, duration: 0.42, ease: "power3.out" }
+          { opacity: 1, y: 0, duration: 0.42, ease: "power3.out" },
         );
       },
     });
@@ -437,9 +479,14 @@ export default function GuestServices() {
       `}</style>
 
       <div className="gs-page pt-[10vh] relative">
+        <div className="w-full h-full absolute top-0 left-0 z-[-1] overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-200/10 via-white/5 to-sky-200/10 blur-[160px]" />
 
-        <div className="w-full h-full absolute top-0 opacity-50 left-0 z-[-1] overflow-hidden">
-          <img src={`/allPageImg/sky.png`} alt="IMG" className="w-full h-full object-cover object-center" />
+          <div className="absolute top-[-10%] left-[5%] w-[40rem] h-[40rem] rounded-full bg-blue-200/10 blur-[160px]" />
+
+          <div className="absolute bottom-[-20%] right-[0%] w-[35rem] h-[35rem] rounded-full bg-blue-300/20 blur-[160px]" />
+
+          <div className="absolute top-[40%] left-[35%] w-[28rem] h-[28rem] rounded-full bg-blue-200/10 blur-[160px]" />
         </div>
 
         <div className="gs-edge-top" />
@@ -449,14 +496,16 @@ export default function GuestServices() {
           <div className="gs-blob gs-blob-1" />
           <div className="gs-blob gs-blob-2" />
 
-
-
-          <h1 ref={heroTitleRef} className="gs-hero-title text-center COLOR_TEXT_RED Font_Q ">
-            Guest <br/> Services
+          <h1
+            ref={heroTitleRef}
+            className="gs-hero-title text-center COLOR_TEXT_RED Font_Q "
+          >
+            Guest <br /> Services
           </h1>
 
           <p ref={heroSubRef} className="gs-hero-sub COLOR_TEXT_RED Font_YV">
-            Everything arranged, so you can be fully present for every celebration.
+            Everything arranged, so you can be fully present for every
+            celebration.
           </p>
         </header>
 
@@ -474,8 +523,12 @@ export default function GuestServices() {
                   aria-controls={`panel-${tab.id}`}
                   onClick={() => switchTab(i)}
                 >
-                  <span className="gs-tab-num COLOR_TEXT_RED Font_YV">{tab.number}</span>
-                  <span className="gs-tab-label COLOR_TEXT_RED Font_YV">{tab.label}</span>
+                  <span className="gs-tab-num COLOR_TEXT_RED Font_YV">
+                    {tab.number}
+                  </span>
+                  <span className="gs-tab-label COLOR_TEXT_RED Font_YV">
+                    {tab.label}
+                  </span>
                 </button>
               ))}
               <div ref={underlineRef} className="gs-tab-underline" />

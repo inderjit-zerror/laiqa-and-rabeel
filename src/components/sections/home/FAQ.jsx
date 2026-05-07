@@ -97,55 +97,25 @@ export default function FAQ() {
   return (
     <section
       id="FAQ"
-      className="min-h-screen max-sm:min-h-fit COLOR_BG_CREAM  flex items-center relative justify-center max-sm:py-[20vw] py-[20vh]"
+      className="min-h-screen max-md:min-h-fit  flex items-center relative justify-center max-md:py-[20vw] py-[20vh]"
     >
 
-      {/* <div className="w-full h-screen fixed top-0 left-0 ">
-        <img src={`/assets/s30.png`} alt="IMG" className="w-full h-full object-cover object-bottom opacity-5" />
-      </div>
+       <div className="w-full h-full absolute top-0 left-0 z-[-1] overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-200/10 via-white/5 to-sky-200/10 blur-[160px]" />
 
-       <div className="w-2/10  h-fit absolute top-[-5%] right-[-5%] ">
-        <img
-          src={`/assets/s01.png`}
-          alt="IMG"
-          className="w-full  object-center object-cover "
-        />
-      </div> */}
+          <div className="absolute top-[-10%] left-[5%] w-[40rem] h-[40rem] rounded-full bg-blue-200/10 blur-[160px]" />
 
+          <div className="absolute bottom-[-20%] right-[0%] w-[35rem] h-[35rem] rounded-full bg-blue-300/20 blur-[160px]" />
+
+          <div className="absolute top-[40%] left-[35%] w-[28rem] h-[28rem] rounded-full bg-blue-200/10 blur-[160px]" />
+        </div>
       
 
 
-      <div className="w-[80%] max-sm:w-full px-6 max-sm:px-[20px] flex flex-col gap-20 relative z-50">
-        <h2 className="text-center Font_Q flex flex-col justify-center items-center max-sm:justify-start max-sm:mt-10 COLOR_TEXT_RED">
+      <div className="w-[80%] max-md:w-full px-6 max-md:px-[20px] flex flex-col gap-20 relative z-50">
+        <h2 className="text-center Font_Q flex flex-col justify-center items-center max-md:justify-start max-md:mt-10 COLOR_TEXT_RED">
           FAQ
-          {/* <p className="  Font_YV mt-7 font-bold sm:pt-5 max-sm:w-full max-sm:px-[10vw]">
-            For any wedding-related questions, please reach out to Sonal & Kush’s wedding planning team at:
-          </p>
-          <div className=" w-fit h-fit flex sm:gap-2 mt-4 justify-center items-center max-sm:flex-col">
-
-             <a href="mailto:sonalskushie@gmail.com" >
-              <div className=" relative group flex flex-col max-sm:mt-2">
-              <p className="Font_YV ">sonalskushie@gmail.com</p>
-              <div className="w-0 h-px bg-[#551301]  group-hover:w-full absolute bottom-[-1] left-0 transition-all duration-200"></div>
-              </div>
-            </a>
-
-            <p className="px-2 max-sm:hidden">|</p>
-
-            <a href="tel:+919358800614">
-              <div className=" relative group flex w-fit flex-col max-sm:mt-2">
-              <p className="Font_YV ">+91 93588 00614</p>
-              <div className="w-0 h-px bg-[#551301]  group-hover:w-full absolute bottom-[-1] left-0 transition-all duration-200"></div>
-              </div>
-            </a>
-            <p className="px-2 max-sm:hidden">|</p>
-            <a href="tel:+919310069102">
-              <div className=" relative group flex w-fit flex-col">
-              <p className="Font_YV max-sm:mt-2">+91 93100 69102</p>
-              <div className="w-0 h-px bg-[#551301]  group-hover:w-full absolute bottom-[-1] left-0 transition-all duration-200"></div>
-              </div>
-            </a>
-          </div> */}
+         
         </h2>
 
         <div className="space-y-6 w-full">
@@ -159,7 +129,7 @@ export default function FAQ() {
                 onClick={() => toggleFAQ(faq.id)}
                 className="group w-full flex items-center justify-between text-left"
               >
-                <span className="tracking-wide uppercase COLOR_TEXT_RED Font_YV text-[1.5rem] max-sm:text-[1.1rem] md:text-base">
+                <span className="tracking-wide uppercase COLOR_TEXT_RED Font_YV text-[1.5rem] max-md:text-[1.1rem] md:text-base">
                   {faq.question}
                 </span>
 

@@ -66,15 +66,15 @@ const Itinerary = () => {
     <>
       <div className="w-full h-fit COLOR_BG_CREAM flex flex-col relative px-10 overflow-hidden">
         {/* Titile */}
-        <div className="w-full h-fit  max-sm:h-fit flex justify-center   items-center mt-[10vh] max-sm:mt-[10vh] mb-[1vh] max-sm:mb-[10vh] max-lg:mb-[10vh] ImgTDcont">
+        <div className="w-full h-fit  max-md:h-fit flex justify-center   items-center mt-[10vh] max-md:mt-[10vh] mb-[1vh] max-md:mb-[10vh] max-lg:mb-[10vh] ImgTDcont">
           <div className="w-fit flex flex-col COLOR_TEXT_RED justify-center items-center">
-            <h1 className="Font_YIV text-[7rem] translate-y-10 max-sm:translate-y-5 leading-[7rem] max-sm:text-[15vw] max-sm:leading-[16vw] max-lg:text-[7vw] max-lg:leading-[14vw]">
+            <h1 className="Font_YIV text-[7rem] translate-y-10 max-md:translate-y-5 leading-[7rem] max-md:text-[15vw] max-md:leading-[16vw] max-lg:text-[7vw] max-lg:leading-[14vw]">
               The
             </h1>
-            <h1 className="Font_Q text-[7rem] leading-[7rem] max-sm:text-[15vw] max-sm:leading-[16vw] max-lg:text-[7vw] max-lg:leading-[8vw] uppercase">
+            <h1 className="Font_Q text-[7rem] leading-[7rem] max-md:text-[15vw] max-md:leading-[16vw] max-lg:text-[7vw] max-lg:leading-[8vw] uppercase">
               Wedding
             </h1>
-            <h1 className="Font_Q text-[7rem] leading-[7rem] max-sm:text-[15vw] max-sm:leading-[16vw] max-lg:text-[7vw] max-lg:leading-[8vw] uppercase">
+            <h1 className="Font_Q text-[7rem] leading-[7rem] max-md:text-[15vw] max-md:leading-[16vw] max-lg:text-[7vw] max-lg:leading-[8vw] uppercase">
               ITINERARY.
             </h1>
             <div className="Font_YV mt-10 w-full flex flex-col text-center ">
@@ -89,12 +89,12 @@ const Itinerary = () => {
 
       <div className="w-full h-fit flex flex-col pt-20 z-20 COLOR_BG_CREAM space-y-20 lg:space-y-20 lg:pt-20 max-lg:pb-[10vh] md:pb-[7vw]">
         {/* div-1 */}
-        <div className="w-full h-fit  max-sm:min-h-fit  items-center flex max-sm:flex-col  ">
+        <div className="w-full h-fit  max-md:min-h-fit  items-center flex max-md:flex-col  ">
           {/* Left */}
-          <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit max-sm:py-[2vh] max-sm:px-[20px] max-lg:px-[4vw] flex relative COLOR_BG_CREAM flex-col COLOR_TEXT_RED justify-center items-center">
+          <div className="w-1/2 max-md:w-full h-fit max-md:h-fit max-md:py-[2vh] max-md:px-[20px] max-lg:px-[4vw] flex relative COLOR_BG_CREAM flex-col COLOR_TEXT_RED justify-center items-center">
             <p className="Font_YV font-semibold uppercase ">Day 1</p>
 
-            <div className=" text-[16px] mt-1 flex flex-col Font_YV gap-1 max-sm:text-center justify-center items-center">
+            <div className=" text-[16px] mt-1 flex flex-col Font_YV gap-1 max-md:text-center justify-center items-center">
               <span>
                 <span className="font-semibold"></span> 11/14/2026
               </span>
@@ -102,7 +102,7 @@ const Itinerary = () => {
             </div>
 
 
-            <h5 className="Font_Q text-[40px] leading-[45px] max-sm:text-center flex-wrap  my-6 uppercase px-[10%] text-center flex justify-center items-center">
+            <h5 className="Font_Q text-[40px] leading-[45px] max-md:text-center flex-wrap  my-6 uppercase px-[10%] text-center flex justify-center items-center">
               Mehndi & Sangeet
             </h5>
 
@@ -119,7 +119,7 @@ const Itinerary = () => {
           </div>
 
           {/* right */}
-          <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit  max-sm:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
+          <div className="w-1/2 max-md:w-full h-fit max-md:h-fit  max-md:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
             <div className="w-1/2 h-fit  flex flex-col justify-center img3d-wrapper items-center">
               <img
                 src={`/imgs/icon3.png`}
@@ -133,19 +133,19 @@ const Itinerary = () => {
         </div>
 
         {/* div-2  */}
-        <div className="w-full h-fit  max-sm:min-h-fit  flex max-sm:flex-col items-center flex-row-reverse  ">
+        <div className="w-full h-fit  max-md:min-h-fit  flex max-md:flex-col items-center flex-row-reverse  ">
           {/* Left */}
-          <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit max-sm:py-[2vh] max-sm:px-[20px] max-lg:px-[4vw] flex relative COLOR_BG_CREAM flex-col COLOR_TEXT_RED justify-center items-center">
+          <div className="w-1/2 max-md:w-full h-fit max-md:h-fit max-md:py-[2vh] max-md:px-[20px] max-lg:px-[4vw] flex relative COLOR_BG_CREAM flex-col COLOR_TEXT_RED justify-center items-center">
             <p className="Font_YV font-semibold uppercase ">Day 2</p>
 
-            <div className=" text-[16px] mt-1 flex flex-col Font_YV gap-1 max-sm:text-center justify-center items-center">
+            <div className=" text-[16px] mt-1 flex flex-col Font_YV gap-1 max-md:text-center justify-center items-center">
               <span className=" uppercase">
                 <span className="font-semibold"></span> 11/15/2026
               </span>
             </div>
 
 
-            <h5 className="Font_Q text-[40px] leading-[45px] max-sm:text-center flex flex-wrap justify-center items-center  my-6 uppercase px-[10%] text-center ">
+            <h5 className="Font_Q text-[40px] leading-[45px] max-md:text-center flex flex-wrap justify-center items-center  my-6 uppercase px-[10%] text-center ">
               Nikkah Ceremony & Reception
             </h5>
 
@@ -160,8 +160,8 @@ const Itinerary = () => {
           </div>
 
           {/* right */}
-          {/* <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit max-sm:py-[0vh] max-sm:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
-            <div className="w-2/3 max-sm:w-1/2 h-fit  flex flex-col justify-center items-center img3d-wrapper">
+          {/* <div className="w-1/2 max-md:w-full h-fit max-md:h-fit max-md:py-[0vh] max-md:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
+            <div className="w-2/3 max-md:w-1/2 h-fit  flex flex-col justify-center items-center img3d-wrapper">
               <img
                 src={`/imgs/icon1.png`}
                 alt="Img"
@@ -169,7 +169,7 @@ const Itinerary = () => {
               />
             </div>
           </div> */}
-          <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit max-sm:pb-[10vh] max-sm:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
+          <div className="w-1/2 max-md:w-full h-fit max-md:h-fit max-md:pb-[10vh] max-md:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
             <div className="w-1/2 h-fit  flex flex-col justify-center img3d-wrapper items-center">
               <img
                 src={`/imgs/icon4.png`}
@@ -183,18 +183,18 @@ const Itinerary = () => {
         </div>
 
         {/* div-3 */}
-        <div className="w-full h-fit  max-sm:min-h-fit   flex items-center max-sm:flex-col ">
+        <div className="w-full h-fit  max-md:min-h-fit   flex items-center max-md:flex-col ">
           {/* Left */}
-          <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit  max-sm:py-[2vh] max-sm:px-[20px] max-lg:px-[4vw] flex relative COLOR_BG_CREAM flex-col COLOR_TEXT_RED justify-center items-center">
+          <div className="w-1/2 max-md:w-full h-fit max-md:h-fit  max-md:py-[2vh] max-md:px-[20px] max-lg:px-[4vw] flex relative COLOR_BG_CREAM flex-col COLOR_TEXT_RED justify-center items-center">
             <p className="Font_YV font-semibold uppercase ">Day 3</p>
 
-            <div className=" text-[16px] mt-1 flex flex-col Font_YV gap-1 max-sm:text-center justify-center items-center">
+            <div className=" text-[16px] mt-1 flex flex-col Font_YV gap-1 max-md:text-center justify-center items-center">
               <span>
                 <span className="font-semibold"></span> 11/16/2026
               </span>
             </div>
 
-            <h5 className="Font_Q text-[40px] leading-[45px] flex flex-wrap justify-center items-center max-sm:text-center  my-6 uppercase  px-[10%] text-center">
+            <h5 className="Font_Q text-[40px] leading-[45px] flex flex-wrap justify-center items-center max-md:text-center  my-6 uppercase  px-[10%] text-center">
               Closing Brunch
             </h5>
 
@@ -209,7 +209,7 @@ const Itinerary = () => {
           </div>
 
           {/* right */}
-          {/* <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit max-sm:pb-[10vh] max-sm:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
+          {/* <div className="w-1/2 max-md:w-full h-fit max-md:h-fit max-md:pb-[10vh] max-md:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
             <div className="w-1/2 h-fit  flex flex-col justify-center img3d-wrapper items-center">
               <img
                 src={`/imgs/icon4.png`}
@@ -218,8 +218,8 @@ const Itinerary = () => {
               />
             </div>
           </div> */}
-          <div className="w-1/2 max-sm:w-full h-fit max-sm:h-fit max-sm:py-[0vh] max-sm:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
-            <div className="w-2/3 max-sm:w-1/2 h-fit  flex flex-col justify-center items-center img3d-wrapper">
+          <div className="w-1/2 max-md:w-full h-fit max-md:h-fit max-md:py-[0vh] max-md:px-[20px] COLOR_TEXT_RED flex flex-col px-12 justify-center items-center">
+            <div className="w-2/3 max-md:w-1/2 h-fit  flex flex-col justify-center items-center img3d-wrapper">
               <img
                 src={`/imgs/icon1.png`}
                 alt="Img"

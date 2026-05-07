@@ -67,7 +67,7 @@ const TravelInfo = () => {
         {/* ROW 1 */}
         <div className="flex whitespace-nowrap uppercase Font_Q" ref={row1}>
           {[...Array(16)].map((_, i) => (
-            <h5 key={i} className="text-[7vw] leading-[7vw] max-sm:text-[20vw] max-sm:leading-[20vw]">
+            <h5 key={i} className="text-[7vw] leading-[7vw] max-md:text-[20vw] max-md:leading-[20vw]">
               Travel Information
             </h5>
           ))}
@@ -76,7 +76,7 @@ const TravelInfo = () => {
         {/* ROW 2 */}
         <div className="flex whitespace-nowrap uppercase Font_Q -ml-[90vw] " ref={row2}>
           {[...Array(16)].map((_, i) => (
-            <h5 key={i} className="text-[7vw] leading-[7vw] max-sm:text-[20vw] max-sm:leading-[20vw]">
+            <h5 key={i} className="text-[7vw] leading-[7vw] max-md:text-[20vw] max-md:leading-[20vw]">
               Travel Information
             </h5>
           ))}
@@ -85,7 +85,7 @@ const TravelInfo = () => {
         {/* ROW 3 */}
         <div className="flex whitespace-nowrap uppercase Font_Q" ref={row3}>
           {[...Array(16)].map((_, i) => (
-            <h5 key={i} className="text-[7vw] leading-[7vw] max-sm:text-[20vw] max-sm:leading-[20vw]">
+            <h5 key={i} className="text-[7vw] leading-[7vw] max-md:text-[20vw] max-md:leading-[20vw]">
               Travel Information
             </h5>
           ))}
@@ -100,11 +100,11 @@ const TravelInfo = () => {
           Travel Information
         </span> */}
 
-        <div className="Font_Q  mb-10 flex flex-col gap-4 max-sm:gap-1 uppercase text-[#044BB2] max-sm:text-[#044BB2] max-sm:uppercase">
+        <div className="Font_Q  mb-10 flex flex-col gap-4 max-md:gap-1 uppercase text-[#044BB2] max-md:text-[#044BB2] max-md:uppercase">
           <h2> Arriving in Marrakech </h2>
         </div>
 
-        <div className="space-y-3 max-sm:space-y-4 ">
+        <div className="space-y-3 max-md:space-y-4 ">
           {/* <p className="uppercase Font_YV text-[#044BB2]">
             Nearest Airport is
           </p> */}
