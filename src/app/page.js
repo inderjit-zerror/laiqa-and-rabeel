@@ -32,7 +32,7 @@ export default function Home() {
         scale: 1,
       },
       {
-        xPercent: -250,
+        xPercent: -280,
         filter: "blur(10px)",
         scale: 2,
         ease: "none",
@@ -48,7 +48,7 @@ export default function Home() {
         scale: 1,
       },
       {
-        xPercent: 250,
+        xPercent: 280,
         filter: "blur(10px)",
         scale: 2,
         ease: "none",
@@ -185,7 +185,7 @@ export default function Home() {
   return (
     <>
       <div  className="w-full h-[200vh]  relative relMain opacity-0 ">
-        <div className="w-full h-screen sticky flex top-0 left-0 overflow-hidden z-20  ">
+        <div className="w-full h-screen sticky flex top-0 left-0 overflow-hidden z-20   ">
           {/* back Building */}
           <div className=" absolute top-0 left-0 w-full h-screen z-10 stickyAnimation overflow-hidden">
             <img
@@ -208,7 +208,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="w-1/2 h-screen  left flex justify-end items-center LTM relative z-50  overflow-x-visible max-md:overflow-hidden">
+          <div className="w-1/2 h-screen   left flex justify-end items-center LTM relative z-50  overflow-x-visible max-md:overflow-hidden">
 
             <div className=" w-1/4 max-md:w-full h-[70vh]  absolute right-0 bottom-0 ">
               <img
@@ -221,7 +221,7 @@ export default function Home() {
             <img
               src={`/allPageImg/home/L.png`}
               alt="left"
-              className="h-full w-screen object-cover scale-[1.03] object-center max-md:object-right flex absolute top-0 left-0 z-[-1]  "
+              className="h-full w-screen object-cover scale-[1.03] max-sm:scale-[1.06] object-center max-md:object-right flex absolute top-0 left-0 z-[-1]  "
             />
           </div>
           <div className="w-1/2  h-screen left relative flex justify-start items-center RTM z-50 overflow-x-visible">
@@ -235,7 +235,7 @@ export default function Home() {
             <img
               src={`/allPageImg/home/R.png`}
               alt="left"
-              className="w-full h-full object-cover scale-[1.02]  object-center max-md:object-left flex absolute top-0  right-0 z-[-1]  "
+              className="w-full h-full object-cover scale-[1.02] max-sm:scale-[1.06]  object-center max-md:object-left flex absolute top-0  right-0 z-[-1]  "
             />
           </div>
         </div>
