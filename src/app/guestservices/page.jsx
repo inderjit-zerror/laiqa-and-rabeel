@@ -500,7 +500,7 @@ export default function GuestServices() {
             ref={heroTitleRef}
             className="gs-hero-title text-center COLOR_TEXT_RED Font_Q "
           >
-            Guest <br /> Services
+            Guest <br className="md:hidden" /> Services
           </h1>
 
           <p ref={heroSubRef} className="gs-hero-sub COLOR_TEXT_RED Font_YV">
