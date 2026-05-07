@@ -251,7 +251,7 @@ const NavBar = () => {
       </div>
 
       {/* MOBILENAV */}
-      <div className="w-full flex flex-col lg:hidden justify-center text-[1.5rem] leading-[1.5rem] z-100 uppercase gap-4 items-center MOBILENAV h-screen COLOR_BG_CREAM absolute -top-10 left-[150%] z-[-1]">
+      <div className="w-full flex flex-col lg:hidden justify-center text-[1.5rem] leading-[1.5rem] z-100 uppercase gap-4 items-center MOBILENAV h-screen bg-white absolute -top-10 left-[150%] z-[-1]">
         <Link href={`/`}>
           <div
             onClick={clickCheck}
